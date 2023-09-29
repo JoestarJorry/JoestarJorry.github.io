@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+  <meta name="generator" content="Hexo 6.3.0">
+
+  
+    <meta name="description" content="简单的个人博客">
+  
+
+  
+    <meta name="keywords" content="Look at me!">
+  
+
+  
+    <meta name="author" content="cxy">
+  
+
+  
+
+  
+
+  <title>
+    
+    
+    arch linux,启动！ | JorryJo
+    
+  
+  </title>
+
+  
+
+  
+    <link rel="shortcut icon" href="/favicon.ico">
+  
+
+  <!--mathjax latex数学公式显示支持-->
+  
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.13/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/monokai.min.css">
+  
+
+  
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/line-numbers/prism-line-numbers.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css">
+  
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(http://ryldbqco1.hn-bkt.clouddn.com/1.pngIMG_3233.PNG)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/">
+        
+          JorryJo
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/">首页</a></li>
+        
+          <li class="navbar-list-item"><a target="_blank" rel="noopener" href="https://space.bilibili.com/282574159?spm_id_from=333.1007.0.0">B站</a></li>
+        
+          <li class="navbar-list-item"><a target="_blank" rel="noopener" href="https://gitee.com/jorryjo">gitee</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">arch linux,启动！</h1>
+          <h2 class="title-sub-wrap">
+            <strong>cxy</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2023-08-23T02:25:01.000Z" itemprop="datePublished">2023-08-23</time>
+          </h2>
+          
+            <h2 class="last-time">
+              <span>最后更新于</span>
+              <time  class="article-updated" datetime="2023-08-31T14:54:48.869Z" itemprop="dateUpdated">2023-08-31</time>
+            </h2>
+          
+          
+          <ul class="wrap-list dark">
+  
+    <li><a href="/categories/Doc/">📒 Doc</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/tags/%E6%95%99%E7%A8%8B/">🏷️ 教程</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <div class="aplayer-box" data-url='http://ryldbqco1.hn-bkt.clouddn.com/%E5%BC%80%E4%B8%8D%E4%BA%86%E5%8F%A3-%E5%91%A8%E6%9D%B0%E4%BC%A6.320.mp3' data-name='开不了口' data-artist='周杰伦' data-cover='http://ryldbqco1.hn-bkt.clouddn.com/f69aae0580c7fc4d3220d0de7d1914b06d231cc4.jpg%401000w_1000h_1c.webp' data-lrc='http://ryldbqco1.hn-bkt.clouddn.com/%E5%BC%80%E4%B8%8D%E4%BA%86%E5%8F%A3%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.lrc' data-lrcType='3' ></div>
+<h1 id="Manjaro是全宇宙最牛逼的系统"><a href="#Manjaro是全宇宙最牛逼的系统" class="headerlink" title="Manjaro是全宇宙最牛逼的系统"></a>Manjaro是全宇宙最牛逼的系统</h1><p>我一时间心血来潮，加上没事做，把用了很久（一个月）的windows10删了，换成了Manjaro,<br>这个其实也不是我第一次用linux,我第一个用过的linux是老笔记本上的kali linux,<br>我当时就应该用arch系，kali折腾的难度太高了，导致很多软件特别是windows manager一个都没装成，但我当时初三，我不可能像初一初二一样一点书都不读天天折腾这些东西，所以我也没办法，周末就一点点时间，装个系统半天过去了，等到下周末早忘了自己上周干了什么。</p>
+<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1>
+    <figure class="figure-image">
+      <img src="http://ryldbqco1.hn-bkt.clouddn.com/1.pngIMG_3234.PNG" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://ryldbqco1.hn-bkt.clouddn.com/1.pngIMG_3233.PNG" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+<p>不多废话了。</p>
+<h3 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h3><p>我装的是最新的manjaro系统，这个没什么好说的，用rufus烧录到u盘之后无脑下一步，我直接把win10抹除了，所以分区，挂载什么都是智能分配，不需要看教程我认为都能够完成。</p>
+<h3 id="Hyprland-waybar"><a href="#Hyprland-waybar" class="headerlink" title="Hyprland&amp;waybar"></a>Hyprland&amp;waybar</h3><p>这是我心心念念了很久很久的一个软件，当初在kali时技术时间有限没装上，装上之后喜悦溢于言表，我看了一篇教程，写的很好，<br><a target="_blank" rel="noopener" href="https://blog.cascade.moe/posts/hyprland-configure/">地址</a><br>我基本看这个就解决了hyprland的美化配置和安装，我的waybar也是抄这位大佬的，省下了很多学习的时间和成本.<br>Hyprland配置</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">
+<span class="token comment">########################################################################################</span>
+AUTOGENERATED HYPR CONFIG.
+PLEASE USE THE CONFIG PROVIDED IN THE GIT REPO /examples/hypr.conf AND EDIT IT<span class="token punctuation">,</span>
+OR EDIT THIS ONE ACCORDING TO THE WIKI INSTRUCTIONS.
+<span class="token comment">########################################################################################</span>
+
+<span class="token comment">#</span>
+<span class="token comment"># Please note not all available settings / options are set here.</span>
+<span class="token comment"># For a full list, see the wiki # remove this line to remove the warning</span>
+
+<span class="token comment"># See https://wiki.hyprland.org/Configuring/Monitors/</span>
+monitor=<span class="token punctuation">,</span>preferred<span class="token punctuation">,</span>auto<span class="token punctuation">,</span>auto
+
+
+<span class="token comment"># See https://wiki.hyprland.org/Configuring/Keywords/ for more</span>
+
+<span class="token comment"># Execute your favorite apps at launch</span>
+<span class="token comment"># exec-once = waybar &amp; hyprpaper &amp; firefox</span>
+
+<span class="token comment"># Source a file (multi-file configs)</span>
+<span class="token comment"># source = ~/.config/hypr/myColors.conf</span>
+
+<span class="token comment"># Some default env vars.</span>
+env = XCURSOR_SIZE<span class="token punctuation">,</span><span class="token number">24</span>
+
+<span class="token comment"># For all categories, see https://wiki.hyprland.org/Configuring/Variables/</span>
+input <span class="token punctuation">&#123;</span>
+    kb_layout = us
+    kb_variant =
+    kb_model =
+    kb_options =
+    kb_rules =
+
+    follow_mouse = 2
+
+    touchpad <span class="token punctuation">&#123;</span>
+        natural_scroll = no
+    <span class="token punctuation">&#125;</span>
+
+    sensitivity = 0 <span class="token comment"># -1.0 - 1.0, 0 means no modification.</span>
+<span class="token punctuation">&#125;</span>
+
+
+
+animations <span class="token punctuation">&#123;</span>
+	enabled = true
+   bezier = wind<span class="token punctuation">,</span> <span class="token number">0.05</span><span class="token punctuation">,</span> <span class="token number">0.9</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">1.05</span>
+  bezier = winIn<span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">1.1</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">,</span> <span class="token number">1.1</span>
+  bezier = winOut<span class="token punctuation">,</span> <span class="token number">0.3</span><span class="token punctuation">,</span> <span class="token number">-0.3</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span>
+  bezier = liner<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span>
+
+  
+  <span class="token comment">#▄▀█ █▄░█ █ █▀▄▀█ ▄▀█ ▀█▀ █ █▀█ █▄░█</span>
+  <span class="token comment">#█▀█ █░▀█ █ █░▀░█ █▀█ ░█░ █ █▄█ █░▀█</span>
+  animation = windows<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> wind<span class="token punctuation">,</span> slide
+  animation = windowsIn<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> winIn<span class="token punctuation">,</span> slide
+  animation = windowsOut<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> winOut<span class="token punctuation">,</span> slide
+  animation = windowsMove<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> wind<span class="token punctuation">,</span> slide
+  animation = border<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> liner
+  animation = borderangle<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> liner<span class="token punctuation">,</span> loop
+  animation = fade<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> default
+  animation = workspaces<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> wind <span class="token comment"># 工作区切换动画</span>
+<span class="token punctuation">&#125;</span>
+dwindle <span class="token punctuation">&#123;</span>
+    <span class="token comment"># See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more</span>
+    pseudotile = yes <span class="token comment"># master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below</span>
+    preserve_split = yes <span class="token comment"># you probably want this</span>
+<span class="token punctuation">&#125;</span>
+
+master <span class="token punctuation">&#123;</span>
+    <span class="token comment"># See https://wiki.hyprland.org/Configuring/Master-Layout/ for more</span>
+    new_is_master = true
+<span class="token punctuation">&#125;</span>
+
+gestures <span class="token punctuation">&#123;</span>
+    <span class="token comment"># See https://wiki.hyprland.org/Configuring/Variables/ for more</span>
+    workspace_swipe = off
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment"># Example per-device config</span>
+<span class="token comment"># See https://wiki.hyprland.org/Configuring/Keywords/#executing for more</span>
+device<span class="token punctuation">:</span>epic<span class="token punctuation">-</span>mouse<span class="token punctuation">-</span>v1 <span class="token punctuation">&#123;</span>
+    sensitivity = <span class="token punctuation">-</span><span class="token number">0.5</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token comment"># Example windowrule v1</span>
+<span class="token comment"># windowrule = float, ^(kitty)$</span>
+<span class="token comment"># Example windowrule v2</span>
+<span class="token comment"># windowrulev2 = float,class:^(kitty)$,title:^(kitty)$</span>
+<span class="token comment"># See https://wiki.hyprland.org/Configuring/Window-Rules/ for more</span>
+
+
+<span class="token comment"># See https://wiki.hyprland.org/Configuring/Keywords/ for more</span>
+$mainMod = SUPER
+
+<span class="token comment"># Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more</span>
+bind = $mainMod<span class="token punctuation">,</span> T<span class="token punctuation">,</span> exec<span class="token punctuation">,</span> alacritty
+bind = $mainMod<span class="token punctuation">,</span> Q<span class="token punctuation">,</span> killactive<span class="token punctuation">,</span> 
+bind = $mainMod<span class="token punctuation">,</span> M<span class="token punctuation">,</span> exit<span class="token punctuation">,</span> 
+bind = $mainMod<span class="token punctuation">,</span> E<span class="token punctuation">,</span> exec<span class="token punctuation">,</span> dolphin
+bind = $mainMod<span class="token punctuation">,</span> V<span class="token punctuation">,</span> togglefloating<span class="token punctuation">,</span> 
+bind = $mainMod<span class="token punctuation">,</span> P<span class="token punctuation">,</span> pseudo<span class="token punctuation">,</span> <span class="token comment"># dwindle</span>
+bind = $mainMod<span class="token punctuation">,</span> J<span class="token punctuation">,</span> togglesplit<span class="token punctuation">,</span> <span class="token comment"># dwindle</span>
+bind = SUPER CTRL<span class="token punctuation">,</span> left<span class="token punctuation">,</span> resizeactive<span class="token punctuation">,</span> <span class="token punctuation">-</span>20 0
+bind = SUPER CTRL<span class="token punctuation">,</span> right<span class="token punctuation">,</span> resizeactive<span class="token punctuation">,</span> 20 0
+bind = SUPER CTRL<span class="token punctuation">,</span> up<span class="token punctuation">,</span> resizeactive<span class="token punctuation">,</span> 0 <span class="token punctuation">-</span><span class="token number">20</span>
+bind = SUPER CTRL<span class="token punctuation">,</span> down<span class="token punctuation">,</span> resizeactive<span class="token punctuation">,</span> 0 20
+bind = SUPER SHIFT<span class="token punctuation">,</span> left<span class="token punctuation">,</span> movewindow<span class="token punctuation">,</span> l
+bind = SUPER SHIFT<span class="token punctuation">,</span> right<span class="token punctuation">,</span> movewindow<span class="token punctuation">,</span> r
+bind = SUPER SHIFT<span class="token punctuation">,</span> up<span class="token punctuation">,</span> movewindow<span class="token punctuation">,</span> u
+bind = SUPER SHIFT<span class="token punctuation">,</span> down<span class="token punctuation">,</span> movewindow<span class="token punctuation">,</span> d
+
+<span class="token comment"># Move focus with mainMod + arrow keys bind = $mainMod, left, movefocus, l</span>
+bind = $mainMod<span class="token punctuation">,</span> right<span class="token punctuation">,</span> movefocus<span class="token punctuation">,</span> r
+bind = $mainMod<span class="token punctuation">,</span> up<span class="token punctuation">,</span> movefocus<span class="token punctuation">,</span> u
+bind = $mainMod<span class="token punctuation">,</span> down<span class="token punctuation">,</span> movefocus<span class="token punctuation">,</span> d
+bind = $mainMod<span class="token punctuation">,</span> F<span class="token punctuation">,</span> fullscreen
+<span class="token comment"># Switch workspaces with mainMod + [0-9]</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">1</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">2</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">3</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">4</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">5</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">6</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">7</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">8</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">9</span>
+bind = $mainMod<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> <span class="token number">10</span>
+
+<span class="token comment"># Move active window to a workspace with mainMod + SHIFT + [0-9]</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">1</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">2</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">3</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">4</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">5</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">6</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">7</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">8</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">9</span>
+bind = $mainMod SHIFT<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> movetoworkspace<span class="token punctuation">,</span> <span class="token number">10</span>
+
+<span class="token comment"># Scroll through existing workspaces with mainMod + scroll</span>
+bind = $mainMod<span class="token punctuation">,</span> mouse_down<span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> e+1
+bind = $mainMod<span class="token punctuation">,</span> mouse_up<span class="token punctuation">,</span> workspace<span class="token punctuation">,</span> e<span class="token punctuation">-</span><span class="token number">1</span>
+
+
+
+<span class="token comment"># Move/resize windows with mainMod + LMB/RMB and dragging</span>
+bindm = $mainMod<span class="token punctuation">,</span> mouse<span class="token punctuation">:</span><span class="token number">272</span><span class="token punctuation">,</span> movewindow
+bindm = $mainMod<span class="token punctuation">,</span> mouse<span class="token punctuation">:</span><span class="token number">273</span><span class="token punctuation">,</span> resizewindow
+
+decoration <span class="token punctuation">&#123;</span>
+    rounding = 12       <span class="token comment"># 圆角大小</span>
+    blur = yes          <span class="token comment"># 模糊效果是否启用</span>
+    blur_size = 5       <span class="token comment"># 模糊半径</span>
+    blur_passes = 1     <span class="token comment"># 模糊过滤次数</span>
+    blur_new_optimizations = on     <span class="token comment"># 模糊优化，通常保持打开</span>
+
+    drop_shadow = yes   <span class="token comment"># 窗口投影是否启用</span>
+    shadow_range = 4    <span class="token comment"># 投影大小</span>
+    shadow_render_power = 3     <span class="token comment"># 投影强度，不过我不太明白这是什么意思</span>
+    col.shadow = rgba(1a1a1aee)     <span class="token comment"># 投影颜色</span>
+<span class="token punctuation">&#125;</span>
+
+general <span class="token punctuation">&#123;</span>
+    gaps_in = 6         <span class="token comment"># 窗口之间的间隙大小</span>
+    gaps_out = 12       <span class="token comment"># 窗口与显示器边缘的间隙大小</span>
+    border_size = 2     <span class="token comment"># 窗口边框的宽度</span>
+    col.active_border = rgba(cceeffbb)      <span class="token comment"># 活动窗口的边框颜色 </span>
+    col.inactive_border = rgba(595959aa)    <span class="token comment"># 非活动窗口的边框颜色</span>
+
+    layout = dwindle    <span class="token comment"># 窗口布局</span>
+<span class="token punctuation">&#125;</span>
+exec<span class="token punctuation">-</span>once = waybar
+exec<span class="token punctuation">-</span>once = fcitx5
+bind = $mainMod<span class="token punctuation">,</span> R<span class="token punctuation">,</span> exec<span class="token punctuation">,</span> rofi <span class="token punctuation">-</span>show drun <span class="token punctuation">|</span> xargs hyprctl dispatch exec <span class="token punctuation">-</span><span class="token punctuation">-</span>
+exec<span class="token punctuation">-</span>once = mpvpaper <span class="token punctuation">-</span>o "no<span class="token punctuation">-</span>audio <span class="token punctuation">-</span><span class="token punctuation">-</span>loop" HDMI<span class="token punctuation">-</span>A<span class="token punctuation">-</span>1 ~/Background/动态壁纸/8.mp4
+bind = $mainMod<span class="token punctuation">,</span>z<span class="token punctuation">,</span>exec<span class="token punctuation">,</span> python /home/cxy/screencut.py
+
+Misc <span class="token punctuation">&#123;</span>
+	animate_manual_resizes = true
+<span class="token punctuation">&#125;</span>
+
+Binds <span class="token punctuation">&#123;</span>
+	pass_mouse_when_bound = true
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>waybar配置<br>css样式配置文件（style.css)</p>
+<pre class="line-numbers language-css" data-language="css"><code class="language-css"> <span class="token punctuation">&#123;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+    <span class="token comment">/*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> Iosevka<span class="token punctuation">,</span> FontAwesome<span class="token punctuation">,</span> Noto Sans CJK<span class="token punctuation">;</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+    <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+    <span class="token property">min-height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">window#waybar</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>30<span class="token punctuation">,</span> 30<span class="token punctuation">,</span> 46<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border-bottom</span><span class="token punctuation">:</span> 1px solid #282828<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #f4d9e1
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#workspaces</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">background</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> 5px 5px 5px 5px<span class="token punctuation">;</span>
+  <span class="token property">padding</span><span class="token punctuation">:</span> 0px 5px 0px 5px<span class="token punctuation">;</span>
+	<span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> solid 0px #f4d9e1<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+  <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token selector">#workspaces button</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0px 5px<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #928374<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#workspaces button.active</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #f4d9e1<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#workspaces button:hover</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> #E6B9C6<span class="token punctuation">;</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+	<span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-date, #clock, #battery, #pulseaudio, #network, #custom-randwall, #custom-launcher</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">background</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> 5px 5px 5px 5px<span class="token punctuation">;</span>
+	<span class="token property">margin</span><span class="token punctuation">:</span> 5px 5px 5px 5px<span class="token punctuation">;</span>
+  <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> solid 0px #f4d9e1<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-date</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #D3869B<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-power</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">color</span><span class="token punctuation">:</span> #24283b<span class="token punctuation">;</span>
+	<span class="token property">background-color</span><span class="token punctuation">:</span> #db4b4b<span class="token punctuation">;</span>
+	<span class="token property">border-radius</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+	<span class="token property">margin-right</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+	<span class="token property">margin-top</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+	<span class="token property">margin-bottom</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+	<span class="token property">margin-left</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+	<span class="token property">padding</span><span class="token punctuation">:</span> 5px 10px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#tray</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px 5px 5px 5px<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0px 5px<span class="token punctuation">;</span>
+    <span class="token comment">/*border-right: solid 1px #282738;*/</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#clock</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #E6B9C6<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 0px 0px 0px 24px<span class="token punctuation">;</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> 13px<span class="token punctuation">;</span>
+    <span class="token property">padding-right</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+    <span class="token comment">/*border-left: solid 1px #282738;*/</span>
+<span class="token punctuation">&#125;</span>
+
+
+<span class="token selector">#battery</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #9ece6a<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#battery.charging</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #9ece6a<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#battery.warning:not(.charging)</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #f7768e<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #24283b<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 5px 5px 5px 5px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#backlight</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #24283b<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #db4b4b<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 0px 0px 0px 0px<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0px 0px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#network</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #f4d9e1<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#pulseaudio</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #f4d9e1<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#pulseaudio.muted</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #928374<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-randwall</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #f4d9e1<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-launcher</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #e5809e<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 0px 24px 0px 0px<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0px 0px 0px 0px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0 20px 0 13px<span class="token punctuation">;</span>
+    <span class="token comment">/*border-right: solid 1px #282738;*/</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-launcher button:hover</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #FB4934<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 8px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> -5px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-playerctl</span> <span class="token punctuation">&#123;</span>
+	<span class="token property">background</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+	<span class="token property">padding-left</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+  <span class="token property">padding-right</span><span class="token punctuation">:</span> 14px<span class="token punctuation">;</span>
+	<span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+  <span class="token comment">/*border-left: solid 1px #282738;*/</span>
+  <span class="token comment">/*border-right: solid 1px #282738;*/</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+  <span class="token property">margin-left</span><span class="token punctuation">:</span> 0px<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+  <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-playerlabel</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> transparent<span class="token punctuation">;</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+    <span class="token property">padding-right</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token comment">/*border-left: solid 1px #282738;*/</span>
+    <span class="token comment">/*border-right: solid 1px #282738;*/</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+    <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#window</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">padding-right</span><span class="token punctuation">:</span> 15px<span class="token punctuation">;</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token comment">/*border-left: solid 1px #282738;*/</span>
+    <span class="token comment">/*border-right: solid 1px #282738;*/</span>
+    <span class="token property">margin-top</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+    <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-wf-recorder</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0 20px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> #e5809e<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #1E1E2E<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#cpu</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+    <span class="token comment">/*color: #FABD2D;*/</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0px 10px 0px 10px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#memory</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+    <span class="token comment">/*color: #83A598;*/</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0px 10px 0px 10px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#disk</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+    <span class="token comment">/*color: #8EC07C;*/</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0px 10px 0px 10px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token selector">#custom-hyprpicker</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #282828<span class="token punctuation">;</span>
+    <span class="token comment">/*color: #8EC07C;*/</span>
+    <span class="token property">border-radius</span><span class="token punctuation">:</span> 16px<span class="token punctuation">;</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0px 11px 0px 9px<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>config文件</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token punctuation">&#123;</span>
+    <span class="token key atrule">"position"</span><span class="token punctuation">:</span> <span class="token string">"top"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"layer"</span><span class="token punctuation">:</span> <span class="token string">"top"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"height"</span><span class="token punctuation">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"margin-top"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"margin-bottom"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"margin-left"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"margin-right"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"modules-left"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"custom/launcher"</span><span class="token punctuation">,</span> <span class="token string">"wlr/workspaces"</span><span class="token punctuation">,</span> <span class="token string">"custom/playerctl"</span><span class="token punctuation">,</span> <span class="token string">"custom/playerlabel"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"modules-center"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"cpu"</span><span class="token punctuation">,</span> <span class="token string">"memory"</span><span class="token punctuation">,</span> <span class="token string">"disk"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"modules-right"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"tray"</span><span class="token punctuation">,</span> <span class="token string">"custom/randwall"</span><span class="token punctuation">,</span> <span class="token string">"network"</span><span class="token punctuation">,</span> <span class="token string">"pulseaudio"</span><span class="token punctuation">,</span> <span class="token string">"clock"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    // Modules configuration
+	<span class="token key atrule">"clock"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">" &#123;:%H:%M&#125;"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"tooltip"</span><span class="token punctuation">:</span> <span class="token string">"true"</span><span class="token punctuation">,</span>
+        	<span class="token key atrule">"tooltip-format"</span><span class="token punctuation">:</span> <span class="token string">"&lt;big>&#123;:%Y %B&#125;&lt;/big>\n&lt;tt>&lt;small>&#123;calendar&#125;&lt;/small>&lt;/tt>"</span><span class="token punctuation">,</span>
+        	<span class="token key atrule">"format-alt"</span><span class="token punctuation">:</span> <span class="token string">" &#123;:%d/%m&#125;"</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	
+
+	<span class="token key atrule">"wlr/workspaces"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token key atrule">"active-only"</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"all-outputs"</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"disable-scroll"</span><span class="token punctuation">:</span> <span class="token boolean important">false</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"on-scroll-up"</span><span class="token punctuation">:</span> <span class="token string">"hyprctl dispatch workspace -1"</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"on-scroll-down"</span><span class="token punctuation">:</span> <span class="token string">"hyprctl dispatch workspace +1"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"&#123;icon&#125;"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"on-click"</span><span class="token punctuation">:</span> <span class="token string">"activate"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"format-icons"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+<span class="token key atrule">//			"1"</span><span class="token punctuation">:</span> <span class="token string">"一"</span><span class="token punctuation">,</span>
+<span class="token key atrule">//			"2"</span><span class="token punctuation">:</span> <span class="token string">"二"</span><span class="token punctuation">,</span>
+<span class="token key atrule">//			"3"</span><span class="token punctuation">:</span> <span class="token string">"三"</span><span class="token punctuation">,</span>
+<span class="token key atrule">//			"4"</span><span class="token punctuation">:</span> <span class="token string">"四"</span><span class="token punctuation">,</span>
+<span class="token key atrule">//			"5"</span><span class="token punctuation">:</span> <span class="token string">"五"</span><span class="token punctuation">,</span>
+			<span class="token key atrule">"urgent"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+			<span class="token key atrule">"active"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+			<span class="token key atrule">"default"</span><span class="token punctuation">:</span> <span class="token string">"󰧞"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"sort-by-number"</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+    <span class="token key atrule">"custom/playerctl"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"&#123;icon&#125;"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"return-type"</span><span class="token punctuation">:</span> <span class="token string">"json"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"max-length"</span><span class="token punctuation">:</span> <span class="token number">64</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"exec"</span><span class="token punctuation">:</span> <span class="token string">"playerctl -a metadata --format '&#123;\"text\": \"&#123;&#123;artist&#125;&#125; - &#123;&#123;markup_escape(title)&#125;&#125;\", \"tooltip\": \"&#123;&#123;playerName&#125;&#125; : &#123;&#123;markup_escape(title)&#125;&#125;\", \"alt\": \"&#123;&#123;status&#125;&#125;\", \"class\": \"&#123;&#123;status&#125;&#125;\"&#125;' -F"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"on-click-middle"</span><span class="token punctuation">:</span> <span class="token string">"playerctl play-pause"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"on-click"</span><span class="token punctuation">:</span> <span class="token string">"playerctl previous"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"on-click-right"</span><span class="token punctuation">:</span> <span class="token string">"playerctl next"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"format-icons"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token key atrule">"Playing"</span><span class="token punctuation">:</span> <span class="token string">"&lt;span foreground='#E5B9C6'>󰒮 󰐌 󰒭&lt;/span>"</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"Paused"</span><span class="token punctuation">:</span> <span class="token string">"&lt;span foreground='#928374'>󰒮 󰏥 󰒭&lt;/span>"</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+    <span class="token key atrule">"custom/playerlabel"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+      <span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"&lt;span>&#123;&#125;&lt;/span>"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"return-type"</span><span class="token punctuation">:</span> <span class="token string">"json"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"max-length"</span><span class="token punctuation">:</span> <span class="token number">48</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"exec"</span><span class="token punctuation">:</span> <span class="token string">"playerctl -a metadata --format '&#123;\"text\": \"&#123;&#123;artist&#125;&#125; - &#123;&#123;markup_escape(title)&#125;&#125;\", \"tooltip\": \"&#123;&#123;playerName&#125;&#125; : &#123;&#123;markup_escape(title)&#125;&#125;\", \"alt\": \"&#123;&#123;status&#125;&#125;\", \"class\": \"&#123;&#123;status&#125;&#125;\"&#125;' -F"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"on-click-middle"</span><span class="token punctuation">:</span> <span class="token string">"playerctl play-pause"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"on-click"</span><span class="token punctuation">:</span> <span class="token string">"playerctl previous"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"on-click-right"</span><span class="token punctuation">:</span> <span class="token string">"playerctl next"</span><span class="token punctuation">,</span>
+      <span class="token key atrule">"format-icons"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token key atrule">"Playing"</span><span class="token punctuation">:</span> <span class="token string">"&lt;span foreground='#E5B9C6'>󰒮 󰐌 󰒭&lt;/span>"</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"Paused"</span><span class="token punctuation">:</span> <span class="token string">"&lt;span foreground='#928374'>󰒮 󰏥 󰒭&lt;/span>"</span>
+      <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+	<span class="token key atrule">"battery"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token key atrule">"states"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+            <span class="token key atrule">"good"</span><span class="token punctuation">:</span> <span class="token number">95</span><span class="token punctuation">,</span>
+            <span class="token key atrule">"warning"</span><span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+            <span class="token key atrule">"critical"</span><span class="token punctuation">:</span> <span class="token number">15</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        "format"<span class="token punctuation">:</span><span class="token string">"&#123;icon&#125;  &#123;capacity&#125;%"</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"format-charging"</span><span class="token punctuation">:</span> <span class="token string">"&#123;capacity&#125;% "</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"format-plugged"</span><span class="token punctuation">:</span> <span class="token string">"&#123;capacity&#125;% "</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"format-alt"</span><span class="token punctuation">:</span> <span class="token string">"&#123;icon&#125; &#123;time&#125;"</span><span class="token punctuation">,</span>
+        <span class="token key atrule">// "format-good"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span> // An empty format will hide the module
+        <span class="token key atrule">// "format-full"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"format-icons"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">]</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+  <span class="token key atrule">"memory"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"󰍛 &#123;&#125;%"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"format-alt"</span><span class="token punctuation">:</span> <span class="token string">"󰍛 &#123;used&#125;/&#123;total&#125; GiB"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"interval"</span><span class="token punctuation">:</span> <span class="token number">5</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+  <span class="token key atrule">"cpu"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"󰻠 &#123;usage&#125;%"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"format-alt"</span><span class="token punctuation">:</span> <span class="token string">"󰻠 &#123;avg_frequency&#125; GHz"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"interval"</span><span class="token punctuation">:</span> <span class="token number">5</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+  <span class="token key atrule">"disk"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"󰋊 &#123;&#125;%"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"format-alt"</span><span class="token punctuation">:</span> <span class="token string">"󰋊 &#123;used&#125;/&#123;total&#125; GiB"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"interval"</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"path"</span><span class="token punctuation">:</span> <span class="token string">"/mnt/Datos"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	
+	<span class="token key atrule">"network"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+        	<span class="token key atrule">"format-wifi"</span><span class="token punctuation">:</span> <span class="token string">"󰤨"</span><span class="token punctuation">,</span>
+        	<span class="token key atrule">"format-ethernet"</span><span class="token punctuation">:</span> <span class="token string">" &#123;ifname&#125;: Aesthetic"</span><span class="token punctuation">,</span>
+        	<span class="token key atrule">"format-linked"</span><span class="token punctuation">:</span> <span class="token string">" &#123;ifname&#125; (No IP)"</span><span class="token punctuation">,</span>
+        	<span class="token key atrule">"format-disconnected"</span><span class="token punctuation">:</span> <span class="token string">"󰤭"</span><span class="token punctuation">,</span>
+        	<span class="token key atrule">"format-alt"</span><span class="token punctuation">:</span> <span class="token string">" &#123;ifname&#125;: &#123;ipaddr&#125;/&#123;cidr&#125;"</span><span class="token punctuation">,</span>
+          <span class="token key atrule">"tooltip-format"</span><span class="token punctuation">:</span> <span class="token string">"&#123;essid&#125;"</span><span class="token punctuation">,</span>
+          <span class="token key atrule">"on-click-right"</span><span class="token punctuation">:</span> <span class="token string">"nm-connection-editor"</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+	<span class="token key atrule">"tray"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token key atrule">"icon-size"</span><span class="token punctuation">:</span> <span class="token number">16</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"spacing"</span><span class="token punctuation">:</span> <span class="token number">5</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+	<span class="token key atrule">"backlight"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+        <span class="token key atrule">// "device"</span><span class="token punctuation">:</span> <span class="token string">"acpi_video1"</span><span class="token punctuation">,</span>
+	<span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"&#123;icon&#125; &#123;percent&#125;%"</span><span class="token punctuation">,</span>
+        <span class="token key atrule">"format-icons"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token string">""</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+//	"on<span class="token punctuation">-</span>scroll<span class="token punctuation">-</span>up"<span class="token punctuation">:</span><span class="token punctuation">,</span>
+//	"on<span class="token punctuation">-</span>scroll<span class="token punctuation">-</span>down"<span class="token punctuation">:</span><span class="token punctuation">,</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+	<span class="token key atrule">"pulseaudio"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"&#123;icon&#125; &#123;volume&#125;%"</span><span class="token punctuation">,</span>
+        	<span class="token key atrule">"format-muted"</span><span class="token punctuation">:</span> <span class="token string">"󰝟"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"format-icons"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+			<span class="token key atrule">"default"</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">"󰕿"</span><span class="token punctuation">,</span> <span class="token string">"󰖀"</span><span class="token punctuation">,</span> <span class="token string">"󰕾"</span><span class="token punctuation">]</span>
+		<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"on-click"</span><span class="token punctuation">:</span> <span class="token string">"bash ~/.scripts/volume mute"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"on-scroll-up"</span><span class="token punctuation">:</span> <span class="token string">"bash ~/.scripts/volume up"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"on-scroll-down"</span><span class="token punctuation">:</span> <span class="token string">"bash ~/.scripts/volume down"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"scroll-step"</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"on-click-right"</span><span class="token punctuation">:</span> <span class="token string">"pavucontrol"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token key atrule">"custom/randwall"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"󰏘"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"on-click"</span><span class="token punctuation">:</span> <span class="token string">"bash $HOME/.config/hypr/randwall.sh"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"on-click-right"</span><span class="token punctuation">:</span> <span class="token string">"bash $HOME/.config/hypr/wall.sh"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token key atrule">"custom/launcher"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"󰈸"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"on-click"</span><span class="token punctuation">:</span> <span class="token string">"bash $HOME/.config/rofi/launcher.sh"</span><span class="token punctuation">,</span>
+<span class="token key atrule">//    "on-click"</span><span class="token punctuation">:</span> <span class="token string">"wofi --show drun -I -a -n -W 500 -H 376 -s ~/.config/wofi/themes/gruvbox.css"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"on-click-right"</span><span class="token punctuation">:</span> <span class="token string">"bash $HOME/.config/rofi/run.sh"</span>  
+<span class="token key atrule">//    "on-click-right"</span><span class="token punctuation">:</span> <span class="token string">"wofi --show run -I -a -n -W 500 -H 376 -s ~/.config/wofi/themes/gruvbox.css"</span>  
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+  <span class="token key atrule">"custom/wf-recorder"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+		<span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"&#123;&#125;"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"interval"</span><span class="token punctuation">:</span> <span class="token string">"once"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"exec"</span><span class="token punctuation">:</span> <span class="token string">"echo ''"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"tooltip"</span><span class="token punctuation">:</span> <span class="token string">"false"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"exec-if"</span><span class="token punctuation">:</span> <span class="token string">"pgrep 'wf-recorder'"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"on-click"</span><span class="token punctuation">:</span> <span class="token string">"exec ./scripts/wlrecord.sh"</span><span class="token punctuation">,</span>
+		<span class="token key atrule">"signal"</span><span class="token punctuation">:</span> <span class="token number">8</span>
+	<span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+  <span class="token key atrule">"custom/hyprpicker"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span>
+    <span class="token key atrule">"format"</span><span class="token punctuation">:</span> <span class="token string">"󰈋"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"on-click"</span><span class="token punctuation">:</span> <span class="token string">"hyprpicker -a -f hex"</span><span class="token punctuation">,</span>
+    <span class="token key atrule">"on-click-right"</span><span class="token punctuation">:</span> <span class="token string">"hyprpicker -a -f rgb"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="Alacritty"><a href="#Alacritty" class="headerlink" title="Alacritty"></a>Alacritty</h3><p>这个终端简洁好用，配置简单，很出色，强烈推荐和hyprland配合使用，非常契合。</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># 导入主题颜色配置</span>
+<span class="token comment"># 导入主题颜色配置</span>
+<span class="token key atrule">import</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> /home/flork/.config/alacritty/themes/themes/material_theme.yaml
+
+<span class="token key atrule">live_config_reload</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+<span class="token key atrule">font</span><span class="token punctuation">:</span>
+    <span class="token key atrule">size</span><span class="token punctuation">:</span> <span class="token number">11</span>
+    <span class="token key atrule">normal</span><span class="token punctuation">:</span>
+        <span class="token key atrule">family</span><span class="token punctuation">:</span> <span class="token string">"JetBrainsMOnoNL Nerd Font Mono"</span>
+        <span class="token key atrule">style</span><span class="token punctuation">:</span> ExtraBold
+    <span class="token key atrule">bold</span><span class="token punctuation">:</span> 
+        <span class="token key atrule">family</span><span class="token punctuation">:</span> <span class="token string">"VictorMono Nerd Font Mono"</span>
+        <span class="token key atrule">style</span><span class="token punctuation">:</span> Bold Italic
+    <span class="token key atrule">italic</span><span class="token punctuation">:</span>
+        <span class="token key atrule">family</span><span class="token punctuation">:</span> <span class="token string">"VictorMono Nerd Font Mono"</span>
+        <span class="token key atrule">style</span><span class="token punctuation">:</span> Bold Italic
+<span class="token comment"># 设置字</span>
+<span class="token key atrule">window</span><span class="token punctuation">:</span>
+    <span class="token key atrule">opacity</span><span class="token punctuation">:</span> <span class="token number">0.4</span>
+
+<span class="token comment"># set startup mode</span>
+<span class="token key atrule">startup_mode</span><span class="token punctuation">:</span> Fullscreen
+
+<span class="token comment"># highlight window damage info</span>
+<span class="token key atrule">highlight_damage</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+
+<span class="token comment"># set cursor style</span>
+<span class="token key atrule">cursor</span><span class="token punctuation">:</span>
+  <span class="token key atrule">style</span><span class="token punctuation">:</span> Beam
+
+<span class="token comment"># bind F11 to Fullscreen </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="musicfox"><a href="#musicfox" class="headerlink" title="musicfox"></a>musicfox</h3><p>这个是网易云音乐的终端版本，好用，安装方法</p>
+<pre class="line-numbers language-none"><code class="language-none">yay -S go-musicfox<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>登陆之后该有的功能都有，推荐。</p>
+<h3 id="cava-cavalier"><a href="#cava-cavalier" class="headerlink" title="cava&amp;cavalier"></a>cava&amp;cavalier</h3><p>cava是一个终端下的音频可视化工具，配置简单效果好</p>
+<pre class="line-numbers language-none"><code class="language-none">yay -S cava<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>cavalier是cava的gui版本，用哪个都无所谓</p>
+<pre class="line-numbers language-none"><code class="language-none">yay -S cavalier<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="nvim-neovide"><a href="#nvim-neovide" class="headerlink" title="nvim&amp;neovide"></a>nvim&amp;neovide</h3><p>一款神之编辑器，我很早以前说过了，搭配neovide能够锦上添花<br>在hyprland下安装neovide要注意一点</p>
+<pre class="line-numbers language-none"><code class="language-none">yay -S neovide-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>装带git的版本，否则用不了</strong><br>我的配置文件在早期写过的一篇文章里。</p>
+<h3 id="rofi"><a href="#rofi" class="headerlink" title="rofi"></a>rofi</h3><p>一款启动器，可以让你减少鼠标的使用频率，这个在hyprland下很有必要，能够方便不少。</p>
+<pre class="line-numbers language-none"><code class="language-none">yay -S rofi<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这篇文章主要是写给我自己的，怕我上学回来之后什么都不记得了</p>
+<h3 id="快捷键列表"><a href="#快捷键列表" class="headerlink" title="快捷键列表"></a>快捷键列表</h3><p>win+q 删除当前窗口<br>win+t 打开alacritty<br>win+r 打开rofi<br>win+v 将一个窗口置于最顶层<br>win+j 更换布局<br>win+z 截屏</p>
+<p>原版dotfile：<a target="_blank" rel="noopener" href="https://github.com/maximbaz/dotfiles">https://github.com/maximbaz/dotfiles</a><br>我稍微改了一点</p>
+<p>ascii画生成:<a target="_blank" rel="noopener" href="https://lachlanarthur.github.io/Braille-ASCII-Art/">https://lachlanarthur.github.io/Braille-ASCII-Art/</a><br>我改过的dotfile：<a target="_blank" rel="noopener" href="https://wwzp.lanzoum.com/ihAOF16p3yaf">https://wwzp.lanzoum.com/ihAOF16p3yaf</a><br>密码:5rst</p>
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="http://ryldbqco1.hn-bkt.clouddn.com/8289c96934cad3d0e9803e8f89df7c786936c604.jpg%401000w_1000h_1c.webp"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2023/08/25/%E8%B6%81%E6%97%B6%E9%97%B4%E6%B2%A1%E5%8F%91%E8%A7%89%E8%AE%A9%E6%88%91%E5%B8%A6%E7%9D%80%E4%BD%A0%E7%A6%BB%E5%BC%80/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">趁时间没发觉让我带着你离开</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="http://ryldbqco1.hn-bkt.clouddn.com/jay.png"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2023/08/20/%E9%92%9F%E7%9A%84%E5%90%91%E6%96%B9%E5%8F%8D/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">钟的向方反</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+  <div id="giscus" class="giscus"></div>
+  <script src="https://giscus.app/client.js"
+        data-repo="jorry114/giscus"
+        data-repo-id="R_kgDOKGisog"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKGisos4CYkpA"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="http://ryldbqco1.hn-bkt.clouddn.com/DA91BACA290A5115989D438E731A4DEB.png" class="soft-size--round soft-style--box" alt="Cxy">
+    
+    
+      <h2>Cxy</h2>
+    
+    
+      <p>星斗其文，赤子其人</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>35</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        8
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>常回来看看🌷🌷🌷</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/categories/Doc/">
+            Doc (8)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/categories/Wallpaper/">
+            Wallpaper (4)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/tags/%E5%89%AA%E7%82%B9%E4%B8%9C%E8%A5%BF/" style="font-size: 12.5px;" class="tags-cloud-3">剪点东西</a> <a href="/tags/%E5%A3%81%E7%BA%B8%E6%8E%A8%E8%8D%90/" style="font-size: 17.5px;" class="tags-cloud-8">壁纸推荐</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 17.5px;" class="tags-cloud-8">教程</a> <a href="/tags/%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/" style="font-size: 15px;" class="tags-cloud-5">朝花夕拾</a> <a href="/tags/%E6%AD%8C%E6%9B%B2%E6%8E%A8%E8%8D%90/" style="font-size: 20px;" class="tags-cloud-10">歌曲推荐</a> <a href="/tags/%E7%8F%8D%E8%B4%B5%E3%81%AE%E8%A7%86%E9%A2%91/" style="font-size: 12.5px;" class="tags-cloud-3">珍贵の视频</a> <a href="/tags/%E8%AE%B2%E7%82%B9%E8%97%8F%E8%AF%9D/" style="font-size: 10px;" class="tags-cloud-0">讲点藏话</a> <a href="/tags/%E9%9F%B3%E4%B9%90%E6%8E%A8%E8%8D%90/" style="font-size: 10px;" class="tags-cloud-0">音乐推荐</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/Jorry114/" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+    </div>
+     
+    <p>&copy; 2023 <a href="/" target="_blank">cxy</a></p>
+
+    
+
+    <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p>
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <!-- aplayer -->
+
+
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+
+<!-- dplayer -->
+
+
+<!-- copy button  -->
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+<!-- https://clipboardjs.com/ -->
+
+
+<script type="text/javascript">
+	(function () {
+		function getCodeType (elem) {
+			const classs = Array.from(elem.classList.values());
+			if (classs && classs.length > 1) {
+				return classs[1];
+			}
+			return "plain";
+		}
+
+		window.addEventListener("DOMContentLoaded", () => {
+			const copyBtnClass = "copy-btn";
+			//  instantiate clipboardjs 
+			const clipboard = new ClipboardJS('.' + copyBtnClass);
+
+			clipboard.on('success', function (e) {
+				console.info('Action:', e.action);
+				console.info('Text:', e.text);
+				console.info('Trigger:', e.trigger);
+				if (e.trigger) {
+					e.trigger.classList.add("copied");
+					setTimeout(() => {
+						e.trigger.classList.remove("copied");
+					}, 3000);
+				}
+				e.clearSelection();
+			});
+
+			clipboard.on('error', function (e) {
+				console.error('Action:', e.action);
+				console.error('Trigger:', e.trigger);
+			});
+
+			document.querySelectorAll('figure.highlight').forEach((elem) => {
+				const codeContent = elem.querySelector("td.code");
+				const copyButton = document.createElement('button');
+				copyButton.setAttribute("class", copyBtnClass);
+				copyButton.setAttribute("title", "Copy Code");
+				copyButton.setAttribute("data-clipboard-text", codeContent.innerText);
+				elem.insertBefore(copyButton, elem.children[0]);
+			});
+		})
+	})();
+</script>
+
+
+
+<script type="text/javascript">
+	(function () {
+		// todo
+	})();
+</script>
+
+
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+</html>
+<script type="text/javascript" src="/js/clicklove.js"></script>
