@@ -29,7 +29,7 @@
   <title>
     
     
-    能不能给我一首歌的时间 | JorryJo
+    Hyprland!!! | JorryJo
     
   
   </title>
@@ -66,7 +66,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(http://all.jorryjo.wiki/5f2d57e88e577fc62bddac99485c3457.gif)"></div>
+    <div class="post-image" style="background-image: url(http://all.jorryjo.wiki/IMG_3450.PNG)"></div>
   
 
   <!-- navbar -->
@@ -117,17 +117,12 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">能不能给我一首歌的时间</h1>
+          <h1 class="title-wrap">Hyprland!!!</h1>
           <h2 class="title-sub-wrap">
             <strong>cxy</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2023-07-23T12:40:35.000Z" itemprop="datePublished">2023-07-23</time>
+            <time  class="article-date" datetime="2023-10-01T02:26:16.000Z" itemprop="datePublished">2023-10-01</time>
           </h2>
-          
-            <h2 class="last-time">
-              <span>最后更新于</span>
-              <time  class="article-updated" datetime="2023-10-01T01:25:10.237Z" itemprop="dateUpdated">2023-10-01</time>
-            </h2>
           
           
           <ul class="wrap-list dark">
@@ -137,7 +132,7 @@
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/">🏷️ 朝花夕拾</a></li>
+    <li><a href="/tags/%E6%95%99%E7%A8%8B/">🏷️ 教程</a></li>
   
 </ul>
         </div>
@@ -161,123 +156,327 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <div class="aplayer-box" data-url='https://www.joy127.com/url/106234.mp3' data-name='单车' data-artist='陈奕迅' data-cover='https://pic.imgdb.cn/item/64bd20b91ddac507ccb40821.webp' ></div>
-<h1 id="一些稍微有用的项目"><a href="#一些稍微有用的项目" class="headerlink" title="一些稍微有用的项目"></a>一些稍微有用的项目</h1><h3 id="全自动二次函数解析-图像生成"><a href="#全自动二次函数解析-图像生成" class="headerlink" title="全自动二次函数解析&amp;图像生成"></a>全自动二次函数解析&amp;图像生成</h3><p>顾名思义，就是一个能够根据你输入的一次项，二次项系数和常数项生成相对应的解析（delta，与x轴的交点），并生成图像。<br>其实就是把abc三个值换成了变量，没多大难度</p>
-
+        <div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E8%8A%B1%E6%9B%87%E3%82%8A%20-%20%E4%BD%90%E8%97%A4%E5%8D%83%E4%BA%9C%E5%A6%83.mp3' data-name='花曇り' data-artist='佐藤千亜妃' data-cover='http://all.jorryjo.wiki/0169ed59621ea0a8012193a37922d2.jpg%401280w_1l_2o_100sh.jpg' data-lrc='http://all.jorryjo.wiki/%E8%8A%B1%E6%9B%87%E3%82%8A%20-%20%E4%BD%90%E8%97%A4%E5%8D%83%E4%BA%9C%E5%A6%83.lrc' data-lrcType='3' ></div>
+<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1>
     <figure class="figure-image">
-      <img src="https://pic.imgdb.cn/item/64bd2de41ddac507cce0d03b.png" alt="大致的效果" loading="lazy" />
-      <figcaption>大致的效果</figcaption>
+      <img src="http://all.jorryjo.wiki/IMG_3450.PNG" alt="" loading="lazy" />
+      <figcaption></figcaption>
     </figure>
   
-<p>具体的代码实现（少数的我写了注释的代码），需要matplotlib，numpy这两个库，22年写的应该是。</p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> mpl_toolkits<span class="token punctuation">.</span>mplot3d <span class="token keyword">import</span> Axes3D
-<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">from</span> matplotlib <span class="token keyword">import</span> pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">import</span> math
-plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span>  <span class="token comment"># 用来正常显示中文标签</span>
-plt<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'axes.unicode_minus'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>  <span class="token comment"># 用来正常显示负号</span>
-x <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0.1</span><span class="token punctuation">)</span>
-A <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'二次项系数'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-B <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'一次项系数'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-C <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token string">'常数项'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-<span class="token comment"># 查成分</span>
-<span class="token keyword">if</span> A <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"开口向下"</span><span class="token punctuation">)</span>
-<span class="token keyword">else</span><span class="token punctuation">:</span>
-    <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"开口向上"</span><span class="token punctuation">)</span>
-DingX <span class="token operator">=</span> B<span class="token operator">/</span><span class="token operator">-</span><span class="token number">2</span><span class="token operator">*</span>A
-DingY <span class="token operator">=</span> <span class="token number">4</span><span class="token operator">*</span>A<span class="token operator">*</span>C <span class="token operator">-</span> B <span class="token operator">*</span> B <span class="token operator">/</span> <span class="token number">4</span> <span class="token operator">*</span> A
-<span class="token comment"># 画出成分</span>
-<span class="token keyword">print</span><span class="token punctuation">(</span>DingX<span class="token punctuation">,</span> DingY<span class="token punctuation">)</span>
-y <span class="token operator">=</span> A <span class="token operator">*</span> x <span class="token operator">*</span> x <span class="token operator">+</span> B <span class="token operator">*</span> x <span class="token operator">+</span> C
-plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'x'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'y'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"一元二次函数"</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="图片转彩色字符画"><a href="#图片转彩色字符画" class="headerlink" title="图片转彩色字符画"></a>图片转彩色字符画</h3><p>说实话我自己也没绷住，这个属于是最没用的<br>灰白的尚且有些意义，加了彩色是脱裤子放屁。</p>
 
     <figure class="figure-image">
-      <img src="https://pic.imgdb.cn/item/64bd30a01ddac507cce8a6cc.png" alt="原图我觉得不用放了，一眼仙贝" loading="lazy" />
-      <figcaption>原图我觉得不用放了，一眼仙贝</figcaption>
+      <img src="http://all.jorryjo.wiki/qqIMG_3427.PNG" alt="" loading="lazy" />
+      <figcaption></figcaption>
     </figure>
   
-<p>代码实现，需要opencv这个库</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">import cv2
-
-charSize &#x3D; 2  # 字符尺寸
-
-string &#x3D; &quot;随便&#39;&quot;
-count &#x3D; len(string)
-img &#x3D; cv2.imread(&#39;3.jpg&#39;)
-u, v, _ &#x3D; img.shape
-c &#x3D; img*0 + 255
-gray &#x3D; cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-for i in range(0, u, 6):
-    for j in range(0, v, 6):
-        pix &#x3D; gray[i, j]
-        b, g, r &#x3D; img[i, j]
-        zifu &#x3D; string[int(((count - 1) * pix) &#x2F; 256)]
-        cv2.putText(c, zifu, (j, i), cv2.FONT_HERSHEY_COMPLEX,
-                    charSize, (int(b), int(g), int(r)), 1)
-
-cv2.imwrite(&#39;output.png&#39;, c)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="素描化图片"><a href="#素描化图片" class="headerlink" title="素描化图片"></a>素描化图片</h3><p>这个效果好，做遗照相当合适（</p>
 
     <figure class="figure-image">
-      <img src="https://pic.imgdb.cn/item/64bd45b61ddac507cc2dd0d4.jpg" alt="渲染花了0.114514s" loading="lazy" />
-      <figcaption>渲染花了0.114514s</figcaption>
+      <img src="http://all.jorryjo.wiki/IMG_3367.PNG" alt="" loading="lazy" />
+      <figcaption></figcaption>
     </figure>
   
-<p>代码实现<br>需要pillow，numpy两个库</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">from PIL import Image
-import numpy as np
-a&#x3D;np.asarray(Image.open(&quot;3.jpg&quot;).convert(&quot;L&quot;)).astype(&quot;float&quot;)
-depth&#x3D;10#深度的范围为0~100，我们先取10这个数
-grad &#x3D; np.gradient(a) #取图像灰度的梯度值，有两个
-grad_x, grad_y &#x3D; grad #分别取横纵图像梯度值
-#将高度融入纵横梯度当中，也可以理解让梯度变化不那么明显
-grad_x &#x3D; grad_x*depth&#x2F;100.
-grad_y &#x3D; grad_y*depth&#x2F;100.
+
+<h1 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h1><h2 id="Hyprland"><a href="#Hyprland" class="headerlink" title="Hyprland"></a>Hyprland</h2><p>配置改自B站的一位大佬,<a target="_blank" rel="noopener" href="https://space.bilibili.com/362142672">Ruixi_rebirth</a>,hyprland部分我只改了startup,windowrule和keybind,没大改.<br>Hyprland配置文件:</p>
+<h3 id="env-conf"><a href="#env-conf" class="headerlink" title="env.conf"></a>env.conf</h3><pre class="line-numbers language-conf" data-language="conf"><code class="language-conf"># Default env vars.
+env &#x3D; XDG_CURRENT_DESKTOP,Hyprland 
+env &#x3D; XDG_SESSION_TYPE,wayland 
+env &#x3D; XDG_SESSION_DESKTOP,Hyprland 
+
+env &#x3D; GDK_BACKEND,wayland
+env &#x3D; QT_QPA_PLATFORM,wayland
+env &#x3D; QT_QPA_PLATFORMTHEME,qt5ct #env &#x3D; QT_STYLE_OVERRIDE,kvantum
+env &#x3D; QT_WAYLAND_DISABLE_WINDOWDECORATION,1
+env &#x3D; QT_AUTO_SCREEN_SCALE_FACTOR,1
+env &#x3D; QT_WAYLAND_DISABLE_WINDOWDECORATION,1
+
+env &#x3D; SDL_VIDEODRIVER,wayland 
+env &#x3D; _JAVA_AWT_WM_NONREPARENTING,1
+env &#x3D; WLR_NO_HARDWARE_CURSORS,1 
+
+env &#x3D; MOZ_DISABLE_RDD_SANDBOX,1
+env &#x3D; MOZ_ENABLE_WAYLAND,1 
+
+env &#x3D; OZONE_PLATFORM,wayland<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="hyprland-conf"><a href="#hyprland-conf" class="headerlink" title="hyprland.conf"></a>hyprland.conf</h3><pre class="line-numbers language-none"><code class="language-none">########################################################################################
+AUTOGENERATED HYPR CONFIG.
+PLEASE USE THE CONFIG PROVIDED IN THE GIT REPO &#x2F;examples&#x2F;hypr.conf AND EDIT IT,
+OR EDIT THIS ONE ACCORDING TO THE WIKI INSTRUCTIONS.
+########################################################################################
+source &#x3D; ~&#x2F;.config&#x2F;hypr&#x2F;startup.conf
+source &#x3D; ~&#x2F;.config&#x2F;hypr&#x2F;env.conf
+source &#x3D; ~&#x2F;.config&#x2F;hypr&#x2F;windowrule.conf
+source &#x3D; ~&#x2F;.config&#x2F;hypr&#x2F;keybinds.conf
 #
-A &#x3D; np.sqrt(grad_x**2 + grad_y**2 + 1.)
-uni_x &#x3D; grad_x&#x2F;A
-uni_y &#x3D; grad_y&#x2F;A
-uni_z &#x3D; 1.&#x2F;A
-#设定了一个光源点，知道角度，来算出单位的x,y,z的长度
-vec_el &#x3D; np.pi&#x2F;2.2                   # 光源的俯视角度，弧度值
-vec_az &#x3D; np.pi&#x2F;4.                    # 光源的方位角度，弧度值
-dx &#x3D; np.cos(vec_el)*np.cos(vec_az)   #光源对x 轴的影响
-dy &#x3D; np.cos(vec_el)*np.sin(vec_az)   #光源对y 轴的影响
-dz &#x3D; np.sin(vec_el)              #光源对z 轴的影响
-#光源归一化
-b &#x3D; 255*(dx*uni_x + dy*uni_y + dz*uni_z)   
-b &#x3D; b.clip(0,255)
- 
-im &#x3D; Image.fromarray(b.astype(&#39;uint8&#39;))  #重构图像
-im.save(&#39;6sav.jpg&#39;)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+# Please note not all available settings &#x2F; options are set here.
+# For a full list, see the wiki # remove this line to remove the warning
 
-<h3 id="QQ信息轰炸"><a href="#QQ信息轰炸" class="headerlink" title="QQ信息轰炸"></a>QQ信息轰炸</h3><p>看名字就知道了，需要pynput这个库</p>
-<pre class="line-numbers language-Python" data-language="Python"><code class="language-Python">from pynput.mouse import Button, Controller as mouse_Controller
-from pynput.keyboard import Key, Controller as key_Controller
-import time
+# See https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Monitors&#x2F;
+monitor&#x3D;, 1920x1080@75,auto,1
 
-time.sleep(3)
-mouse &#x3D; mouse_Controller()  # 控制鼠标
-keyboard &#x3D; key_Controller()
-mouse.press(Button.left)  # 按住鼠标左键
-mouse.release(Button.left)  # 松开鼠标左键
-for i in range(99):  #总共发多少次
-    time.sleep(0.1) #消息发送间隔时间
-    keyboard.type(&#39;cnm&#39;)  #发送的消息内容,不一定要c他m
-    keyboard.press(Key.enter)
-    keyboard.release(Key.enter)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<div class="dplayer-box" data-url='http://all.jorryjo.wiki/unknown_2023.08.01-10.27.mp4' ></div>
 
-<p>这个不大好演示，我还没有找到一个很好的视频托管平台，等我找到了会把演示视频补上。</p>
-<p>三年属实太长了，东西做了很多只是少数发到了朋友圈和动态，很多东西我都没有演示，这两三天内我差中选优，多做几期，纪念，歌颂我平凡的爱好。</p>
+# See https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Keywords&#x2F; for more
+
+# Execute your favorite apps at launch
+# exec-once &#x3D; waybar &amp; hyprpaper &amp; firefox
+
+# Source a file (multi-file configs)
+# source &#x3D; ~&#x2F;.config&#x2F;hypr&#x2F;myColors.conf
+
+# Some default env vars.
+env &#x3D; XCURSOR_SIZE,24
+
+# For all categories, see https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Variables&#x2F;
+input &#123;
+    kb_layout &#x3D; us
+    kb_variant &#x3D;
+    kb_model &#x3D;
+    kb_options &#x3D;
+    kb_rules &#x3D;
+
+    follow_mouse &#x3D; 2
+
+    touchpad &#123;
+        natural_scroll &#x3D; no
+    &#125;
+
+    sensitivity &#x3D; 0 # -1.0 - 1.0, 0 means no modification.
+&#125;
+
+
+#
+animations &#123;
+    enabled &#x3D; yes   # 是否启用动画
+bezier&#x3D;overshot,0.13,0.99,0.29,1.1
+bezier&#x3D;linear,0.0,0.0,1.0,1.0
+animation&#x3D;windows,1,4,overshot,slide
+animation&#x3D;border,1,10,default
+animation&#x3D;fade,1,10,default
+animation&#x3D;workspaces,1,6,overshot,slidevert
+animation&#x3D;border,1,10,linear
+animation&#x3D;borderangle,1,100,linear,loop
+&#125;
+# dwindle &#123;
+#     # See https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Dwindle-Layout&#x2F; for more
+#     pseudotile &#x3D; yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
+#     preserve_split &#x3D; yes # you probably want this
+# &#125;
+
+master &#123;
+    # See https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Master-Layout&#x2F; for more
+    new_is_master &#x3D; true
+&#125;
+
+gestures &#123;
+    # See https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Variables&#x2F; for more
+    workspace_swipe &#x3D; off
+&#125;
+
+# Example per-device config
+# See https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Keywords&#x2F;#executing for more
+device:epic-mouse-v1 &#123;
+    sensitivity &#x3D; -0.5
+&#125;
+
+# Example windowrule v1
+# windowrule &#x3D; float, ^(kitty)$
+# Example windowrule v2
+# windowrulev2 &#x3D; float,class:^(kitty)$,title:^(kitty)$
+# See https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Window-Rules&#x2F; for more
+
+
+# See https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Keywords&#x2F; for more
+
+decoration &#123;
+    rounding &#x3D; 3       # 圆角大小
+    blur &#x3D; yes          # 模糊效果是否启用
+    blur_size &#x3D; 10       # 模糊半径
+    blur_passes &#x3D; 2     # 模糊过滤次数
+    blur_new_optimizations &#x3D; on     # 模糊优化，通常保持打开
+
+    drop_shadow &#x3D; yes   # 窗口投影是否启用
+    shadow_range &#x3D; 4    # 投影大小
+    shadow_render_power &#x3D; 3     # 投影强度，不过我不太明白这是什么意思
+    col.shadow &#x3D; rgba(1a1a1aee)     # 投影颜色
+&#125;
+general &#123;
+  gaps_in &#x3D; 5
+  gaps_out &#x3D; 5
+  border_size &#x3D; 2
+  col.active_border &#x3D; rgba(c293a3ff) rgba(c293a3ff) 45deg
+  col.inactive_border &#x3D; 0xff382D2E
+  no_border_on_floating &#x3D; false # enable border on float window
+  layout &#x3D; dwindle
+  no_cursor_warps &#x3D; true
+  # cursor_inactive_timeout &#x3D; 0 
+  # no_focus_fallback &#x3D; false 
+  # resize_on_border &#x3D; false 
+&#125;
+
+
+
+
+
+Misc &#123;
+	animate_manual_resizes &#x3D; true
+&#125;
+
+Binds &#123;
+	pass_mouse_when_bound &#x3D; true
+&#125;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="keybinds-conf"><a href="#keybinds-conf" class="headerlink" title="keybinds.conf"></a>keybinds.conf</h3><pre class="line-numbers language-none"><code class="language-none">$mainMod &#x3D; SUPER
+
+# Example binds, see https:&#x2F;&#x2F;wiki.hyprland.org&#x2F;Configuring&#x2F;Binds&#x2F; for more
+bind &#x3D; $mainMod, Q, exec, wezterm
+bind &#x3D; $mainMod, C, killactive, 
+bind &#x3D; $mainMod, M, exit, 
+bind &#x3D; $mainMod, V, togglefloating, 
+bind &#x3D; $mainMod, P, pseudo # dwindle
+bind &#x3D; $mainMod, J, togglesplit # dwindle
+bind &#x3D; $mainMod, N, exec, neovide
+bind &#x3D; $mainMod, E, exec, microsoft-edge-stable 
+bind &#x3D; SUPER CTRL, left, resizeactive, -20 0
+bind &#x3D; SUPER CTRL, right, resizeactive, 20 0
+bind &#x3D; SUPER CTRL, up, resizeactive, 0 -20
+bind &#x3D; SUPER CTRL, down, resizeactive, 0 20
+bind &#x3D; SUPER SHIFT, right, movewindow, l
+bind &#x3D; SUPER SHIFT, left, movewindow, r
+bind &#x3D; SUPER SHIFT, up, movewindow, u
+bind &#x3D; SUPER SHIFT, down, movewindow, d
+
+# Move focus with mainMod + arrow keys bind &#x3D; $mainMod, left, movefocus, l
+bind &#x3D; $mainMod, right, movefocus, r
+bind &#x3D; $mainMod, up, movefocus, u
+bind &#x3D; $mainMod, down, movefocus, d
+bind &#x3D; $mainMod, left, movefocus, l
+bind &#x3D; $mainMod, F, fullscreen
+# Switch workspaces with mainMod + [0-9]
+bind &#x3D; $mainMod, 1, workspace, 1
+bind &#x3D; $mainMod, 2, workspace, 2
+bind &#x3D; $mainMod, 3, workspace, 3
+bind &#x3D; $mainMod, 4, workspace, 4
+bind &#x3D; $mainMod, 5, workspace, 5
+bind &#x3D; $mainMod, 6, workspace, 6
+bind &#x3D; $mainMod, 7, workspace, 7
+bind &#x3D; $mainMod, 8, workspace, 8
+bind &#x3D; $mainMod, 9, workspace, 9
+bind &#x3D; $mainMod, 0, workspace, 10
+
+# Move active window to a workspace with mainMod + SHIFT + [0-9]
+bind &#x3D; $mainMod SHIFT, 1, movetoworkspace, 1
+bind &#x3D; $mainMod SHIFT, 2, movetoworkspace, 2
+bind &#x3D; $mainMod SHIFT, 3, movetoworkspace, 3
+bind &#x3D; $mainMod SHIFT, 4, movetoworkspace, 4
+bind &#x3D; $mainMod SHIFT, 5, movetoworkspace, 5
+bind &#x3D; $mainMod SHIFT, 6, movetoworkspace, 6
+bind &#x3D; $mainMod SHIFT, 7, movetoworkspace, 7
+bind &#x3D; $mainMod SHIFT, 8, movetoworkspace, 8
+bind &#x3D; $mainMod SHIFT, 9, movetoworkspace, 9
+bind &#x3D; $mainMod SHIFT, 0, movetoworkspace, 10
+
+# Scroll through existing workspaces with mainMod + scroll
+bind &#x3D; $mainMod, mouse_down, workspace, e+1
+bind &#x3D; $mainMod, mouse_up, workspace, e-1
+
+bind &#x3D; SUPER ALT, up, moveactive, 0 -80
+bind &#x3D; SUPER ALT, left, moveactive, -80 0
+bind &#x3D; SUPER ALT, down, moveactive, 0 80
+bind &#x3D; SUPER ALT, right, moveactive, 80 0
+
+# Move&#x2F;resize windows with mainMod + LMB&#x2F;RMB and dragging
+bindm &#x3D; $mainMod, mouse:272, movewindow
+bindm &#x3D; $mainMod, mouse:273, resizewindow
+bind &#x3D; $mainMod, R, exec, rofi -show drun | xargs hyprctl dispatch exec --
+bind &#x3D; $mainMod,z,exec, python &#x2F;home&#x2F;cxy&#x2F;screencut.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="startup-conf"><a href="#startup-conf" class="headerlink" title="startup.conf"></a>startup.conf</h3><pre class="line-numbers language-none"><code class="language-none">exec-once &#x3D; ~&#x2F;.config&#x2F;hypr&#x2F;scripts&#x2F;resetxdgportal.sh # reset XDPH for screenshare
+exec-once &#x3D; dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP # for XDPH
+exec-once &#x3D; systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP # for XDPH
+exec-once &#x3D; waybar
+exec-once &#x3D; fcitx5
+#exec-once &#x3D; mpvpaper -o &quot;no-audio --loop&quot; HDMI-A-1 ~&#x2F;Background&#x2F;mp4&#x2F;12.28.mp4
+exec-once &#x3D; systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec-once &#x3D; swaybg -i ~&#x2F;Background&#x2F;3.png # Set wallpaper
+exec-once &#x3D; sudo modprobe snd_aloop
+exec-once &#x3D; cd ~&#x2F;.tmux&#x2F;plugins&#x2F;rose-pine-tmux&#x2F;rose-pine.tmux&amp;.&#x2F;rose-pine.tmux
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="windowrule-conf"><a href="#windowrule-conf" class="headerlink" title="windowrule.conf"></a>windowrule.conf</h3><pre class="line-numbers language-none"><code class="language-none"># █░█░█ █ █▄░█ █▀▄ █▀█ █░█░█   █▀█ █░█ █░░ █▀▀ █▀
+# ▀▄▀▄▀ █ █░▀█ █▄▀ █▄█ ▀▄▀▄▀   █▀▄ █▄█ █▄▄ ██▄ ▄█
+
+# Opacity 
+windowrulev2 &#x3D; opacity 0.90 0.90,class:^(Brave-browser)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(Steam)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(Alacritty)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(steamwebhelper)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(Spotify)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(Code)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(Thunar)$
+windowrulev2 &#x3D; opacity 0.60 0.60,class:^(QQ)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(file-roller)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(nwg-look)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(qt5ct)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(fcitx)$
+windowrulev2 &#x3D; opacity 0.80 0.70,class:^(pavucontrol)$
+windowrulev2 &#x3D; opacity 0.80 0.70,class:^(org.kde.polkit-kde-authentication-agent-1)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(org.telegram.desktop)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(firefox)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(Rofi)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(neovide)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(WezTerm)$
+windowrulev2 &#x3D; opacity 0.80 0.80,class:^(cavalier)$
+windowrulev2 &#x3D; opacity 0.70 0.70,class:^(yesplaymusic)$
+windowrulev2 &#x3D; opacity 0.70 0.70,class:^(PyCharm-Community)$
+windowrulev2 &#x3D; opacity 0.70 0.70,class:^(bilibili)$
+# Position
+windowrulev2 &#x3D; float,class:^(org.kde.polkit-kde-authentication-agent-1)$
+windowrulev2 &#x3D; float,class:^(pavucontrol)$
+windowrulev2 &#x3D; float,title:^(Media viewer)$
+windowrulev2 &#x3D; float,title:^(Volume Control)$
+windowrulev2 &#x3D; float,title:^(Picture-in-Picture)$
+windowrulev2 &#x3D; float,class:^(Viewnior)$
+windowrulev2 &#x3D; float,title:^(DevTools)$
+windowrulev2 &#x3D; float,class:^(file_progress)$
+windowrulev2 &#x3D; float,class:^(confirm)$
+windowrulev2 &#x3D; float,class:^(dialog)$
+windowrulev2 &#x3D; float,class:^(download)$
+windowrulev2 &#x3D; float,class:^(notification)$
+windowrulev2 &#x3D; float,class:^(error)$
+windowrulev2 &#x3D; float,class:^(confirmreset)$
+windowrulev2 &#x3D; float,title:^(Open File)$
+windowrulev2 &#x3D; float,title:^(branchdialog)$
+windowrulev2 &#x3D; float,title:^(Confirm to replace files)
+windowrulev2 &#x3D; float,title:^(File Operation Progress)
+
+windowrulev2 &#x3D; move 75 44%,title:^(Volume Control)$
+
+# Workspace 
+windowrulev2 &#x3D; workspace 1, class:^(Brave-browser)$
+windowrulev2 &#x3D; workspace 2, class:^(discord)$
+windowrulev2 &#x3D; workspace 3, class:^(org.telegram.desktop)$
+#windowrulev2 &#x3D; workspace 4, class:^(Code)$
+windowrulev2 &#x3D; workspace 4, class:^(code-url-handler)$
+windowrulev2 &#x3D; workspace 5, class:^(Spotify)$
+
+# Size
+windowrulev2 &#x3D; size 800 600,class:^(download)$
+windowrulev2 &#x3D; size 800 600,title:^(Open File)$
+windowrulev2 &#x3D; size 800 600,title:^(Save File)$
+windowrulev2 &#x3D; size 800 600,title:^(Volume Control)$
+
+windowrulev2 &#x3D; idleinhibit focus,class:^(mpv)$
+windowrulev2 &#x3D; idleinhibit fullscreen,class:^(Brave-browser)$
+
+# xwaylandvideobridge
+windowrulev2 &#x3D; opacity 0.0 override 0.0 override,class:^(xwaylandvideobridge)$
+windowrulev2 &#x3D; noanim,class:^(xwaylandvideobridge)$
+windowrulev2 &#x3D; nofocus,class:^(xwaylandvideobridge)$
+windowrulev2 &#x3D; noinitialfocus,class:^(xwaylandvideobridge)$
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="waybar"><a href="#waybar" class="headerlink" title="waybar"></a>waybar</h2><p>对,也是抄的,但是改了一些东西<br>首先是歌曲显示,这个能显示所有来源的歌曲名和作者,原版只能显示mpd下的.<br>其次是天气显示,我用了github上的一个项目叫<a target="_blank" rel="noopener" href="https://github.com/bjesus/wttrbar">wttrbar</a><br>你可能需要改一改这个文件的路径,在config文件里,或者你把这个wttrbar的文件放在家目录下<br>最后就是一些无所谓的更改了,改了分秒显示,改了cpu和温度显示其他的记不大清楚了.<br>配置文件:<a target="_blank" rel="noopener" href="https://wwzp.lanzoum.com/iqVK7177e8gj">https://wwzp.lanzoum.com/iqVK7177e8gj</a><br>密码:hotp<br>hyprland的配置文件链接里不是最新的,上面的是,我的github不知道为什么上传不了文件,报以四.<br>waybar没怎么动就加上有个wttrbar文件我也不好复制就直接粘贴上来了.</p>
+<h2 id="neofetch-rofi"><a href="#neofetch-rofi" class="headerlink" title="neofetch&amp;rofi"></a>neofetch&amp;rofi</h2><p>配置文件:<a target="_blank" rel="noopener" href="https://wwzp.lanzoum.com/iqVK7177e8gj">https://wwzp.lanzoum.com/iqVK7177e8gj</a><br>密码:hotp</p>
 
       </section>
 
@@ -285,30 +484,16 @@ for i in range(99):  #总共发多少次
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://pic.imgdb.cn/item/64be748a1ddac507ccd84d60.webp"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2023/07/24/%E6%8A%8A%E6%95%85%E4%BA%8B%E5%90%AC%E5%88%B0%E6%9C%80%E5%90%8E%E6%89%8D%E8%AF%B4%E5%86%8D%E8%A7%81/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">把故事听到最后才说再见</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
+      <div class="card-cover" background-image-lazy data-img="http://all.jorryjo.wiki/jaychou.webp"></div>
+    
     <div class="card-text">
       
-        <a href="/2023/07/20/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AEneovim-%E4%B8%80%E6%AC%BE%E7%A5%9E%E4%B9%8B%E7%BC%96%E8%BE%91%E5%99%A8/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">从0开始配置neovim--一款神之编辑器</h2>
+        <a href="/2023/08/27/%E6%83%B3%E5%9B%9E%E5%88%B0%E8%BF%87%E5%8E%BB%EF%BD%9E/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">想回到过去～</h2>
         </a>
       
       <div class="card-text--row">Older</div>
