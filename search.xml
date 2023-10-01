@@ -3,10 +3,7 @@
   <entry>
     <title>I am falling, I am fading~</title>
     <url>/2023/08/02/I-am-falling-I-am-fading/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/e166f56f581a2505e280cbefc1bea53862258e70.png%401000w_1000h_1c.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/Duvet-B%C3%B4a.320.mp3' data-name='Duvet' data-artist='BǒA' data-cover='http://all.jorryjo.wiki/e166f56f581a2505e280cbefc1bea53862258e70.png%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/Duvet%20-%20B%C3%B4a.lrc' data-lrcType='3' ></div>
 <p>有一种不凡的美。</p>
 ]]></content>
       <tags>
@@ -34,10 +31,7 @@
   <entry>
     <title>That&#39;s What I like</title>
     <url>/2023/08/17/That-s-What-I-like/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/2.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/obj_wo3DlMOGwrbDjj7DisKw_19116251137_2f57_a58f_cb4d_1d3118dc48273a8ee5d324457ca1f764.mp3' data-name='That's What I like' data-artist='Bruno Mars' data-cover='http://all.jorryjo.wiki/2.webp' data-lrc='http://all.jorryjo.wiki/That%27s%20What%20I%20Like%20-%20Bruno%20Mars.lrc' data-lrcType='3' ></div>
 <p>Lucky for you that’s what I like.</p>
 ]]></content>
       <tags>
@@ -47,16 +41,23 @@
   <entry>
     <title>arch linux,启动！</title>
     <url>/2023/08/23/arch-linux-%E5%90%AF%E5%8A%A8%EF%BC%81/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/f69aae0580c7fc4d3220d0de7d1914b06d231cc4.jpg%401000w_1000h_1c.webp)");
-			</script>
-<h1><span id="manjaro是全宇宙最牛逼的系统">Manjaro是全宇宙最牛逼的系统</span></h1><p>我一时间心血来潮，加上没事做，把用了很久（一个月）的windows10删了，换成了Manjaro,<br>这个其实也不是我第一次用linux,我第一个用过的linux是老笔记本上的kali linux,<br>我当时就应该用arch系，kali折腾的难度太高了，导致很多软件特别是windows manager一个都没装成，</p>
-<h1><span id="overview">Overview</span></h1><img src="/url=http:/all.jorryjo.wiki/1.pngIMG_3234.PNG" class>
-<img src="/url=http:/all.jorryjo.wiki/1.pngIMG_3233.PNG" class>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E5%BC%80%E4%B8%8D%E4%BA%86%E5%8F%A3-%E5%91%A8%E6%9D%B0%E4%BC%A6.320.mp3' data-name='开不了口' data-artist='周杰伦' data-cover='http://all.jorryjo.wiki/f69aae0580c7fc4d3220d0de7d1914b06d231cc4.jpg%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E5%BC%80%E4%B8%8D%E4%BA%86%E5%8F%A3%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.lrc' data-lrcType='3' ></div>
+<h1 id="Manjaro是全宇宙最牛逼的系统"><a href="#Manjaro是全宇宙最牛逼的系统" class="headerlink" title="Manjaro是全宇宙最牛逼的系统"></a>Manjaro是全宇宙最牛逼的系统</h1><p>我一时间心血来潮，加上没事做，把用了很久（一个月）的windows10删了，换成了Manjaro,<br>这个其实也不是我第一次用linux,我第一个用过的linux是老笔记本上的kali linux,<br>我当时就应该用arch系，kali折腾的难度太高了，导致很多软件特别是windows manager一个都没装成，</p>
+<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1>
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/1.pngIMG_3234.PNG" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/1.pngIMG_3233.PNG" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
 <p>不多废话了。</p>
-<h3><span id="系统安装">系统安装</span></h3><p>我装的是最新的manjaro系统，这个没什么好说的，用rufus烧录到u盘之后无脑下一步，我直接把win10抹除了，所以分区，挂载什么都是智能分配，不需要看教程我认为都能够完成。</p>
-<h3><span id="hyprlandampwaybar">Hyprland&amp;waybar</span></h3><p>这是我心心念念了很久很久的一个软件，当初在kali时技术时间有限没装上，装上之后喜悦溢于言表，我看了一篇教程，写的很好，<br><a href="https://blog.cascade.moe/posts/hyprland-configure/">地址</a><br>我基本看这个就解决了hyprland的美化配置和安装，我的waybar也是抄这位大佬的，省下了很多学习的时间和成本.<br>Hyprland配置</p>
+<h3 id="系统安装"><a href="#系统安装" class="headerlink" title="系统安装"></a>系统安装</h3><p>我装的是最新的manjaro系统，这个没什么好说的，用rufus烧录到u盘之后无脑下一步，我直接把win10抹除了，所以分区，挂载什么都是智能分配，不需要看教程我认为都能够完成。</p>
+<h3 id="Hyprland-waybar"><a href="#Hyprland-waybar" class="headerlink" title="Hyprland&amp;waybar"></a>Hyprland&amp;waybar</h3><p>这是我心心念念了很久很久的一个软件，当初在kali时技术时间有限没装上，装上之后喜悦溢于言表，我看了一篇教程，写的很好，<br><a href="https://blog.cascade.moe/posts/hyprland-configure/">地址</a><br>我基本看这个就解决了hyprland的美化配置和安装，我的waybar也是抄这位大佬的，省下了很多学习的时间和成本.<br>Hyprland配置</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">
 <span class="token comment">########################################################################################</span>
 AUTOGENERATED HYPR CONFIG.
@@ -661,7 +662,7 @@ Binds <span class="token punctuation">&#123;</span>
   <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3><span id="alacritty">Alacritty</span></h3><p>这个终端简洁好用，配置简单，很出色，强烈推荐和hyprland配合使用，非常契合。</p>
+<h3 id="Alacritty"><a href="#Alacritty" class="headerlink" title="Alacritty"></a>Alacritty</h3><p>这个终端简洁好用，配置简单，很出色，强烈推荐和hyprland配合使用，非常契合。</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># 导入主题颜色配置</span>
 <span class="token comment"># 导入主题颜色配置</span>
 <span class="token key atrule">import</span><span class="token punctuation">:</span>
@@ -695,22 +696,22 @@ Binds <span class="token punctuation">&#123;</span>
 
 <span class="token comment"># bind F11 to Fullscreen </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3><span id="musicfox">musicfox</span></h3><p>这个是网易云音乐的终端版本，好用，安装方法</p>
+<h3 id="musicfox"><a href="#musicfox" class="headerlink" title="musicfox"></a>musicfox</h3><p>这个是网易云音乐的终端版本，好用，安装方法</p>
 <pre class="line-numbers language-none"><code class="language-none">yay -S go-musicfox<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>登陆之后该有的功能都有，推荐。</p>
-<h3><span id="cavaampcavalier">cava&amp;cavalier</span></h3><p>cava是一个终端下的音频可视化工具，配置简单效果好</p>
+<h3 id="cava-cavalier"><a href="#cava-cavalier" class="headerlink" title="cava&amp;cavalier"></a>cava&amp;cavalier</h3><p>cava是一个终端下的音频可视化工具，配置简单效果好</p>
 <pre class="line-numbers language-none"><code class="language-none">yay -S cava<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>cavalier是cava的gui版本，用哪个都无所谓</p>
 <pre class="line-numbers language-none"><code class="language-none">yay -S cavalier<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<h3><span id="nvimampneovide">nvim&amp;neovide</span></h3><p>一款神之编辑器，我很早以前说过了，搭配neovide能够锦上添花<br>在hyprland下安装neovide要注意一点</p>
+<h3 id="nvim-neovide"><a href="#nvim-neovide" class="headerlink" title="nvim&amp;neovide"></a>nvim&amp;neovide</h3><p>一款神之编辑器，我很早以前说过了，搭配neovide能够锦上添花<br>在hyprland下安装neovide要注意一点</p>
 <pre class="line-numbers language-none"><code class="language-none">yay -S neovide-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>装带git的版本，否则用不了</strong><br>我的配置文件在早期写过的一篇文章里。</p>
-<h3><span id="rofi">rofi</span></h3><p>一款启动器，可以让你减少鼠标的使用频率，这个在hyprland下很有必要，能够方便不少。</p>
+<h3 id="rofi"><a href="#rofi" class="headerlink" title="rofi"></a>rofi</h3><p>一款启动器，可以让你减少鼠标的使用频率，这个在hyprland下很有必要，能够方便不少。</p>
 <pre class="line-numbers language-none"><code class="language-none">yay -S rofi<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>这篇文章主要是写给我自己的，怕我上学回来之后什么都不记得了</p>
-<h3><span id="快捷键列表">快捷键列表</span></h3><p>win+q 删除当前窗口<br>win+t 打开alacritty<br>win+r 打开rofi<br>win+v 将一个窗口置于最顶层<br>win+j 更换布局<br>win+z 截屏</p>
+<h3 id="快捷键列表"><a href="#快捷键列表" class="headerlink" title="快捷键列表"></a>快捷键列表</h3><p>win+q 删除当前窗口<br>win+t 打开alacritty<br>win+r 打开rofi<br>win+v 将一个窗口置于最顶层<br>win+j 更换布局<br>win+z 截屏</p>
 <p>原版dotfile：<a href="https://github.com/maximbaz/dotfiles">https://github.com/maximbaz/dotfiles</a><br>我稍微改了一点</p>
 <p>ascii画生成:<a href="https://lachlanarthur.github.io/Braille-ASCII-Art/">https://lachlanarthur.github.io/Braille-ASCII-Art/</a><br>我改过的dotfile：<a href="https://wwzp.lanzoum.com/ihAOF16p3yaf">https://wwzp.lanzoum.com/ihAOF16p3yaf</a><br>密码:5rst</p>
 ]]></content>
@@ -724,10 +725,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>一首不需要推荐的名曲</title>
     <url>/2023/08/04/%E4%B8%80%E9%A6%96%E4%B8%8D%E9%9C%80%E8%A6%81%E6%8E%A8%E8%8D%90%E7%9A%84%E5%90%8D%E6%9B%B2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://rylgutqq8.sabkt.gdipper.com/0e105fe2d8666adb5020789395a985191ffb1070.jpg%401000w_1000h_1c.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://rylgutqq8.sabkt.gdipper.com/%E5%B8%95%E8%B5%AB%E8%B4%9D%E5%B0%94%20%E5%8D%A1%E5%86%9C-%E8%B4%B5%E6%97%8F%E9%9F%B3%E4%B9%90%E5%8F%A4%E5%85%B8.flac' data-name='卡农' data-artist='无' data-cover='http://rylgutqq8.sabkt.gdipper.com/0e105fe2d8666adb5020789395a985191ffb1070.jpg%401000w_1000h_1c.webp' ></div>
 ]]></content>
       <tags>
         <tag>歌曲推荐</tag>
@@ -736,32 +734,47 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>从0开始配置neovim--一款神之编辑器</title>
     <url>/2023/07/20/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E9%85%8D%E7%BD%AEneovim-%E4%B8%80%E6%AC%BE%E7%A5%9E%E4%B9%8B%E7%BC%96%E8%BE%91%E5%99%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>我做这件事本就没有什么意义，活着就得这样，不能什么都追求要有个意义，给世界宇宙和你自己留点隐私是有必要的,<br>    但不是不去追求真理，<br>    世界给了你一扇窗要的是让你一点一点地窥探蓝天，而不是一眼就窥见全貌。<br>    我的图文教程就拿最没有意义的事，我整了6个月的活开始讲起。</p>
-<h1><span id="neovim">Neovim</span></h1><p>vim作为一个非常古老的文本编辑器，是neovim的亲爹，因为社区的活跃出现了各式各样的插件和种类而焕发生机。<br>可玩性很高，客制化程度相当高,因技术的迭代更新，出现了新时代的vim——neovim，<br>    一款基于vim又高于vim的新版vim。也是今天要讲解的主角</p>
-<h3><span id="0下载安装">0.下载安装</span></h3><p><a href="https://github.com/neovim/neovim">neovim官方文档</a>，<a href="https://github.com/neovim/neovim/releases">下载地址</a>,<br>同一个版本说明的下方有个Assets，拉开选择最新版的windows安装包进行下载，</p>
-<h3><span id="1创建配置文件">1.创建配置文件</span></h3><p>跟某些v字开头的浏览器编辑器不一样，vim或者neovim是没有图形化的编辑界面的，<br>    也就是说你基本每一步改动都要在代码或命令行里进行，需要一定的计算机基础和编程基础，<br>    否则理解起来会很困难,最好能够熟悉命令行和lua语言，大部分的工作用到命令行会简单很多，<br>    本文的配置皆使用lua语言。<br>    在windows下，neovim的配置文件存放在</p>
+    <content><![CDATA[<p>我做这件事本就没有什么意义，活着就得这样，不能什么都追求要有个意义，给世界宇宙和你自己留点隐私是有必要的,<br>    但不是不去追求真理，<br>    世界给了你一扇窗要的是让你一点一点地窥探蓝天，而不是一眼就窥见全貌。<br>    我的图文教程就拿最没有意义的事，我整了6个月的活开始讲起。</p>
+<h1 id="Neovim"><a href="#Neovim" class="headerlink" title="Neovim"></a>Neovim</h1><p>vim作为一个非常古老的文本编辑器，是neovim的亲爹，因为社区的活跃出现了各式各样的插件和种类而焕发生机。<br>可玩性很高，客制化程度相当高,因技术的迭代更新，出现了新时代的vim——neovim，<br>    一款基于vim又高于vim的新版vim。也是今天要讲解的主角</p>
+<h3 id="0-下载安装"><a href="#0-下载安装" class="headerlink" title="0.下载安装"></a>0.下载安装</h3><p><a href="https://github.com/neovim/neovim">neovim官方文档</a>，<a href="https://github.com/neovim/neovim/releases">下载地址</a>,<br>同一个版本说明的下方有个Assets，拉开选择最新版的windows安装包进行下载，</p>
+<h3 id="1-创建配置文件"><a href="#1-创建配置文件" class="headerlink" title="1.创建配置文件"></a>1.创建配置文件</h3><p>跟某些v字开头的浏览器编辑器不一样，vim或者neovim是没有图形化的编辑界面的，<br>    也就是说你基本每一步改动都要在代码或命令行里进行，需要一定的计算机基础和编程基础，<br>    否则理解起来会很困难,最好能够熟悉命令行和lua语言，大部分的工作用到命令行会简单很多，<br>    本文的配置皆使用lua语言。<br>    在windows下，neovim的配置文件存放在</p>
 <pre class="line-numbers language-none"><code class="language-none">C:\Users\Administrator\AppData\Local\nvim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这个目录下<br>    假设没有这个文件夹你可以自行创建，<br>    顺便提一句，在linux下配置的neovim直接把配置抄到windows下是基本可行的，<br>    除了彩虹括号插件之外都没有出什么大问题。·<br>    首先你要做的就是在</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">C<span class="token operator">:</span>\Users\Administrator\AppData\Local\nvim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>下创建一个<strong>init.lua</strong>文件，这里要把文件扩展名打开，后缀一定要改成lua，这是第一步，<br>    其次就是插件列表和个人的配置列表，我建议都使用一个文件夹来管理，在C:\Users\Administrator\AppData\Local\nvim下新建名为lua（叫什么都可以）的文件夹，<br>    在其中再次新建core及plugin文件夹，core用于存放配置文件，plugin用于存放插件的配置文件和下载程序。</p>
-<h3><span id="2安装插件管理器">2.安装插件管理器</span></h3><p>如此庞大的插件市场首先就是要解决下载使用管理这三大基本的问题，对于neovim，有很多的选择，例如<br>packer，lazy，因为我当时看的教程比较老，所以用的是不那么方便的packer<br>假设你需要使用neovim，我的建议是你去用lazy，这个插件管理系统比packer有序的多，且下载简单，有更<br>美观的图形化界面。<br>以下我以Packer为例子，讲述如何在windows下安装Packer。</p>
-<h5><span id="1安装git">(1)安装git</span></h5><p>这个很简单，到<a href="https://git-scm.com/">git官网</a>下载安装即可。</p>
-<h5><span id="2克隆仓库">(2)克隆仓库</span></h5><p>有了git以后我们可以使用git clone指令，在任意位置右键鼠标，选择git bash here，后在命令行输入这<br>一段命令    </p>
+<h3 id="2-安装插件管理器"><a href="#2-安装插件管理器" class="headerlink" title="2.安装插件管理器"></a>2.安装插件管理器</h3><p>如此庞大的插件市场首先就是要解决下载使用管理这三大基本的问题，对于neovim，有很多的选择，例如<br>packer，lazy，因为我当时看的教程比较老，所以用的是不那么方便的packer<br>假设你需要使用neovim，我的建议是你去用lazy，这个插件管理系统比packer有序的多，且下载简单，有更<br>美观的图形化界面。<br>以下我以Packer为例子，讲述如何在windows下安装Packer。</p>
+<h5 id="1-安装git"><a href="#1-安装git" class="headerlink" title="(1)安装git"></a>(1)安装git</h5><p>这个很简单，到<a href="https://git-scm.com/">git官网</a>下载安装即可。</p>
+<h5 id="2-克隆仓库"><a href="#2-克隆仓库" class="headerlink" title="(2)克隆仓库"></a>(2)克隆仓库</h5><p>有了git以后我们可以使用git clone指令，在任意位置右键鼠标，选择git bash here，后在命令行输入这<br>一段命令    </p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">git clone https<span class="token operator">:</span><span class="token comment">//github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这就算是装好了，最后附上<a href="https://github.com/wbthomason/packer.nvim">packer仓库地址</a>，怎么使用去<strong>看文档看文档看文档</strong>。</p>
-<h3><span id="或者还有一种更简单的方法假设你无法使用git你可以直接复制我的配置文件即开即用">或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。</span></h3><p>我的配置文件地址在<a href="https://gitee.com/jorryjo/new-configruation">这里</a>,把这个文件下载下来，然后直接解压到</p>
+<h3 id="或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。"><a href="#或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。" class="headerlink" title="或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。"></a>或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。</h3><p>我的配置文件地址在<a href="https://gitee.com/jorryjo/new-configruation">这里</a>,把这个文件下载下来，然后直接解压到</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">C<span class="token operator">:</span>\Users\Administrator\AppData\Local\nvim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>用neovim进入该文件下的</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">\lua\plugins\plugins<span class="token operator">-</span>setup<span class="token punctuation">.</span>lua<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>按下回车，等待配置安装完成即可。<br>你可能会需要neovide，这个我下一篇文章会说。</p>
-<h5><span id="3必备插件">(3).必备插件</span></h5><p>每一个人的习惯不一样，我个人觉得颜值即正义，所以我的配置文件实用性不高，观赏性高点，<br>这里我推荐几个好看好用的插件。</p>
-<h6><span id="dashboard">dashboard</span></h6><p><a href="https://github.com/nvimdev/dashboard-nvim">官方文档</a>，是国人glepnir写的，本人非常佩服他。<br>是一个开屏的插件，就是能够给你的neovim一个更好看的首页。<br>我建议搭配alpha插件使用，<a href="https://github.com/goolord/alpha-nvim">官方文档</a>,基于dashboard的主题，可以自定义开屏图标，但需是ascii码，我推荐几个常用的图片转ascii码的网站<br><a href="https://fsymbols.com/text-art/">https://fsymbols.com/text-art/</a><br><a href="https://manytools.org/hacker-tools/image-to-byte-array/">https://manytools.org/hacker-tools/image-to-byte-array/</a><br><a href="https://vj-duardo.github.io/Braille-Art/">https://vj-duardo.github.io/Braille-Art/</a><br><a href="https://lachlanarthur.github.io/Braille-ASCII-Art/">https://lachlanarthur.github.io/Braille-ASCII-Art/</a><br>都挺好的。</p>
-<h6><span id="alpha">Alpha</span></h6><p><a href="https://github.com/goolord/alpha-nvim">官方文档</a>，就是上文我所说的，有很多可以自定的地方，详细的还是得自己去看文档。</p>
-<h6><span id="autoparis">Autoparis</span></h6><p><a href="https://github.com/windwp/nvim-autopairs">官方文档</a>，一款能够自动补全另一半(括号)的插件，配置文件我也没有做什么改动，直接用官方的默认配置或者去抄我的配置文件。</p>
-<h5><span id="treesitter">treesitter</span></h5><p><a href="https://github.com/nvim-treesitter/nvim-treesitter">官方文档</a>，更高级的代码高亮，直接默认配置，或者去抄我的配置文件。</p>
-<h2><span id="最后附上几张我的nvim样式截图">最后附上几张我的nvim样式截图。</span></h2><img src="/url=http:/rylgutqq8.sabkt.gdipper.com/64b94ec41ddac507cce0ffd4.png" class title="title&#x3D;别用聚合图床，6块钱去用七牛云，不然你就会像我现在这样在含泪补链接">
-<img src="/url=http:/rylgutqq8.sabkt.gdipper.com/64b94fb51ddac507cce5986d.png" class title="title&#x3D;后续更新换成了staline">
-<img src="/url=http:/rylgutqq8.sabkt.gdipper.com/64b94fcb1ddac507cce604fd.png" class title="title&#x3D;开屏&#x2F;alpha页">
+<h5 id="3-必备插件"><a href="#3-必备插件" class="headerlink" title="(3).必备插件"></a>(3).必备插件</h5><p>每一个人的习惯不一样，我个人觉得颜值即正义，所以我的配置文件实用性不高，观赏性高点，<br>这里我推荐几个好看好用的插件。</p>
+<h6 id="dashboard"><a href="#dashboard" class="headerlink" title="dashboard"></a>dashboard</h6><p><a href="https://github.com/nvimdev/dashboard-nvim">官方文档</a>，是国人glepnir写的，本人非常佩服他。<br>是一个开屏的插件，就是能够给你的neovim一个更好看的首页。<br>我建议搭配alpha插件使用，<a href="https://github.com/goolord/alpha-nvim">官方文档</a>,基于dashboard的主题，可以自定义开屏图标，但需是ascii码，我推荐几个常用的图片转ascii码的网站<br><a href="https://fsymbols.com/text-art/">https://fsymbols.com/text-art/</a><br><a href="https://manytools.org/hacker-tools/image-to-byte-array/">https://manytools.org/hacker-tools/image-to-byte-array/</a><br><a href="https://vj-duardo.github.io/Braille-Art/">https://vj-duardo.github.io/Braille-Art/</a><br><a href="https://lachlanarthur.github.io/Braille-ASCII-Art/">https://lachlanarthur.github.io/Braille-ASCII-Art/</a><br>都挺好的。</p>
+<h6 id="Alpha"><a href="#Alpha" class="headerlink" title="Alpha"></a>Alpha</h6><p><a href="https://github.com/goolord/alpha-nvim">官方文档</a>，就是上文我所说的，有很多可以自定的地方，详细的还是得自己去看文档。</p>
+<h6 id="Autoparis"><a href="#Autoparis" class="headerlink" title="Autoparis"></a>Autoparis</h6><p><a href="https://github.com/windwp/nvim-autopairs">官方文档</a>，一款能够自动补全另一半(括号)的插件，配置文件我也没有做什么改动，直接用官方的默认配置或者去抄我的配置文件。</p>
+<h5 id="treesitter"><a href="#treesitter" class="headerlink" title="treesitter"></a>treesitter</h5><p><a href="https://github.com/nvim-treesitter/nvim-treesitter">官方文档</a>，更高级的代码高亮，直接默认配置，或者去抄我的配置文件。</p>
+<h2 id="最后附上几张我的nvim样式截图。"><a href="#最后附上几张我的nvim样式截图。" class="headerlink" title="最后附上几张我的nvim样式截图。"></a>最后附上几张我的nvim样式截图。</h2>
+    <figure class="figure-image">
+      <img src="http://rylgutqq8.sabkt.gdipper.com/64b94ec41ddac507cce0ffd4.png" alt="别用聚合图床，6块钱去用七牛云，不然你就会像我现在这样在含泪补链接" loading="lazy" />
+      <figcaption>别用聚合图床，6块钱去用七牛云，不然你就会像我现在这样在含泪补链接</figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://rylgutqq8.sabkt.gdipper.com/64b94fb51ddac507cce5986d.png" alt="后续更新换成了staline" loading="lazy" />
+      <figcaption>后续更新换成了staline</figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://rylgutqq8.sabkt.gdipper.com/64b94fcb1ddac507cce604fd.png" alt="开屏/alpha页" loading="lazy" />
+      <figcaption>开屏/alpha页</figcaption>
+    </figure>
+  
 ]]></content>
       <categories>
         <category>Doc</category>
@@ -773,10 +786,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>好听，爱听</title>
     <url>/2023/07/27/%E4%BB%BB%E5%8A%A1%E7%BD%A2%E4%BA%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/20509557656b9852a7fef52d9337263e104040d8.jpg%401000w_1000h_1c.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%EB%9A%9C%EB%91%90%EB%9A%9C%EB%91%90%20%28DDU-DU%20DDU-DU%29-BLACKPINK.320.mp3' data-name='DDU-DU DDU-DU' data-artist='BLACKPINK' data-cover='http://all.jorryjo.wiki/20509557656b9852a7fef52d9337263e104040d8.jpg%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%EB%9A%9C%EB%91%90%EB%9A%9C%EB%91%90%20%28DDU-DU%20DDU-DU%29%20-%20BLACKPINK.lrc' data-lrcType='3' ></div>
 <p>炜👨‍🦳点名要听。<br>确实挺不错的。</p>
 ]]></content>
       <tags>
@@ -786,10 +796,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>前尘硬化像石头 随缘地抛下便逃走</title>
     <url>/2023/08/03/%E5%89%8D%E5%B0%98%E7%A1%AC%E5%8C%96%E5%83%8F%E7%9F%B3%E5%A4%B4-%E9%9A%8F%E7%BC%98%E5%9C%B0%E6%8A%9B%E4%B8%8B%E5%8F%98%E9%80%83%E8%B5%B0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/aec972f72907fd34abdd42e287c1823766f09e9c.png%401000w_1000h_1c.webp)");
-			</script>]]></content>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/obj_wo3DlMOGwrbDjj7DisKw_14096431539_0225_8539_7485_e45cc5942b0c6ec3086746cd2163c1d2.mp3' data-name='富士山下' data-artist='陈奕迅' data-cover='http://all.jorryjo.wiki/aec972f72907fd34abdd42e287c1823766f09e9c.png%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E5%AF%8C%E5%A3%AB%E5%B1%B1%E4%B8%8B%20-%20%E9%99%88%E5%A5%95%E8%BF%85.lrc' data-lrcType='3' ></div>]]></content>
       <tags>
         <tag>歌曲推荐</tag>
       </tags>
@@ -797,11 +804,8 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>原谅我这一生不羁放纵，爱自由</title>
     <url>/2023/08/16/%E5%8E%9F%E8%B0%85%E6%88%91%E8%BF%99%E4%B8%80%E7%94%9F%E4%B8%8D%E7%BE%81%E6%94%BE%E7%BA%B5%EF%BC%8C%E7%88%B1%E8%87%AA%E7%94%B1/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/78f03998fd27eba9db808533872651a14078b70a.png%401000w_1000h_1c.webp)");
-			</script>
-<h2><span id="我时常怀念过去和夏天惦记着不再来的诗意和蝉"><em>我时常怀念过去和夏天，惦记着不再来的诗意和蝉。</em></span></h2>]]></content>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA-Beyond.320.mp3' data-name='海阔天空' data-artist='Beyond' data-cover='http://all.jorryjo.wiki/78f03998fd27eba9db808533872651a14078b70a.png%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E6%B5%B7%E9%98%94%E5%A4%A9%E7%A9%BA%20-%20Beyond.lrc' data-lrcType='3' ></div>
+<h2 id="我时常怀念过去和夏天，惦记着不再来的诗意和蝉。"><a href="#我时常怀念过去和夏天，惦记着不再来的诗意和蝉。" class="headerlink" title="我时常怀念过去和夏天，惦记着不再来的诗意和蝉。"></a><em>我时常怀念过去和夏天，惦记着不再来的诗意和蝉。</em></h2>]]></content>
       <tags>
         <tag>歌曲推荐</tag>
       </tags>
@@ -810,7 +814,7 @@ Binds <span class="token punctuation">&#123;</span>
     <title>啰嗦的话</title>
     <url>/2023/07/18/%E5%95%B0%E5%97%A6%E7%9A%84%E8%AF%9D/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="输入错误密码弹出的提示信息" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="96792a0069f65b5ff6cff8829fd3fb96ffc3b6cfead29ab7c603b4a62d44d0df">10d79030e8222445804370796b90fca14b3382df4730eb0fe3a9f1aa6acbfdf977f308135c251cf4014cb9472e5eb4c7010efd08fb0e3bdf1ebef1844b47b7bbdce99f87d5af857ca0ff659bfd7ff840f919ac903c0da67ccc85cc230a8bbc6beae3b3b4b69f0eb06ca4b5cf10f1599355da44ea1f207869e070e07b0d03c07a4b83b3fb06d2d04cf13f3cb9ca969e4439cef45d0eb382f3303bccc4e70948f7840bad89cb99df664e0f7bc2e56ad784a708e9abe83eec0eddd1009405bc1812119b3153926b5bc457063b4c3683fad0b5fc5434551f63866d6eaaff7a66cf4631d807e35dc1a6e79225115a5412865a0020309e0dd8433d138b24d78226711f615b37fc04ece1b91a3ece6d5a3820b430276743a93ba7b5c0ea73bf54c198ba65e106769b1172be8b8bc074f4de8adf18da307c622974aabe2dfa7fddb1b5cfbcd605bfd34024de335755176aca855e3a6e55dc4cec5e4ce99f1fdd9d107b7d1ab74236d7ee24a21c6fd4d4d9ae49132f45036b343b120b349221cbb74135545172508ca1394245fb89034850c2240dc37d406ee2d4a540713d64cd6586509ee5408719dedd8f246acf9f500ba376ab2da55246022d63e96f586867ec41024d4663d531b173c727d94ecb82e810636f22d66df13787bd810c2ba77bb214a9c710356901ef5dd83a930a48ccaf63fadeaae53fa11261d1b54224e467c7daf0d4288e7b8331f0b6db07149f7974a3ff75339f1ee45ff16d340d4952efca6220a8235e2155aa8daac417742d0e4a673ef173742668789d49402db5731f6ef61d70fbbc6970faef2ff858694b6f697112fd7f2a3a58232a86e4e40f8e5ad06f3b0f3375156d1efea7c9931f91d39c930efebccd17cbc0232ea0d7fc0fca6bbba0d004528b83c41a05052d07b8bbe9b385010ff5cadfe4c652670720d0f56d80e85858197084702e0ca4d6d204406a53898a91e2922f1249a9b198408952651347862f9a01791cb46f9ec3b70074615522fe35d6bc4d6b97fc988e5c97ae89d6620b3180459a54c032ee83ae7c1aea97c21aeefe16ec5200518c62bc2895c03410e709911959bf13570fd9a24174873d7a681475a3facf4d7215a9e0edf6e5908170484071046da289461d035d545acbae088c745f6037424e5a914fcbf7ee3c727c56cc4ac6633b776af267be1bb824cc45570eacb899346f26e76fbd7c482b26d6a0c9288f661fd71f30409eee452da5c83d3cc08f9d07a72ba5f1d0e550aa679b7cef6ea58d1ae3db580c08106c0e4948fb476187daf926bebf9a51e1d3a686d12f95d1b1f201e0f03190542b37fbf3806d3ee70dd3885295aa85bae991c1e8fd1924e697a0db79fceae5c662efe5bef491dfff0223b2ef7e3eda9ca8fc76ed8bad0723d0064e292c691e4e7003955e6072ee94fbc12583163818f6f639605dc65f8a60134ab5c221f8413b8f1cf33ae1f6973ee6ffdc0ebaa88c394c8cf3024aa23811d46adff0a189552ba2a1a2f6a151743594a65c963445e0337f02043858904396982bb87ef11fefab15de21a17a6f763b8c947ea62a8e4dff835c0325b0bf3252946b972d264177183b95165eb45fcced4dc5e2142f91647b3dfe99e6c37b02d829d0728df85f09aa94d5d73ce19bf3408aeac96b1fd547504cc10b7e55edceaabb3e1b209a0a1280dddadcf6ecace0451c3031f59b399a1d271df329c8b9678ef4ad7bc3385d855c90599a249360dd2ec62a23eeb570f22ea0740566736fa184940e50909f680a35f9256599d847307d7855b6b585750ba3a0b5c95d03795e96fb94a95b62ff30b6e7972069f0b7573122d132e2e0e7fb7031fc017ea00ef06569676a29a01f1d5c73c0c47356f8400d98a19a47128986da4eece6aafeea6a1640edf8ec407b1d61808d71350a8f227f239d006c04df82956158c9a74c9a5d9e4e5b3e0a8e4019dcb62e868413bf838cb19ee42eef5fa68bf11d2506bef03ceedebff9ecb0767a7717c3b60b9fe92efefb16f871c251c7cff6a9e62901962839aac229670778961d7d9e33a1b5c95cbb1aea026a3ed2b145784de113c5bb3b8a5716319349dc28cd0d1d4f874a6b0444fb8da0145beb22f7a029f250ec5ed9d5a5ed77b727a6a8c64d9f237d82</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="22de42da933ca5fc0955b77428b79c49c082e9850fcc50a6c10f1b53bb59248c">10d79030e8222445804370796b90fca10dec9888c61a51191f7bcefa426776cad30d448424127cde1008626bd6c1bc56ea6c4399bd7456bfc1c89943479bc1d1a2441cc938b41335a1f973c95c09b0f7cebc30cc1d5cf6d8ff97bc202b30d880be34ced0ba47ec2761d42fda7041a360139e3c488d076ca3f3d3e72bd55247786539affd4d510f9886d25ed0e2688ce4bfdd481b2f9df1bb82a21bd785823b35251fd20a751d693a2bf3ccde2caba0cfbe0532c193cd1b92440857ea8ff13050465759b3efbfca9c890d1c4d9de568c2c7408e62390f8f4e19ce344799648bcceba001c158c7dcd0a0448b71ffc0bd5d0bfe5e7ac29de243efe1807c9c15ebaabf7426e8e47fa178960d652cd3c64e12fdfceedc245da81092eae3659f0b3cbf3848ed1c23ba3d70f85571a846060954b68b1ea6524a19de992037f11a4515b4354f765a29ac1131f2a2eba7202d9307df5b4986da4c0473c4498678989d291a820dea11f763d9d73a682809ca5b910de8e23eda1ec9b2c3aec10eb9627bd1ea023d9b22019360e995d8e7424df7ec17caa50254c1fade2ba498fc8513093fffdb12bbfdb55c46344b85882ddfef90507f6a3d9a40a3bd0190ee664c8df5bf17066d1923891f1321bda1c1f2ec198db2fef260bb23b2789a6e1dcedbf07fe244b096ac6165e629ba787e5b7d8f7ea5e49488856465172d06f3918b7d807798952a5b9afab7368cd736a50b7444d3e43c7dde7df39a052ba3ef8f69d41791ac565323908853b48bcda1a56a133a8cfb4e1b7bb6f5028033faa3102a190e2c980d7a8b088251ac496d9679dca9c8a162f15c7300626d6e9a0983ce2897331198e8f02fe274e34c606fb311052e7287ee24bed04fe01443892bf3a8e9ce31f9a006caeaabd266070f23540c1a5bb7fec95912a562dcbcb3883f50895da3f61c296e6bb830278f3851f22741d32e760bf1b19604ad13dcf970055dff19e1b9c7e17f25f6dc37040f48f32707d5141f36a59f14c6e8047e0f29a9a3631b34dbf800a8fb56b96dbce9bac3165538bf5ef09345abfd27bd22b18e0aea9b6df03b93efc881cabd28949a956bd0c6130eb975b4ab144d5e845f49c755d38990caa45c4c8cd531f45c6191121e4304d8a89f8b068774089f1b76be036c758a2694bf412f31856bea3e9fd2ae3280a47d60ffe4b5af0a07b176bcad4565e2c83c6d74447353af19099bf1cc2f87d4c4a348a4fd4dd733feddeb0521e1737c4d59013c5c1a45b7014352706279e9a4375f1f132b6ef4eaa3c0cfc6c454b62d2740c63ab2f5f87547b6c44354176be52f278602dd01c1c0632560c966f685913f680b7c5ce2011bc80e20f71271dbe61cc5e942d51c3ad8fd3c1d0756a91314901ac53b2a5ea2c17146b2e0ccd79c6fba9b82f273b3c81e06b34fae6a550d78f80c1cbe57978b45929cdbaf7d7eb0db04a06ec990c01433ef1614163252f7ab084478681f492c9c32bc281ac390024103b5222ed0850d713ca835d1e1b5a30470e7139c3434d61c649bc7f470cbef0b2a4262455f5efe1fb48cf1e01777f4a6619d5fc9aae706dfe17d5073ee3cf1ca30c43bc17eb4d51e14f4719b3183ee5978439bed52b58e31c37cc203716de01f184534d4cbe4ba709df64bb12c7142c4759652bd6ee1a38bab1d8c88dd1e34559c3d9612f4b700d7a149b2253ff445f4246c4a009249933df35b2dd2018b8ae5acdca77b9477fbe014c2a76b116176d5c67459db98050eb741b8d12e7087a24593a1c183f6ad8e6678a4de6448b98258a1ab22f151bcbf9bf98ffb5a35983385f0673795f9a13db167bb8ab00ae6d0d147faaf25cedf667834dd3bfc2a5a63a425cacb8d6eb37b7e727093cd0fa79aa9461d6abbf749931c6733b0af4ba30099cfbe5e972220abecd932ace1c8f28b9295eaefd74015eadc98961197ec40396d3d2cc2eac3cf048001a72ab75156f026c4da17f7c69516b65695f3931b731dbdbf6b7134814756</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-default">
       <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
@@ -828,10 +832,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>在hexo中如何正确添加giscus评论</title>
     <url>/2023/08/15/%E5%9C%A8hexo%E4%B8%AD%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E6%B7%BB%E5%8A%A0giscus%E8%AF%84%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/b8014a90f603738d6b3e0520bb1bb051f819ecb8.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E7%A7%A6%E5%B2%9A%20-%20%E9%BB%84%E6%98%8F%E4%B9%8B%E6%97%B6%EF%BC%88%E9%92%A2%E7%90%B4%E7%89%88%EF%BC%89.mp3' data-name='黄昏之时（钢琴版）' data-artist='秦岚' data-cover='http://all.jorryjo.wiki/b8014a90f603738d6b3e0520bb1bb051f819ecb8.webp' ></div>
 <p>我因为懒一开始就不想自己写，后来发现费的时间更多，基本上把该踩的坑全踩了一遍，我也不多废话我自己的悲惨经历了，我讲讲如何正确的配置giscus评论。</p>
 <p>申请的部分按照csdn和知乎上的几篇教程来是可以的，但是到了本地配置的时候_<em>千万不能直接照抄</em>_，首先你要在你主题下的config文件里添加这样一些内容：</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">giscus</span><span class="token punctuation">:</span>
@@ -884,11 +885,8 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>城堡为爱守着秘密，而我为你守着回忆</title>
     <url>/2023/08/18/%E5%9F%8E%E5%A0%A1%E4%B8%BA%E7%88%B1%E5%AE%88%E7%9D%80%E7%A7%98%E5%AF%86%EF%BC%8C%E8%80%8C%E6%88%91%E4%B8%BA%E4%BD%A0%E5%AE%88%E7%9D%80%E5%9B%9E%E5%BF%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/aa3028c7325deb494c43e390b957a397f2f0eed7.jpg%401000w_1000h_1c.webp)");
-			</script>
-<h1><span id="好听"><em><em>好听。</em></em></span></h1>]]></content>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/60054703842163532.mp3' data-name='明明就' data-artist='周杰伦' data-cover='http://all.jorryjo.wiki/aa3028c7325deb494c43e390b957a397f2f0eed7.jpg%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E6%98%8E%E6%98%8E%E5%B0%B1%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.lrc' data-lrcType='3' ></div>
+<h1 id="好听。"><a href="#好听。" class="headerlink" title="好听。"></a><em><em>好听。</em></em></h1>]]></content>
       <tags>
         <tag>歌曲推荐</tag>
       </tags>
@@ -896,10 +894,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>强风吹拂</title>
     <url>/2023/08/01/%E5%BC%BA%E9%A3%8E%E5%90%B9%E6%8B%82/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/004ee07c50e08c9f418015fafe365f9637792ea7.jpg%401000w_1000h_1c.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/obj_wo3DlMOGwrbDjj7DisKw_8779886276_eac0_7b5d_5eb8_c79a42c50eed09ba46b18a2326a4e4dc.mp3' data-name='リセット' data-artist='Taichi Mukai' data-cover='http://all.jorryjo.wiki/004ee07c50e08c9f418015fafe365f9637792ea7.jpg%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88%20-%20%E5%90%91%E4%BA%95%E5%A4%AA%E4%B8%80.lrc' data-lrcType='3' ></div>
 ]]></content>
       <tags>
         <tag>歌曲推荐</tag>
@@ -908,10 +903,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>想回到过去～</title>
     <url>/2023/08/27/%E6%83%B3%E5%9B%9E%E5%88%B0%E8%BF%87%E5%8E%BB%EF%BD%9E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/jaychou.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E7%AE%80%E5%8D%95%E7%88%B1-%E5%91%A8%E6%9D%B0%E4%BC%A6.128.mp3' data-name='回到过去' data-artist='周杰伦' data-cover='http://all.jorryjo.wiki/jaychou.webp' data-lrc='http://all.jorryjo.wiki/%E7%AE%80%E5%8D%95%E7%88%B1%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.lrc' data-lrcType='3' ></div>
 
 ]]></content>
       <tags>
@@ -921,10 +913,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>我会发着呆，然后忘记你~</title>
     <url>/2023/07/31/%E6%88%91%E4%BC%9A%E5%8F%91%E7%9D%80%E5%91%86%EF%BC%8C%E7%84%B6%E5%90%8E%E5%BF%98%E8%AE%B0%E4%BD%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://rylgutqq8.sabkt.gdipper.com/7aec54e736d12f2e695636fc4ac2d562843568df.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E8%BD%A8%E8%BF%B9.mp3' data-name='轨迹' data-artist='周杰伦' data-cover='http://rylgutqq8.sabkt.gdipper.com/7aec54e736d12f2e695636fc4ac2d562843568df.webp' data-lrc='http://rylgutqq8.sabkt.gdipper.com/%E8%BD%A8%E8%BF%B9.lrc' data-lrcType='3' ></div>
 ]]></content>
       <tags>
         <tag>歌曲推荐</tag>
@@ -945,10 +934,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>我想就这样牵着你的手不放开</title>
     <url>/2023/08/26/%E6%88%91%E6%83%B3%E5%B0%B1%E8%BF%99%E6%A0%B7%E7%89%B5%E7%9D%80%E4%BD%A0%E7%9A%84%E6%89%8B%E4%B8%8D%E6%94%BE%E5%BC%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/jaychou.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E7%AE%80%E5%8D%95%E7%88%B1-%E5%91%A8%E6%9D%B0%E4%BC%A6.128.mp3' data-name='简单爱' data-artist='周杰伦' data-cover='http://all.jorryjo.wiki/jaychou.webp' data-lrc='http://all.jorryjo.wiki/%E7%AE%80%E5%8D%95%E7%88%B1%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.lrc' data-lrcType='3' ></div>
 ]]></content>
       <tags>
         <tag>歌曲推荐</tag>
@@ -1025,10 +1011,7 @@ a <span class="token operator">=</span> <span class="token builtin">int</span><s
   <entry>
     <title>描述我如何爱你，你却微笑地离我而去。</title>
     <url>/2023/08/19/%E6%8F%8F%E8%BF%B0%E6%88%91%E5%A6%82%E4%BD%95%E7%88%B1%E4%BD%A0%EF%BC%8C%E4%BD%A0%E5%8D%B4%E5%BE%AE%E7%AC%91%E5%9C%B0%E7%A6%BB%E6%88%91%E8%80%8C%E5%8E%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/cfa19afbf9f84378e5c1949b0af9770f17a66b06.jpg%401000w_1000h_1c.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/60054701995164729.mp3"' data-name='我不配' data-artist='周杰伦' data-cover='http://all.jorryjo.wiki/cfa19afbf9f84378e5c1949b0af9770f17a66b06.jpg%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E6%88%91%E4%B8%8D%E9%85%8D%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.lrc' data-lrcType='3' ></div>
 ]]></content>
       <tags>
         <tag>歌曲推荐</tag>
@@ -1037,10 +1020,7 @@ a <span class="token operator">=</span> <span class="token builtin">int</span><s
   <entry>
     <title>放首歌听</title>
     <url>/2023/07/30/%E6%94%BE%E9%A6%96%E6%AD%8C%E5%90%AC/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/f31342a0e7cfdebb9d1404608b8da977f8a6c461.png%401000w_1000h_1c.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E6%99%9A%E5%AE%89-%E9%A2%9C%E4%BA%BA%E4%B8%AD.320.mp3' data-name='晚安' data-artist='颜中人' data-cover='http://all.jorryjo.wiki/f31342a0e7cfdebb9d1404608b8da977f8a6c461.png%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E6%99%9A%E5%AE%89%20-%20%E9%A2%9C%E4%BA%BA%E4%B8%AD.lrc' data-lrcType='3' ></div>
 <p>不能一昧盯着老一辈的歌,把滤镜关了,好听的歌还是有的。</p>
 ]]></content>
       <tags>
@@ -1050,19 +1030,26 @@ a <span class="token operator">=</span> <span class="token builtin">int</span><s
   <entry>
     <title>新老婆</title>
     <url>/2023/08/07/%E6%96%B0%E8%80%81%E5%A9%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><img src="/url=http:/all.jorryjo.wiki/fb57d71f1c9881e22ec645ec4a2fdaae.png" class title="title&#x3D;卡哇伊内">]]></content>
+    <content><![CDATA[
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/fb57d71f1c9881e22ec645ec4a2fdaae.png" alt="卡哇伊内" loading="lazy" />
+      <figcaption>卡哇伊内</figcaption>
+    </figure>
+  ]]></content>
   </entry>
   <entry>
     <title>昨天没写完的部分</title>
     <url>/2023/07/25/%E6%98%A8%E5%A4%A9%E6%B2%A1%E5%86%99%E5%AE%8C%E7%9A%84%E9%83%A8%E5%88%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=https://pic.imgdb.cn/item/64bfcc681ddac507cc5b2f5b.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='https://www.joy127.com/url/106289.mp3' data-name='Blueming' data-artist='IU' data-cover='https://pic.imgdb.cn/item/64bfcc681ddac507cc5b2f5b.webp' ></div>
 <p>谁选的我不多说，懂的都懂。</p>
 <p><em><strong>昨天因为我python的环境有些冲突，很多都没有跑起来，今天折腾半天，最后用conda建立虚拟环境，大部分都可以了，我把昨天应该写的补上，应该做完今天的就差不多没了。</strong></em></p>
-<h2><span id="颜值打分">颜值打分</span></h2><p>这个做了挺久的，半抄半写，效果不算好，我认为应该是越白分数越高，我也不清楚opencv这个模型是拿什么练的，测了一下，彭于晏没pzm帅😋</p>
-<img src="/url=https:/pic.imgdb.cn/item/64bfcc4f1ddac507cc5b0856.png" class title="title&#x3D;莱昂纳多那肯定得一伯分">
+<h2 id="颜值打分"><a href="#颜值打分" class="headerlink" title="颜值打分"></a>颜值打分</h2><p>这个做了挺久的，半抄半写，效果不算好，我认为应该是越白分数越高，我也不清楚opencv这个模型是拿什么练的，测了一下，彭于晏没pzm帅😋</p>
+
+    <figure class="figure-image">
+      <img src="https://pic.imgdb.cn/item/64bfcc4f1ddac507cc5b0856.png" alt="莱昂纳多那肯定得一伯分" loading="lazy" />
+      <figcaption>莱昂纳多那肯定得一伯分</figcaption>
+    </figure>
+  
 <p>代码实现，要有一个文件叫haarcascade_frontalface_default.xml，训练模型，这个应该是在opencv里有。<br>需要的库有：ybc_face,numpy,opencv,tkinter</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> cv2
 <span class="token keyword">import</span> ybc_face <span class="token keyword">as</span> face
@@ -1086,9 +1073,19 @@ imageLabel_win<span class="token punctuation">.</span>pack<span class="token pun
 imageLabel_win<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2><span id="图片油画效果">图片油画效果</span></h2><p>还是opencv，opencv真图像处理界の绝对王者</p>
-<img src="/url=https:/pic.imgdb.cn/item/64bfd8771ddac507cc702d55.jpg" class title="title&#x3D;原图">
-<img src="/url=https:/pic.imgdb.cn/item/64c063a21ddac507cc292c4f.jpg" class title="title&#x3D;处理之后">
+<h2 id="图片油画效果"><a href="#图片油画效果" class="headerlink" title="图片油画效果"></a>图片油画效果</h2><p>还是opencv，opencv真图像处理界の绝对王者</p>
+
+    <figure class="figure-image">
+      <img src="https://pic.imgdb.cn/item/64bfd8771ddac507cc702d55.jpg" alt="原图" loading="lazy" />
+      <figcaption>原图</figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="https://pic.imgdb.cn/item/64c063a21ddac507cc292c4f.jpg" alt="处理之后" loading="lazy" />
+      <figcaption>处理之后</figcaption>
+    </figure>
+  
 <p>这个模糊程度得自行根据图片的清晰程度调整，直接照抄不好使。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> cv2
 
@@ -1098,7 +1095,7 @@ res <span class="token operator">=</span> cv2<span class="token punctuation">.</
 cv2<span class="token punctuation">.</span>imwrite<span class="token punctuation">(</span><span class="token string">'result1.jpg'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
 cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2><span id="文字填充图片像素">文字填充图片像素</span></h2><p>就是把图片里的像素用文字覆盖，改自b站一位up的项目，<a href="https://github.com/3150601355/PictureOfText">原项目地址</a>。<br>主要是把import那一块改了，我觉得没啥必要这样写，直接import更方便，当然那位up可能是为了方便纯路人。<br>文件切记不能太大，否则动辄几十上百兆。</p>
+<h2 id="文字填充图片像素"><a href="#文字填充图片像素" class="headerlink" title="文字填充图片像素"></a>文字填充图片像素</h2><p>就是把图片里的像素用文字覆盖，改自b站一位up的项目，<a href="https://github.com/3150601355/PictureOfText">原项目地址</a>。<br>主要是把import那一块改了，我觉得没啥必要这样写，直接import更方便，当然那位up可能是为了方便纯路人。<br>文件切记不能太大，否则动辄几十上百兆。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> sys
 <span class="token keyword">import</span> cv2
 <span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image<span class="token punctuation">,</span> ImageDraw<span class="token punctuation">,</span> ImageFont
@@ -1136,10 +1133,20 @@ font <span class="token operator">=</span> ImageFont<span class="token punctuati
                 charIndex <span class="token operator">=</span> <span class="token number">0</span>
     
     imgDst<span class="token punctuation">.</span>save<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>                                <span class="token comment"># 保存图片</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<img src="/url=https:/pic.imgdb.cn/item/64bfe2921ddac507cc8154a4.png" class title="title&#x3D;文件实在是太大了，传不上去">
-<img src="/url=https:/pic.imgdb.cn/item/64bfe2d71ddac507cc81d05c.png" class title="title&#x3D;只能这么看看">
 
-<h2><span id="猜数游戏">猜数游戏</span></h2><p>python写累了，写个rust。</p>
+    <figure class="figure-image">
+      <img src="https://pic.imgdb.cn/item/64bfe2921ddac507cc8154a4.png" alt="文件实在是太大了，传不上去" loading="lazy" />
+      <figcaption>文件实在是太大了，传不上去</figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="https://pic.imgdb.cn/item/64bfe2d71ddac507cc81d05c.png" alt="只能这么看看" loading="lazy" />
+      <figcaption>只能这么看看</figcaption>
+    </figure>
+  
+
+<h2 id="猜数游戏"><a href="#猜数游戏" class="headerlink" title="猜数游戏"></a>猜数游戏</h2><p>python写累了，写个rust。</p>
 <pre class="line-numbers language-rust" data-language="rust"><code class="language-rust"><span class="token keyword">use</span> <span class="token namespace">std<span class="token punctuation">::</span></span>io<span class="token punctuation">;</span>
 <span class="token keyword">use</span> <span class="token namespace">rand<span class="token punctuation">::</span></span><span class="token class-name">Rng</span><span class="token punctuation">;</span>
 <span class="token keyword">use</span> <span class="token namespace">std<span class="token punctuation">::</span>cmp<span class="token punctuation">::</span></span><span class="token class-name">Ordering</span><span class="token punctuation">;</span>
@@ -1170,7 +1177,7 @@ font <span class="token operator">=</span> ImageFont<span class="token punctuati
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>随机给一个数（1~100），然后让你凭空猜，上的rust课里有讲这个，没什么好写了就放出来了。</p>
-<h3><span id="这算是写完了换了电脑很多不太好的项目被当时的我狠狠地删除了留下来了寥寥几个能写的我当时是否真正的认真挑选了我没有确定的依据就当是把过错都丢弃了好像我寄希望于杀死明月的太阳带来阳光的同时抹去了人们在恐惧中发明的火种我忏悔当时的鲁莽">这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。</span></h3>]]></content>
+<h3 id="这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。"><a href="#这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。" class="headerlink" title="这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。"></a>这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。</h3>]]></content>
       <categories>
         <category>Doc</category>
       </categories>
@@ -1181,10 +1188,7 @@ font <span class="token operator">=</span> ImageFont<span class="token punctuati
   <entry>
     <title>最燃的一集</title>
     <url>/2023/08/07/%E6%9C%80%E7%87%83%E7%9A%84%E4%B8%80%E9%9B%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://rylgutqq8.sabkt.gdipper.com/2886218025454316.jpg)");
-			</script>]]></content>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://rylgutqq8.sabkt.gdipper.com/obj_wo3DlMOGwrbDjj7DisKw_14081614489_7c71_d58e_2bc9_ffe5efa9689f831c4c8c9d61415587dd.mp3' data-name='風' data-artist='山猿' data-cover='http://rylgutqq8.sabkt.gdipper.com/2886218025454316.jpg' data-lrc='http://rylgutqq8.sabkt.gdipper.com/%E9%A2%A8%20-%20%E5%B1%B1%E7%8C%BF.lrc' data-lrcType='3' ></div>]]></content>
       <tags>
         <tag>歌曲推荐</tag>
       </tags>
@@ -1219,10 +1223,7 @@ font <span class="token operator">=</span> ImageFont<span class="token punctuati
   <entry>
     <title>真的爱你</title>
     <url>/2023/08/09/%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/3ca020e07e8e8329819fc1ced032d2ecfa68af1f.jpg%401000w_1000h_1c.webp)");
-			</script>]]></content>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0-Beyond.128.mp3' data-name='真的爱你' data-artist='Beyond' data-cover='http://all.jorryjo.wiki/3ca020e07e8e8329819fc1ced032d2ecfa68af1f.jpg%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0%20-%20Beyond.lrc' data-lrcType='3' ></div>]]></content>
       <tags>
         <tag>歌曲推荐</tag>
       </tags>
@@ -1358,7 +1359,7 @@ for i in range(99):  #总共发多少次
   <entry>
     <title>论gitee和shit的区别</title>
     <url>/2023/07/27/%E8%AE%BAgitee%E5%92%8Cshit%E7%9A%84%E5%8C%BA%E5%88%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1><span id="gitee和屎有什么区别">Gitee和屎有什么区别？</span></h1><p>众所周知，gitee是全宇宙最棒的开源网站，其优点包括但不限于：不实名不开源，实名过审比挖审核的祖坟还难，以及典中典之：灵活开源，动态开源，非必要不开源，谨防恶意开源。确实是很有清朝末期的繁荣与开放，又带有明朝的高度言论自由，是有着浓厚的古风古韵的。</p>
+    <content><![CDATA[<h1 id="Gitee和屎有什么区别？"><a href="#Gitee和屎有什么区别？" class="headerlink" title="Gitee和屎有什么区别？"></a>Gitee和屎有什么区别？</h1><p>众所周知，gitee是全宇宙最棒的开源网站，其优点包括但不限于：不实名不开源，实名过审比挖审核的祖坟还难，以及典中典之：灵活开源，动态开源，非必要不开源，谨防恶意开源。确实是很有清朝末期的繁荣与开放，又带有明朝的高度言论自由，是有着浓厚的古风古韵的。</p>
 <p>礼完了，这几句好看的话憋了半小时，兵。<br>首先是gitee的实名审核制度，这个实名审核制度先不扯其过审速度，我可以暂且理解为员工忙，人手不够。<br>就单从这个审核标准说起，一张身份证正面，一张反面，手持身份证，一张正面一张反面，四张照片，你就在页面里挂一句这个，然后要求是什么都没有，用户怎么知道？从你们宕机了的脑子里读取吗，还是我要自己写readme给自己看？拍完了告诉我身份证保护套是要摘的，此时已经距离我上传照片4天了，谁的时间都是金钱，你轻描淡写一句话又重拍，又审核四天，又不行，这次是因为图片不清晰，你gitee存这个是要拿来当壁纸还是要拿来挂公司楼梯里当墙纸啊？每个员工拿一张用户实名认证的照片放电脑上时刻警醒自己还要工作吗？<br>其次是gitee处理issue的态度，你们是不是不把这个当回事？issue里有多少人反馈实名的问题？这是一天两天了吗，我操你妈一看见就删，不然就拒绝，回一句重复这个没有意义，你要多有意义？你们解决不了的就没有意义？为什么没人去你那上班你还不明白吗。<br>再然后是最逆天的开源，非必要不开源，这句话就好像再说非必要不人民民主专政，我开不开源是我的事，你替我做决定那还是你来替我写项目？开源我自己的东西我还要给你交身份证明，发你gitee上算给你脸了，得寸进尺的吃相相当难看。<br>家家有本难念的经，gitee是把好念的经全写上难念，然后以国家的名义来遮蔽自己傲慢的事实，开局就高人一等，你的底气是你母亲的数量吗。<br>讲回到标题，屎尚且能涵养土地为人民服务。傻逼Gitee除了拿钱浪费时间什么都办不到，这叫阻挠社会发展的害虫。</p>
 ]]></content>
       <categories>
@@ -1371,10 +1372,7 @@ for i in range(99):  #总共发多少次
   <entry>
     <title>趁时间没发觉让我带着你离开</title>
     <url>/2023/08/25/%E8%B6%81%E6%97%B6%E9%97%B4%E6%B2%A1%E5%8F%91%E8%A7%89%E8%AE%A9%E6%88%91%E5%B8%A6%E7%9D%80%E4%BD%A0%E7%A6%BB%E5%BC%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/8289c96934cad3d0e9803e8f89df7c786936c604.jpg%401000w_1000h_1c.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E5%88%86%E8%A3%82-%E5%91%A8%E6%9D%B0%E4%BC%A6.320.mp3' data-name='分裂' data-artist='周杰伦' data-cover='http://all.jorryjo.wiki/8289c96934cad3d0e9803e8f89df7c786936c604.jpg%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/%E5%88%86%E8%A3%82%20-%20%E5%91%A8%E6%9D%B0%E4%BC%A6.lrc' data-lrcType='3' ></div>
 ]]></content>
       <tags>
         <tag>歌曲推荐</tag>
@@ -1383,10 +1381,7 @@ for i in range(99):  #总共发多少次
   <entry>
     <title>钟的向方反</title>
     <url>/2023/08/20/%E9%92%9F%E7%9A%84%E5%90%91%E6%96%B9%E5%8F%8D/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
-			<script>
-				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/cfa19afbf9f84378e5c1949b0af9770f17a66b06.jpg%401000w_1000h_1c.webp)");
-			</script>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/20230820_184344_1.mp3' data-name='反方向的钟（钢琴版）' data-artist='何谐沐' data-cover='http://all.jorryjo.wiki/cfa19afbf9f84378e5c1949b0af9770f17a66b06.jpg%401000w_1000h_1c.webp' ></div>
 ]]></content>
       <tags>
         <tag>歌曲推荐</tag>
