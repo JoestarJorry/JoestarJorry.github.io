@@ -161,47 +161,32 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>我做这件事本就没有什么意义，活着就得这样，不能什么都追求要有个意义，给世界宇宙和你自己留点隐私是有必要的,<br>    但不是不去追求真理，<br>    世界给了你一扇窗要的是让你一点一点地窥探蓝天，而不是一眼就窥见全貌。<br>    我的图文教程就拿最没有意义的事，我整了6个月的活开始讲起。</p>
-<h1 id="Neovim"><a href="#Neovim" class="headerlink" title="Neovim"></a>Neovim</h1><p>vim作为一个非常古老的文本编辑器，是neovim的亲爹，因为社区的活跃出现了各式各样的插件和种类而焕发生机。<br>可玩性很高，客制化程度相当高,因技术的迭代更新，出现了新时代的vim——neovim，<br>    一款基于vim又高于vim的新版vim。也是今天要讲解的主角</p>
-<h3 id="0-下载安装"><a href="#0-下载安装" class="headerlink" title="0.下载安装"></a>0.下载安装</h3><p><a target="_blank" rel="noopener" href="https://github.com/neovim/neovim">neovim官方文档</a>，<a target="_blank" rel="noopener" href="https://github.com/neovim/neovim/releases">下载地址</a>,<br>同一个版本说明的下方有个Assets，拉开选择最新版的windows安装包进行下载，</p>
-<h3 id="1-创建配置文件"><a href="#1-创建配置文件" class="headerlink" title="1.创建配置文件"></a>1.创建配置文件</h3><p>跟某些v字开头的浏览器编辑器不一样，vim或者neovim是没有图形化的编辑界面的，<br>    也就是说你基本每一步改动都要在代码或命令行里进行，需要一定的计算机基础和编程基础，<br>    否则理解起来会很困难,最好能够熟悉命令行和lua语言，大部分的工作用到命令行会简单很多，<br>    本文的配置皆使用lua语言。<br>    在windows下，neovim的配置文件存放在</p>
+        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>我做这件事本就没有什么意义，活着就得这样，不能什么都追求要有个意义，给世界宇宙和你自己留点隐私是有必要的,<br>    但不是不去追求真理，<br>    世界给了你一扇窗要的是让你一点一点地窥探蓝天，而不是一眼就窥见全貌。<br>    我的图文教程就拿最没有意义的事，我整了6个月的活开始讲起。</p>
+<h1><span id="neovim">Neovim</span></h1><p>vim作为一个非常古老的文本编辑器，是neovim的亲爹，因为社区的活跃出现了各式各样的插件和种类而焕发生机。<br>可玩性很高，客制化程度相当高,因技术的迭代更新，出现了新时代的vim——neovim，<br>    一款基于vim又高于vim的新版vim。也是今天要讲解的主角</p>
+<h3><span id="0下载安装">0.下载安装</span></h3><p><a target="_blank" rel="noopener" href="https://github.com/neovim/neovim">neovim官方文档</a>，<a target="_blank" rel="noopener" href="https://github.com/neovim/neovim/releases">下载地址</a>,<br>同一个版本说明的下方有个Assets，拉开选择最新版的windows安装包进行下载，</p>
+<h3><span id="1创建配置文件">1.创建配置文件</span></h3><p>跟某些v字开头的浏览器编辑器不一样，vim或者neovim是没有图形化的编辑界面的，<br>    也就是说你基本每一步改动都要在代码或命令行里进行，需要一定的计算机基础和编程基础，<br>    否则理解起来会很困难,最好能够熟悉命令行和lua语言，大部分的工作用到命令行会简单很多，<br>    本文的配置皆使用lua语言。<br>    在windows下，neovim的配置文件存放在</p>
 <pre class="line-numbers language-none"><code class="language-none">C:\Users\Administrator\AppData\Local\nvim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这个目录下<br>    假设没有这个文件夹你可以自行创建，<br>    顺便提一句，在linux下配置的neovim直接把配置抄到windows下是基本可行的，<br>    除了彩虹括号插件之外都没有出什么大问题。·<br>    首先你要做的就是在</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">C<span class="token operator">:</span>\Users\Administrator\AppData\Local\nvim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>下创建一个<strong>init.lua</strong>文件，这里要把文件扩展名打开，后缀一定要改成lua，这是第一步，<br>    其次就是插件列表和个人的配置列表，我建议都使用一个文件夹来管理，在C:\Users\Administrator\AppData\Local\nvim下新建名为lua（叫什么都可以）的文件夹，<br>    在其中再次新建core及plugin文件夹，core用于存放配置文件，plugin用于存放插件的配置文件和下载程序。</p>
-<h3 id="2-安装插件管理器"><a href="#2-安装插件管理器" class="headerlink" title="2.安装插件管理器"></a>2.安装插件管理器</h3><p>如此庞大的插件市场首先就是要解决下载使用管理这三大基本的问题，对于neovim，有很多的选择，例如<br>packer，lazy，因为我当时看的教程比较老，所以用的是不那么方便的packer<br>假设你需要使用neovim，我的建议是你去用lazy，这个插件管理系统比packer有序的多，且下载简单，有更<br>美观的图形化界面。<br>以下我以Packer为例子，讲述如何在windows下安装Packer。</p>
-<h5 id="1-安装git"><a href="#1-安装git" class="headerlink" title="(1)安装git"></a>(1)安装git</h5><p>这个很简单，到<a target="_blank" rel="noopener" href="https://git-scm.com/">git官网</a>下载安装即可。</p>
-<h5 id="2-克隆仓库"><a href="#2-克隆仓库" class="headerlink" title="(2)克隆仓库"></a>(2)克隆仓库</h5><p>有了git以后我们可以使用git clone指令，在任意位置右键鼠标，选择git bash here，后在命令行输入这<br>一段命令    </p>
+<h3><span id="2安装插件管理器">2.安装插件管理器</span></h3><p>如此庞大的插件市场首先就是要解决下载使用管理这三大基本的问题，对于neovim，有很多的选择，例如<br>packer，lazy，因为我当时看的教程比较老，所以用的是不那么方便的packer<br>假设你需要使用neovim，我的建议是你去用lazy，这个插件管理系统比packer有序的多，且下载简单，有更<br>美观的图形化界面。<br>以下我以Packer为例子，讲述如何在windows下安装Packer。</p>
+<h5><span id="1安装git">(1)安装git</span></h5><p>这个很简单，到<a target="_blank" rel="noopener" href="https://git-scm.com/">git官网</a>下载安装即可。</p>
+<h5><span id="2克隆仓库">(2)克隆仓库</span></h5><p>有了git以后我们可以使用git clone指令，在任意位置右键鼠标，选择git bash here，后在命令行输入这<br>一段命令    </p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">git clone https<span class="token operator">:</span><span class="token comment">//github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>这就算是装好了，最后附上<a target="_blank" rel="noopener" href="https://github.com/wbthomason/packer.nvim">packer仓库地址</a>，怎么使用去<strong>看文档看文档看文档</strong>。</p>
-<h3 id="或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。"><a href="#或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。" class="headerlink" title="或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。"></a>或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。</h3><p>我的配置文件地址在<a target="_blank" rel="noopener" href="https://gitee.com/jorryjo/new-configruation">这里</a>,把这个文件下载下来，然后直接解压到</p>
+<h3><span id="或者还有一种更简单的方法假设你无法使用git你可以直接复制我的配置文件即开即用">或者还有一种更简单的方法，假设你无法使用git，你可以直接复制我的配置文件，即开即用。</span></h3><p>我的配置文件地址在<a target="_blank" rel="noopener" href="https://gitee.com/jorryjo/new-configruation">这里</a>,把这个文件下载下来，然后直接解压到</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">C<span class="token operator">:</span>\Users\Administrator\AppData\Local\nvim<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>用neovim进入该文件下的</p>
 <pre class="line-numbers language-c" data-language="c"><code class="language-c">\lua\plugins\plugins<span class="token operator">-</span>setup<span class="token punctuation">.</span>lua<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>按下回车，等待配置安装完成即可。<br>你可能会需要neovide，这个我下一篇文章会说。</p>
-<h5 id="3-必备插件"><a href="#3-必备插件" class="headerlink" title="(3).必备插件"></a>(3).必备插件</h5><p>每一个人的习惯不一样，我个人觉得颜值即正义，所以我的配置文件实用性不高，观赏性高点，<br>这里我推荐几个好看好用的插件。</p>
-<h6 id="dashboard"><a href="#dashboard" class="headerlink" title="dashboard"></a>dashboard</h6><p><a target="_blank" rel="noopener" href="https://github.com/nvimdev/dashboard-nvim">官方文档</a>，是国人glepnir写的，本人非常佩服他。<br>是一个开屏的插件，就是能够给你的neovim一个更好看的首页。<br>我建议搭配alpha插件使用，<a target="_blank" rel="noopener" href="https://github.com/goolord/alpha-nvim">官方文档</a>,基于dashboard的主题，可以自定义开屏图标，但需是ascii码，我推荐几个常用的图片转ascii码的网站<br><a target="_blank" rel="noopener" href="https://fsymbols.com/text-art/">https://fsymbols.com/text-art/</a><br><a target="_blank" rel="noopener" href="https://manytools.org/hacker-tools/image-to-byte-array/">https://manytools.org/hacker-tools/image-to-byte-array/</a><br><a target="_blank" rel="noopener" href="https://vj-duardo.github.io/Braille-Art/">https://vj-duardo.github.io/Braille-Art/</a><br><a target="_blank" rel="noopener" href="https://lachlanarthur.github.io/Braille-ASCII-Art/">https://lachlanarthur.github.io/Braille-ASCII-Art/</a><br>都挺好的。</p>
-<h6 id="Alpha"><a href="#Alpha" class="headerlink" title="Alpha"></a>Alpha</h6><p><a target="_blank" rel="noopener" href="https://github.com/goolord/alpha-nvim">官方文档</a>，就是上文我所说的，有很多可以自定的地方，详细的还是得自己去看文档。</p>
-<h6 id="Autoparis"><a href="#Autoparis" class="headerlink" title="Autoparis"></a>Autoparis</h6><p><a target="_blank" rel="noopener" href="https://github.com/windwp/nvim-autopairs">官方文档</a>，一款能够自动补全另一半(括号)的插件，配置文件我也没有做什么改动，直接用官方的默认配置或者去抄我的配置文件。</p>
-<h5 id="treesitter"><a href="#treesitter" class="headerlink" title="treesitter"></a>treesitter</h5><p><a target="_blank" rel="noopener" href="https://github.com/nvim-treesitter/nvim-treesitter">官方文档</a>，更高级的代码高亮，直接默认配置，或者去抄我的配置文件。</p>
-<h2 id="最后附上几张我的nvim样式截图。"><a href="#最后附上几张我的nvim样式截图。" class="headerlink" title="最后附上几张我的nvim样式截图。"></a>最后附上几张我的nvim样式截图。</h2>
-    <figure class="figure-image">
-      <img src="http://rylgutqq8.sabkt.gdipper.com/64b94ec41ddac507cce0ffd4.png" alt="别用聚合图床，6块钱去用七牛云，不然你就会像我现在这样在含泪补链接" loading="lazy" />
-      <figcaption>别用聚合图床，6块钱去用七牛云，不然你就会像我现在这样在含泪补链接</figcaption>
-    </figure>
-  
-
-    <figure class="figure-image">
-      <img src="http://rylgutqq8.sabkt.gdipper.com/64b94fb51ddac507cce5986d.png" alt="后续更新换成了staline" loading="lazy" />
-      <figcaption>后续更新换成了staline</figcaption>
-    </figure>
-  
-
-    <figure class="figure-image">
-      <img src="http://rylgutqq8.sabkt.gdipper.com/64b94fcb1ddac507cce604fd.png" alt="开屏/alpha页" loading="lazy" />
-      <figcaption>开屏/alpha页</figcaption>
-    </figure>
-  
+<h5><span id="3必备插件">(3).必备插件</span></h5><p>每一个人的习惯不一样，我个人觉得颜值即正义，所以我的配置文件实用性不高，观赏性高点，<br>这里我推荐几个好看好用的插件。</p>
+<h6><span id="dashboard">dashboard</span></h6><p><a target="_blank" rel="noopener" href="https://github.com/nvimdev/dashboard-nvim">官方文档</a>，是国人glepnir写的，本人非常佩服他。<br>是一个开屏的插件，就是能够给你的neovim一个更好看的首页。<br>我建议搭配alpha插件使用，<a target="_blank" rel="noopener" href="https://github.com/goolord/alpha-nvim">官方文档</a>,基于dashboard的主题，可以自定义开屏图标，但需是ascii码，我推荐几个常用的图片转ascii码的网站<br><a target="_blank" rel="noopener" href="https://fsymbols.com/text-art/">https://fsymbols.com/text-art/</a><br><a target="_blank" rel="noopener" href="https://manytools.org/hacker-tools/image-to-byte-array/">https://manytools.org/hacker-tools/image-to-byte-array/</a><br><a target="_blank" rel="noopener" href="https://vj-duardo.github.io/Braille-Art/">https://vj-duardo.github.io/Braille-Art/</a><br><a target="_blank" rel="noopener" href="https://lachlanarthur.github.io/Braille-ASCII-Art/">https://lachlanarthur.github.io/Braille-ASCII-Art/</a><br>都挺好的。</p>
+<h6><span id="alpha">Alpha</span></h6><p><a target="_blank" rel="noopener" href="https://github.com/goolord/alpha-nvim">官方文档</a>，就是上文我所说的，有很多可以自定的地方，详细的还是得自己去看文档。</p>
+<h6><span id="autoparis">Autoparis</span></h6><p><a target="_blank" rel="noopener" href="https://github.com/windwp/nvim-autopairs">官方文档</a>，一款能够自动补全另一半(括号)的插件，配置文件我也没有做什么改动，直接用官方的默认配置或者去抄我的配置文件。</p>
+<h5><span id="treesitter">treesitter</span></h5><p><a target="_blank" rel="noopener" href="https://github.com/nvim-treesitter/nvim-treesitter">官方文档</a>，更高级的代码高亮，直接默认配置，或者去抄我的配置文件。</p>
+<h2><span id="最后附上几张我的nvim样式截图">最后附上几张我的nvim样式截图。</span></h2><img src="/url=http:/rylgutqq8.sabkt.gdipper.com/64b94ec41ddac507cce0ffd4.png" class title="title&#x3D;别用聚合图床，6块钱去用七牛云，不然你就会像我现在这样在含泪补链接">
+<img src="/url=http:/rylgutqq8.sabkt.gdipper.com/64b94fb51ddac507cce5986d.png" class title="title&#x3D;后续更新换成了staline">
+<img src="/url=http:/rylgutqq8.sabkt.gdipper.com/64b94fcb1ddac507cce604fd.png" class title="title&#x3D;开屏&#x2F;alpha页">
 
       </section>
 

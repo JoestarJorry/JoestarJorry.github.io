@@ -161,7 +161,10 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E7%A7%A6%E5%B2%9A%20-%20%E9%BB%84%E6%98%8F%E4%B9%8B%E6%97%B6%EF%BC%88%E9%92%A2%E7%90%B4%E7%89%88%EF%BC%89.mp3' data-name='黄昏之时（钢琴版）' data-artist='秦岚' data-cover='http://all.jorryjo.wiki/b8014a90f603738d6b3e0520bb1bb051f819ecb8.webp' ></div>
+        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+			<script>
+				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=http://all.jorryjo.wiki/b8014a90f603738d6b3e0520bb1bb051f819ecb8.webp)");
+			</script>
 <p>我因为懒一开始就不想自己写，后来发现费的时间更多，基本上把该踩的坑全踩了一遍，我也不多废话我自己的悲惨经历了，我讲讲如何正确的配置giscus评论。</p>
 <p>申请的部分按照csdn和知乎上的几篇教程来是可以的，但是到了本地配置的时候_<em>千万不能直接照抄</em>_，首先你要在你主题下的config文件里添加这样一些内容：</p>
 <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">giscus</span><span class="token punctuation">:</span>

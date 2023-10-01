@@ -161,16 +161,14 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <div class="aplayer-box" data-url='https://www.joy127.com/url/106289.mp3' data-name='Blueming' data-artist='IU' data-cover='https://pic.imgdb.cn/item/64bfcc681ddac507cc5b2f5b.webp' ></div>
+        <link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+			<script>
+				console.error("Error: [hexo-tag-aplayer] Specified asset file not found (cover=https://pic.imgdb.cn/item/64bfcc681ddac507cc5b2f5b.webp)");
+			</script>
 <p>谁选的我不多说，懂的都懂。</p>
 <p><em><strong>昨天因为我python的环境有些冲突，很多都没有跑起来，今天折腾半天，最后用conda建立虚拟环境，大部分都可以了，我把昨天应该写的补上，应该做完今天的就差不多没了。</strong></em></p>
-<h2 id="颜值打分"><a href="#颜值打分" class="headerlink" title="颜值打分"></a>颜值打分</h2><p>这个做了挺久的，半抄半写，效果不算好，我认为应该是越白分数越高，我也不清楚opencv这个模型是拿什么练的，测了一下，彭于晏没pzm帅😋</p>
-
-    <figure class="figure-image">
-      <img src="https://pic.imgdb.cn/item/64bfcc4f1ddac507cc5b0856.png" alt="莱昂纳多那肯定得一伯分" loading="lazy" />
-      <figcaption>莱昂纳多那肯定得一伯分</figcaption>
-    </figure>
-  
+<h2><span id="颜值打分">颜值打分</span></h2><p>这个做了挺久的，半抄半写，效果不算好，我认为应该是越白分数越高，我也不清楚opencv这个模型是拿什么练的，测了一下，彭于晏没pzm帅😋</p>
+<img src="/url=https:/pic.imgdb.cn/item/64bfcc4f1ddac507cc5b0856.png" class title="title&#x3D;莱昂纳多那肯定得一伯分">
 <p>代码实现，要有一个文件叫haarcascade_frontalface_default.xml，训练模型，这个应该是在opencv里有。<br>需要的库有：ybc_face,numpy,opencv,tkinter</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> cv2
 <span class="token keyword">import</span> ybc_face <span class="token keyword">as</span> face
@@ -194,19 +192,9 @@ imageLabel_win<span class="token punctuation">.</span>pack<span class="token pun
 imageLabel_win<span class="token punctuation">.</span>mainloop<span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="图片油画效果"><a href="#图片油画效果" class="headerlink" title="图片油画效果"></a>图片油画效果</h2><p>还是opencv，opencv真图像处理界の绝对王者</p>
-
-    <figure class="figure-image">
-      <img src="https://pic.imgdb.cn/item/64bfd8771ddac507cc702d55.jpg" alt="原图" loading="lazy" />
-      <figcaption>原图</figcaption>
-    </figure>
-  
-
-    <figure class="figure-image">
-      <img src="https://pic.imgdb.cn/item/64c063a21ddac507cc292c4f.jpg" alt="处理之后" loading="lazy" />
-      <figcaption>处理之后</figcaption>
-    </figure>
-  
+<h2><span id="图片油画效果">图片油画效果</span></h2><p>还是opencv，opencv真图像处理界の绝对王者</p>
+<img src="/url=https:/pic.imgdb.cn/item/64bfd8771ddac507cc702d55.jpg" class title="title&#x3D;原图">
+<img src="/url=https:/pic.imgdb.cn/item/64c063a21ddac507cc292c4f.jpg" class title="title&#x3D;处理之后">
 <p>这个模糊程度得自行根据图片的清晰程度调整，直接照抄不好使。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> cv2
 
@@ -216,7 +204,7 @@ res <span class="token operator">=</span> cv2<span class="token punctuation">.</
 cv2<span class="token punctuation">.</span>imwrite<span class="token punctuation">(</span><span class="token string">'result1.jpg'</span><span class="token punctuation">,</span>res<span class="token punctuation">)</span>
 cv2<span class="token punctuation">.</span>waitKey<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h2 id="文字填充图片像素"><a href="#文字填充图片像素" class="headerlink" title="文字填充图片像素"></a>文字填充图片像素</h2><p>就是把图片里的像素用文字覆盖，改自b站一位up的项目，<a target="_blank" rel="noopener" href="https://github.com/3150601355/PictureOfText">原项目地址</a>。<br>主要是把import那一块改了，我觉得没啥必要这样写，直接import更方便，当然那位up可能是为了方便纯路人。<br>文件切记不能太大，否则动辄几十上百兆。</p>
+<h2><span id="文字填充图片像素">文字填充图片像素</span></h2><p>就是把图片里的像素用文字覆盖，改自b站一位up的项目，<a target="_blank" rel="noopener" href="https://github.com/3150601355/PictureOfText">原项目地址</a>。<br>主要是把import那一块改了，我觉得没啥必要这样写，直接import更方便，当然那位up可能是为了方便纯路人。<br>文件切记不能太大，否则动辄几十上百兆。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> sys
 <span class="token keyword">import</span> cv2
 <span class="token keyword">from</span> PIL <span class="token keyword">import</span> Image<span class="token punctuation">,</span> ImageDraw<span class="token punctuation">,</span> ImageFont
@@ -254,20 +242,10 @@ font <span class="token operator">=</span> ImageFont<span class="token punctuati
                 charIndex <span class="token operator">=</span> <span class="token number">0</span>
     
     imgDst<span class="token punctuation">.</span>save<span class="token punctuation">(</span>sys<span class="token punctuation">.</span>argv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>                                <span class="token comment"># 保存图片</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<img src="/url=https:/pic.imgdb.cn/item/64bfe2921ddac507cc8154a4.png" class title="title&#x3D;文件实在是太大了，传不上去">
+<img src="/url=https:/pic.imgdb.cn/item/64bfe2d71ddac507cc81d05c.png" class title="title&#x3D;只能这么看看">
 
-    <figure class="figure-image">
-      <img src="https://pic.imgdb.cn/item/64bfe2921ddac507cc8154a4.png" alt="文件实在是太大了，传不上去" loading="lazy" />
-      <figcaption>文件实在是太大了，传不上去</figcaption>
-    </figure>
-  
-
-    <figure class="figure-image">
-      <img src="https://pic.imgdb.cn/item/64bfe2d71ddac507cc81d05c.png" alt="只能这么看看" loading="lazy" />
-      <figcaption>只能这么看看</figcaption>
-    </figure>
-  
-
-<h2 id="猜数游戏"><a href="#猜数游戏" class="headerlink" title="猜数游戏"></a>猜数游戏</h2><p>python写累了，写个rust。</p>
+<h2><span id="猜数游戏">猜数游戏</span></h2><p>python写累了，写个rust。</p>
 <pre class="line-numbers language-rust" data-language="rust"><code class="language-rust"><span class="token keyword">use</span> <span class="token namespace">std<span class="token punctuation">::</span></span>io<span class="token punctuation">;</span>
 <span class="token keyword">use</span> <span class="token namespace">rand<span class="token punctuation">::</span></span><span class="token class-name">Rng</span><span class="token punctuation">;</span>
 <span class="token keyword">use</span> <span class="token namespace">std<span class="token punctuation">::</span>cmp<span class="token punctuation">::</span></span><span class="token class-name">Ordering</span><span class="token punctuation">;</span>
@@ -298,7 +276,7 @@ font <span class="token operator">=</span> ImageFont<span class="token punctuati
     <span class="token punctuation">&#125;</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>随机给一个数（1~100），然后让你凭空猜，上的rust课里有讲这个，没什么好写了就放出来了。</p>
-<h3 id="这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。"><a href="#这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。" class="headerlink" title="这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。"></a>这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。</h3>
+<h3><span id="这算是写完了换了电脑很多不太好的项目被当时的我狠狠地删除了留下来了寥寥几个能写的我当时是否真正的认真挑选了我没有确定的依据就当是把过错都丢弃了好像我寄希望于杀死明月的太阳带来阳光的同时抹去了人们在恐惧中发明的火种我忏悔当时的鲁莽">这算是写完了，换了电脑很多不太好的项目被当时的我狠狠地删除了，留下来了寥寥几个能写的，我当时是否真正的认真挑选了我没有确定的依据，就当是把过错都丢弃了，好像我寄希望于杀死明月的太阳，带来阳光的同时抹去了人们在恐惧中发明的火种，我忏悔当时的鲁莽。</span></h3>
       </section>
 
       
