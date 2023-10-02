@@ -943,7 +943,7 @@ Binds <span class="token punctuation">&#123;</span>
   <entry>
     <title>把故事听到最后才说再见</title>
     <url>/2023/07/24/%E6%8A%8A%E6%95%85%E4%BA%8B%E5%90%AC%E5%88%B0%E6%9C%80%E5%90%8E%E6%89%8D%E8%AF%B4%E5%86%8D%E8%A7%81/</url>
-    <content><![CDATA[<div class="aplayer-box" data-url='https://www.joy127.com/url/106256.mp3' data-name='修炼爱情' data-artist='林俊杰' data-cover='https://pic.imgdb.cn/item/64be748a1ddac507ccd84d60.webp' ></div>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/6005752BNV9133334.mp3' data-name='修炼爱情' data-artist='林俊杰' data-lrc='http://all.jorryjo.wiki/%E4%BF%AE%E7%82%BC%E7%88%B1%E6%83%85%20-%20%E6%9E%97%E4%BF%8A%E6%9D%B0.lrc' data-lrcType='3' data-cover='https://pic.imgdb.cn/item/64be748a1ddac507ccd84d60.webp' ></div>
 <p><strong>rqの爱歌.</strong></p>
 <h1 id="一些稍微有用的项目（2）"><a href="#一些稍微有用的项目（2）" class="headerlink" title="一些稍微有用的项目（2）"></a>一些稍微有用的项目（2）</h1><h3 id="1-视频转字符画"><a href="#1-视频转字符画" class="headerlink" title="1.视频转字符画"></a>1.视频转字符画</h3><p>这个半抄半写，效果一级<br>需要opencv库，os库是python自带。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> os
@@ -1003,7 +1003,8 @@ a <span class="token operator">=</span> <span class="token builtin">int</span><s
       <img src="https://pic.imgdb.cn/item/64bea3331ddac507cc70efaa.jpg" alt="你怎么知道我马超有标了？" loading="lazy" />
       <figcaption>你怎么知道我马超有标了？</figcaption>
     </figure>
-  ]]></content>
+  
+]]></content>
       <tags>
         <tag>朝花夕拾</tag>
       </tags>
