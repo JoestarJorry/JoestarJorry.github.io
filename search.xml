@@ -1729,4 +1729,34 @@ windowrulev2 &#x3D; noinitialfocus,class:^(xwaylandvideobridge)$
         <tag>歌曲推荐</tag>
       </tags>
   </entry>
+  <entry>
+    <title>ZeroBot-Plugin+cqhttp实现qq机器人的过程记录及说明</title>
+    <url>/2023/10/04/ZeroBot-Plugin-cqhttp%E5%AE%9E%E7%8E%B0qq%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95%E5%8F%8A%E8%AF%B4%E6%98%8E/</url>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/f6be_d727_ef4d_fd6ed4a6fbd7ae74335777a35b69ea1d.mp3' data-name='Sincerely' data-artist='TRUE' data-cover='http://all.jorryjo.wiki/8f590bab834264cfbf86ae009d6ac84d9bc2e597.png%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/Sincerely%20-%20TRUE.lrc' data-lrcType='3' ></div>
+<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>今天刷b站的时候发现了一个很有意思的项目,就是今天的主角—-ZeroBot<br>它原版功能较少,我选了一个带插件的扩展版本<br>Github:<a href="https://github.com/FloatTech/ZeroBot-Plugin">https://github.com/FloatTech/ZeroBot-Plugin</a><br>配合cqhttp和云服务器可以实现24小时全天在线的qq机器人,<br>cqhttp的Github仓库:<a href="https://github.com/Mrs4s/go-cqhttp">https://github.com/Mrs4s/go-cqhttp</a></p>
+<h1 id="qq群内的使用方法"><a href="#qq群内的使用方法" class="headerlink" title="qq群内的使用方法"></a>qq群内的使用方法</h1><h3 id="1-邀请QQ机器人入群-机器人输入-响应-然后等机器人恢复之后就可以正常使用了-完整-只因哥-响应-如果没有反应可以多输入几次"><a href="#1-邀请QQ机器人入群-机器人输入-响应-然后等机器人恢复之后就可以正常使用了-完整-只因哥-响应-如果没有反应可以多输入几次" class="headerlink" title="1.邀请QQ机器人入群,@机器人输入&#x2F;响应,然后等机器人恢复之后就可以正常使用了,完整:@只因哥 &#x2F;响应.(如果没有反应可以多输入几次)"></a>1.邀请QQ机器人入群,@机器人输入&#x2F;响应,然后等机器人恢复之后就可以正常使用了,完整:@只因哥 &#x2F;响应.(如果没有反应可以多输入几次)</h3><h3 id="2-机器人会不定时的出来交流-这个看情况-触发了事件就会有反应"><a href="#2-机器人会不定时的出来交流-这个看情况-触发了事件就会有反应" class="headerlink" title="2.机器人会不定时的出来交流,这个看情况,触发了事件就会有反应."></a>2.机器人会不定时的出来交流,这个看情况,触发了事件就会有反应.</h3><h3 id="3-一些目前可使用的命令-都要-一次"><a href="#3-一些目前可使用的命令-都要-一次" class="headerlink" title="3.一些目前可使用的命令(都要@一次)"></a>3.一些目前可使用的命令(都要@一次)</h3><pre class="line-numbers language-none"><code class="language-none">例:@只因哥 群温度
+以下省略@只因哥,&quot;[]&quot;内为自填内容,&quot;#&quot;后面是我写的注释,不要打上去.
+早安
+晚安
+抽象翻译[]
+翻转[] #[]内填英文,意思是把这段英文翻转过来,例如:翻转i love you ! &#x3D; noʎ ǝʌol ᴉ
+组cp[@xxx][@xxx] #发送一段关于他俩的暧昧文案
+磕cp #后面跟两个人名与上面的类似
+今日早报 #发送一段早报
+小作文 #发送一段嘉然逆天小作文
+发大病 #发一段与嘉然有关的病
+运势
+抽签#上面的运势和这个一样,都是发送今天的运势
+一言#十个好句
+随机图片#随机的一张二次元图片
+随机galCG #随即一个galgame的CG<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="目前实现的特殊功能只有这些-你也可以说一些在此范围之外的-它有可能会正常回复你-也有可能会胡言乱语"><a href="#目前实现的特殊功能只有这些-你也可以说一些在此范围之外的-它有可能会正常回复你-也有可能会胡言乱语" class="headerlink" title="目前实现的特殊功能只有这些,你也可以说一些在此范围之外的,它有可能会正常回复你,也有可能会胡言乱语"></a>目前实现的特殊功能只有这些,你也可以说一些在此范围之外的,它有可能会正常回复你,也有可能会胡言乱语</h3><h3 id="这个项目我放在雨云的服务器上跑-兜里就15块也租不到什么很好的服务器-所以我选了一个美国的低配服务器-有些时候可能反应会比较慢-大家耐心等等"><a href="#这个项目我放在雨云的服务器上跑-兜里就15块也租不到什么很好的服务器-所以我选了一个美国的低配服务器-有些时候可能反应会比较慢-大家耐心等等" class="headerlink" title="这个项目我放在雨云的服务器上跑,兜里就15块也租不到什么很好的服务器,所以我选了一个美国的低配服务器,有些时候可能反应会比较慢,大家耐心等等"></a>这个项目我放在雨云的服务器上跑,兜里就15块也租不到什么很好的服务器,所以我选了一个美国的低配服务器,有些时候可能反应会比较慢,大家耐心等等</h3><h3 id="这个问题等我什么时候富裕了在解决-应该是解决不了了"><a href="#这个问题等我什么时候富裕了在解决-应该是解决不了了" class="headerlink" title="这个问题等我什么时候富裕了在解决(应该是解决不了了)"></a>这个问题等我什么时候富裕了在解决(应该是解决不了了)</h3><h3 id="先试行一个月-没出什么事再说"><a href="#先试行一个月-没出什么事再说" class="headerlink" title="先试行一个月,没出什么事再说."></a>先试行一个月,没出什么事再说.</h3><h1 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h1><h4 id="將这两个项目下载到本地之后-打开finalshell连接自己的服务器-这个服务器没必要用很好的-差不多的就差不多了-一定要是linux系统"><a href="#將这两个项目下载到本地之后-打开finalshell连接自己的服务器-这个服务器没必要用很好的-差不多的就差不多了-一定要是linux系统" class="headerlink" title="將这两个项目下载到本地之后,打开finalshell连接自己的服务器,这个服务器没必要用很好的,差不多的就差不多了,一定要是linux系统!!!"></a>將这两个项目下载到本地之后,打开finalshell连接自己的服务器,这个服务器没必要用很好的,差不多的就差不多了,一定要是linux系统!!!</h4><h4 id="之后把这两个项目直接复制粘贴到服务器的root目录下-先运行一下cqhttp-选项选2-生成config文件后更改里面的内容-主要是qq号和密码-密码一定要写"><a href="#之后把这两个项目直接复制粘贴到服务器的root目录下-先运行一下cqhttp-选项选2-生成config文件后更改里面的内容-主要是qq号和密码-密码一定要写" class="headerlink" title="之后把这两个项目直接复制粘贴到服务器的root目录下,先运行一下cqhttp,选项选2,生成config文件后更改里面的内容,主要是qq号和密码,密码一定要写."></a>之后把这两个项目直接复制粘贴到服务器的root目录下,先运行一下cqhttp,选项选2,生成config文件后更改里面的内容,主要是qq号和密码,密码一定要写.</h4><h4 id="后把签名服务器的地址粘贴到”sign-sever-”就好了-这个签名服务器cqhttp的latest-release下就有-完成之后保存重新运行一遍cqhttp-选2-进入网址打开网络检测"><a href="#后把签名服务器的地址粘贴到”sign-sever-”就好了-这个签名服务器cqhttp的latest-release下就有-完成之后保存重新运行一遍cqhttp-选2-进入网址打开网络检测" class="headerlink" title="后把签名服务器的地址粘贴到”sign-sever:”就好了,这个签名服务器cqhttp的latest release下就有,完成之后保存重新运行一遍cqhttp,选2,进入网址打开网络检测"></a>后把签名服务器的地址粘贴到”sign-sever:”就好了,这个签名服务器cqhttp的latest release下就有,完成之后保存重新运行一遍cqhttp,选2,进入网址打开网络检测</h4><h4 id="记录ticket复制粘贴回服务器终端-接着接收手机验证码-最后同时运行cqhttp和zerobot就行了"><a href="#记录ticket复制粘贴回服务器终端-接着接收手机验证码-最后同时运行cqhttp和zerobot就行了" class="headerlink" title="记录ticket复制粘贴回服务器终端,接着接收手机验证码,最后同时运行cqhttp和zerobot就行了."></a>记录ticket复制粘贴回服务器终端,接着接收手机验证码,最后同时运行cqhttp和zerobot就行了.</h4>]]></content>
+      <categories>
+        <category>Doc</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
 </search>
