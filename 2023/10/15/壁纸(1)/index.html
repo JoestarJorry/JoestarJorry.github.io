@@ -29,7 +29,7 @@
   <title>
     
     
-    在hexo中如何正确添加giscus评论 | JorryJo
+    壁纸(1) | JorryJo
     
   
   </title>
@@ -66,7 +66,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(http://all.jorryjo.wiki/b8014a90f603738d6b3e0520bb1bb051f819ecb8.webp)"></div>
+    <div class="post-image" style="background-image: url(http://all.jorryjo.wiki/wallhaven-l315vy.png)"></div>
   
 
   <!-- navbar -->
@@ -117,27 +117,20 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">在hexo中如何正确添加giscus评论</h1>
+          <h1 class="title-wrap">壁纸(1)</h1>
           <h2 class="title-sub-wrap">
             <strong>cxy</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2023-08-15T04:44:51.000Z" itemprop="datePublished">2023-08-15</time>
+            <time  class="article-date" datetime="2023-10-15T03:30:38.000Z" itemprop="datePublished">2023-10-15</time>
           </h2>
-          
-            <h2 class="last-time">
-              <span>最后更新于</span>
-              <time  class="article-updated" datetime="2023-10-01T01:20:33.678Z" itemprop="dateUpdated">2023-10-01</time>
-            </h2>
           
           
           <ul class="wrap-list dark">
-  
-    <li><a href="/categories/Doc/">📒 Doc</a></li>
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/%E6%95%99%E7%A8%8B/">🏷️ 教程</a></li>
+    <li><a href="/tags/%E5%A3%81%E7%BA%B8%E6%8E%A8%E8%8D%90/">🏷️ 壁纸推荐</a></li>
   
 </ul>
         </div>
@@ -161,48 +154,45 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <div class="aplayer-box" data-url='http://all.jorryjo.wiki/%E7%A7%A6%E5%B2%9A%20-%20%E9%BB%84%E6%98%8F%E4%B9%8B%E6%97%B6%EF%BC%88%E9%92%A2%E7%90%B4%E7%89%88%EF%BC%89.mp3' data-name='黄昏之时（钢琴版）' data-artist='秦岚' data-cover='http://all.jorryjo.wiki/b8014a90f603738d6b3e0520bb1bb051f819ecb8.webp' ></div>
-<p>我因为懒一开始就不想自己写，后来发现费的时间更多，基本上把该踩的坑全踩了一遍，我也不多废话我自己的悲惨经历了，我讲讲如何正确的配置giscus评论。</p>
-<p>申请的部分按照csdn和知乎上的几篇教程来是可以的，但是到了本地配置的时候_<em>千万不能直接照抄</em>_，首先你要在你主题下的config文件里添加这样一些内容：</p>
-<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">giscus</span><span class="token punctuation">:</span>
-  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
-  <span class="token key atrule">repo</span><span class="token punctuation">:</span>  <span class="token comment"># Github repository name</span>
-  <span class="token key atrule">repo-id</span><span class="token punctuation">:</span>  <span class="token comment"># Github repository id$</span>
-  <span class="token key atrule">category</span><span class="token punctuation">:</span>  <span class="token comment"># Github discussion category</span>
-  <span class="token key atrule">category_id</span><span class="token punctuation">:</span>  <span class="token comment"># Github discussion category id</span>
-  <span class="token comment"># Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme</span>
-    <span class="token comment"># Available values: pathname | url | title | og:title</span>
-  <span class="token key atrule">mapping</span><span class="token punctuation">:</span> 
-  <span class="token comment"># Available values: 0 | 1</span>
-  <span class="token key atrule">reactions-enabled</span><span class="token punctuation">:</span> <span class="token number">1</span>
-   <span class="token comment"># Available values: 0 | 1</span>
-  <span class="token key atrule">emit-metadata</span><span class="token punctuation">:</span> <span class="token number">0</span>
-  <span class="token comment"># Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme</span>
-  <span class="token key atrule">theme</span><span class="token punctuation">:</span> preferred_color_scheme
-  <span class="token comment"># Available values: en | zh-CN</span>
-  <span class="token key atrule">lang</span><span class="token punctuation">:</span> zh<span class="token punctuation">-</span>CN
-  <span class="token comment"># Place the comment box above the comments</span>
-  <span class="token key atrule">input-position</span><span class="token punctuation">:</span> top<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>之后你要在主题下的layout文件里找到跟评论有关的，一般都是有comments字样的，可能是文件夹也可能是ejs或者其他的文件，按主题来定，找到之后在这添加以下的代码，这个可以在giscus那里找到，每个人的都不一样你复制你自己的。</p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>theme<span class="token punctuation">.</span>giscus <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>giscus<span class="token punctuation">[</span><span class="token string">'repo'</span><span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> theme<span class="token punctuation">.</span>giscus<span class="token punctuation">[</span><span class="token string">'repo-id'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span> <span class="token operator">%</span><span class="token operator">></span>
-  <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"giscus"</span> <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"giscus"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-  <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">""</span>
-        data<span class="token operator">-</span>repo<span class="token operator">=</span><span class="token string">""</span>
-        data<span class="token operator">-</span>repo<span class="token operator">-</span>id<span class="token operator">=</span><span class="token string">""</span>
-        data<span class="token operator">-</span>category<span class="token operator">=</span><span class="token string">""</span>
-        data<span class="token operator">-</span>category<span class="token operator">-</span>id<span class="token operator">=</span><span class="token string">""</span>
-        data<span class="token operator">-</span>mapping<span class="token operator">=</span><span class="token string">""</span>
-        data<span class="token operator">-</span>strict<span class="token operator">=</span><span class="token string">"0"</span>
-        data<span class="token operator">-</span>reactions<span class="token operator">-</span>enabled<span class="token operator">=</span><span class="token string">"1"</span>
-        data<span class="token operator">-</span>emit<span class="token operator">-</span>metadata<span class="token operator">=</span><span class="token string">"0"</span>
-        data<span class="token operator">-</span>input<span class="token operator">-</span>position<span class="token operator">=</span><span class="token string">"bottom"</span>
-        data<span class="token operator">-</span>theme<span class="token operator">=</span><span class="token string">"preferred_color_scheme"</span>
-        data<span class="token operator">-</span>lang<span class="token operator">=</span><span class="token string">"zh-CN"</span>
-        crossorigin<span class="token operator">=</span><span class="token string">"anonymous"</span>
-        async<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
-<span class="token operator">&lt;</span><span class="token operator">%</span> <span class="token punctuation">&#125;</span> <span class="token operator">%</span><span class="token operator">></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>完成之后直接保存生成大概就没什么问题了，这里ejs内的文件内容，逻辑可能会有不一样，有的有判断语句自行选择是加上去还是直接把原配置全部删掉，我是把主体内其他的评论系统全部删掉了直接粘贴这一段代码的，目前没有问题，最后要在主题的config文件里把评论打开就好了。</p>
+        
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/wallhaven-vqzq98.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/wallhaven-vqp668.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/wallhaven-l315vy.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/wallhaven-gp7mq3.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/wallhaven-9ml298.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/1.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+
 
       </section>
 
@@ -210,32 +200,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="http://all.jorryjo.wiki/QQ%E6%88%AA%E5%9B%BE20230817120822.png"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2023/08/16/%E6%88%91%E5%A5%BD%E6%83%B3%E5%BD%93%E6%A0%BC%E9%87%8C%E8%8A%AC%E7%9A%84%E7%8B%97%E5%95%8A-mp4/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">我好想当格里芬的狗啊.mp4</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="http://all.jorryjo.wiki/2b25b15d4dd3e3fc01731d78e3401def.png"></div>
+      <div class="card-cover" background-image-lazy data-img="http://all.jorryjo.wiki/528a8707b36328efacb15018454ff1be71f5605f.jpg%401000w_1000h_1c.webp"></div>
     
     <div class="card-text">
       
-        <a href="/2023/08/12/MyDock-%E4%B8%80%E4%B8%AA%E4%B8%8D%E4%B9%B0mac%E7%9A%84%E7%90%86%E7%94%B1/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">MyDock--一个不买mac的理由</h2>
+        <a href="/2023/10/15/%E5%8F%8D%E6%96%B9%E5%90%91%E7%9A%84%E9%92%9F/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">反方向的钟</h2>
         </a>
       
       <div class="card-text--row">Older</div>
@@ -403,34 +377,6 @@
 
   
   <!-- aplayer -->
-
-
-  <!-- aplayer 音频 start -->
-  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
-  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <script type="text/javascript">
-    const aplayer = document.querySelectorAll(".aplayer-box");
-    aplayer && initaplayer(aplayer);
-    function initaplayer(els) {
-      let elsArr = Array.from(els);
-      elsArr.forEach(el => {
-        let params = {
-          container: el,
-          audio: { ...el.dataset },
-          theme: "#b7daff",
-          autoplay: false,
-          loop: false,
-          mutex: true,
-        }
-        if (el.dataset.lrc) {
-          params['lrcType'] = 3
-        }
-        new APlayer(params);
-      });
-    }
-  </script>
-  <!-- aplayer 音频 end -->
-  
 
 
 <!-- dplayer -->
