@@ -1,0 +1,10 @@
+exec-once = ~/.config/hypr/scripts/resetxdgportal.sh # reset XDPH for screenshare
+exec-once = dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP # for XDPH
+exec-once = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP # for XDPH
+exec-once = waybar
+exec-once = fcitx5
+#exec-once = mpvpaper -o "no-audio --loop" HDMI-A-1 ~/Background/mp4/2.mp4
+exec-once = systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec-once = swaybg -i ~/Background/02.png # Set wallpaper
+
+

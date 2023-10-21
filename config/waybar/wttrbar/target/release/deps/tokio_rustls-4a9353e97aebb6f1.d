@@ -1,0 +1,11 @@
+/home/cxy/.config/waybar/wttrbar/target/release/deps/tokio_rustls-4a9353e97aebb6f1.rmeta: /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/lib.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/client.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/common/mod.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/common/handshake.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/server.rs
+
+/home/cxy/.config/waybar/wttrbar/target/release/deps/libtokio_rustls-4a9353e97aebb6f1.rlib: /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/lib.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/client.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/common/mod.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/common/handshake.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/server.rs
+
+/home/cxy/.config/waybar/wttrbar/target/release/deps/tokio_rustls-4a9353e97aebb6f1.d: /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/lib.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/client.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/common/mod.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/common/handshake.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/server.rs
+
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/lib.rs:
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/client.rs:
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/common/mod.rs:
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/common/handshake.rs:
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-rustls-0.23.4/src/server.rs:

@@ -1,0 +1,11 @@
+/home/cxy/weather/wttrbar/target/debug/deps/hyper_rustls-3d8c4f5fc6e07aa1.rmeta: /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/lib.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/config.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/connector.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/connector/builder.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/stream.rs
+
+/home/cxy/weather/wttrbar/target/debug/deps/libhyper_rustls-3d8c4f5fc6e07aa1.rlib: /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/lib.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/config.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/connector.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/connector/builder.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/stream.rs
+
+/home/cxy/weather/wttrbar/target/debug/deps/hyper_rustls-3d8c4f5fc6e07aa1.d: /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/lib.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/config.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/connector.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/connector/builder.rs /home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/stream.rs
+
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/lib.rs:
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/config.rs:
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/connector.rs:
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/connector/builder.rs:
+/home/cxy/.cargo/registry/src/index.crates.io-6f17d22bba15001f/hyper-rustls-0.23.2/src/stream.rs:
