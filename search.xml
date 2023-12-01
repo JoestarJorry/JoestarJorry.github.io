@@ -1843,4 +1843,34 @@ windowrulev2 &#x3D; noinitialfocus,class:^(xwaylandvideobridge)$
         <tag>歌曲推荐</tag>
       </tags>
   </entry>
+  <entry>
+    <title>原神,启动</title>
+    <url>/2023/12/01/%E5%8E%9F%E7%A5%9E-%E5%90%AF%E5%8A%A8/</url>
+    <content><![CDATA[
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/yuanshen.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/xinqiong.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/mingri.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+]]></content>
+      <tags>
+        <tag>整活</tag>
+      </tags>
+  </entry>
 </search>
