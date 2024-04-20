@@ -1916,4 +1916,39 @@ windowrulev2 &#x3D; noinitialfocus,class:^(xwaylandvideobridge)$
         <tag>歌曲推荐</tag>
       </tags>
   </entry>
+  <entry>
+    <title>WeChatRobot折腾记</title>
+    <url>/2024/04/20/WeChatRobot%E6%8A%98%E8%85%BE%E8%AE%B0/</url>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/475140942.mp3' data-name='老男孩' data-artist='筷子兄弟' data-cover='http://all.jorryjo.wiki/%E8%80%81%E7%94%B7%E5%AD%A9.webp' data-lrc='http://all.jorryjo.wiki/%E8%80%81%E7%94%B7%E5%AD%A9_-_%E7%AD%B7%E5%AD%90%E5%85%84%E5%BC%9F.lrc' data-lrcType='3' ></div>
+<h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>很久没有更新了，主要还是上了高中之后学业繁重没有时间了，加上也没怎么做过项目，发博客也就没什么意义了。<br>这次我又是在b站刷到的，一个接入了chatgpt的微信机器人，<br>github地址:<a href="https://github.com/lich0821/WeChatRobot">https://github.com/lich0821/WeChatRobot</a><br>这是我成功的一个实例，微信号:CxyRobot(没有挂到服务器上不能实现24小时在线)</p>
+<h1 id="踩坑实录"><a href="#踩坑实录" class="headerlink" title="踩坑实录"></a>踩坑实录</h1><h3 id="首先"><a href="#首先" class="headerlink" title="首先"></a><strong>首先</strong></h3><p>我犯了一个大忌，我没有好好看文档导致微信版本错乱，报错提醒是</p>
+<pre class="line-numbers language-none"><code class="language-none">LoadLibrary调用失败，错误码：5 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>我在这里思索了很久，最后还是问了一圈才发现自己下错了，我真是傻逼。</p>
+<h3 id="然后"><a href="#然后" class="headerlink" title="然后"></a><strong>然后</strong></h3><p>就是chatgpt的接入环节，我本来是不想用gpt想用科大星火的，但是因为找不到ft最终向gpt妥协了。<br>这个部署起来还是很简单的，效果也很好非常适合新手，基本不会犯错除非你跟我一样sb.<br>我这个也谈不上什么教程，最多也就是给你们提个醒。</p>
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/D7A30247CD1D560ACC2076B0C8FAACCE.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/A548388BB1AFEABEC4C26A9E1C88ECFF.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/9196CD19A436B4662C0C8BC6D66B0FD9.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+]]></content>
+      <categories>
+        <category>Doc</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
 </search>
