@@ -1915,11 +1915,62 @@ windowrulev2 &#x3D; noinitialfocus,class:^(xwaylandvideobridge)$
       </tags>
   </entry>
   <entry>
-    <title>使用已录入恋爱足迹网页的NFC芯片给女友一个小惊喜</title>
+    <title>使用已录入恋爱足迹网页的NFC芯片给女朋友一个小惊喜</title>
     <url>/2024/06/30/%E4%BD%BF%E7%94%A8%E5%B7%B2%E5%BD%95%E5%85%A5%E6%81%8B%E7%88%B1%E8%B6%B3%E8%BF%B9%E7%BD%91%E9%A1%B5%E7%9A%84NFC%E8%8A%AF%E7%89%87%E7%BB%99%E5%A5%B3%E5%8F%8B%E4%B8%80%E4%B8%AA%E5%B0%8F%E6%83%8A%E5%96%9C/</url>
-    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/f6be_d727_ef4d_fd6ed4a6fbd7ae74335777a35b69ea1d.mp3' data-name='Sincerely' data-artist='TRUE' data-cover='http://all.jorryjo.wiki/8f590bab834264cfbf86ae009d6ac84d9bc2e597.png%401000w_1000h_1c.webp' data-lrc='http://all.jorryjo.wiki/Sincerely%20-%20TRUE.lrc' data-lrcType='3' ></div>
+    <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/tiantian.mp3' data-name='天天' data-artist='陶喆' data-cover='http://all.jorryjo.wiki/42.jpg' data-lrc='http://all.jorryjo.wiki/tiantian.lrc' data-lrcType='3' ></div>
 
 <h1 id="对！我谈恋爱了！"><a href="#对！我谈恋爱了！" class="headerlink" title="对！我谈恋爱了！"></a>对！我谈恋爱了！</h1><p>这个事已经过了近两个月了.<br>为了充分运用个人特长给lyx一个意想不到的惊喜，也是受到小区门禁系统的启发.<br>我想到了在NFC卡内录入一个有我们两个的恋爱足迹的小网页,藏在我事先给她织好的围巾里面，当她把手机靠近就能直接打开这个网页.<br>现场实录.mp4 👇</p>
+<h2 id="关于NFC"><a href="#关于NFC" class="headerlink" title="关于NFC"></a>关于NFC</h2><p>需要NFC芯片，pdd上有很多相关商品，挑便宜的买就行，价格基本是1-2块一张，买的越多越便宜，我只买了一个，假设你觉得自己没把握可以多买几个.</p>
+<h3 id="写入软件"><a href="#写入软件" class="headerlink" title="写入软件"></a>写入软件</h3><p>安卓可以用<strong>NFC TOOLS PRO</strong><br>我是苹果所以一开始找了很久，推荐使用<strong>NFC Reader And Write</strong><br>找到写入软件下载安装后还得确保你的手机<strong>可以使用NFC</strong><br>不然没法写入，写入的过程大概就是扫描后直接添加url记录，很简单。</p>
+<h2 id="关于恋爱足迹页"><a href="#关于恋爱足迹页" class="headerlink" title="关于恋爱足迹页"></a>关于恋爱足迹页</h2><p>这个叫足迹我觉得不太稳妥，叫恋爱计时器&amp;留言系统会比较好。<br><a href="http://jorryjo.wiki/Love-Story/index.html">足迹页面</a><br>使用传统html三件套+一点点的php<br>其实也没多复杂主要由两大块组成</p>
+<h3 id="计时系统"><a href="#计时系统" class="headerlink" title="计时系统"></a>计时系统</h3><p>这个跟我之前做的那个微信机器人的倒计时一样，换个语法</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token operator">&lt;</span>script<span class="token operator">></span>
+       <span class="token keyword">function</span> <span class="token function">timer</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+           <span class="token keyword">var</span> start <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token number">2024</span><span class="token punctuation">,</span> <span class="token number">05</span><span class="token punctuation">,</span> <span class="token number">03</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">,</span> <span class="token number">00</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+           <span class="token keyword">var</span> t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> start<span class="token punctuation">;</span>
+           <span class="token keyword">var</span> h <span class="token operator">=</span> <span class="token operator">~</span><span class="token operator">~</span><span class="token punctuation">(</span>t <span class="token operator">/</span> <span class="token number">1000</span> <span class="token operator">/</span> <span class="token number">60</span> <span class="token operator">/</span> <span class="token number">60</span> <span class="token operator">%</span> <span class="token number">24</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token keyword">if</span> <span class="token punctuation">(</span>h <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+               h <span class="token operator">=</span> <span class="token string">"0"</span> <span class="token operator">+</span> h<span class="token punctuation">;</span>
+           <span class="token punctuation">&#125;</span>
+           <span class="token keyword">var</span> m <span class="token operator">=</span> <span class="token operator">~</span><span class="token operator">~</span><span class="token punctuation">(</span>t <span class="token operator">/</span> <span class="token number">1000</span> <span class="token operator">/</span> <span class="token number">60</span> <span class="token operator">%</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token keyword">if</span> <span class="token punctuation">(</span>m <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+               m <span class="token operator">=</span> <span class="token string">"0"</span> <span class="token operator">+</span> m<span class="token punctuation">;</span>
+           <span class="token punctuation">&#125;</span>
+
+           <span class="token keyword">var</span> s <span class="token operator">=</span> <span class="token operator">~</span><span class="token operator">~</span><span class="token punctuation">(</span>t <span class="token operator">/</span> <span class="token number">1000</span> <span class="token operator">%</span> <span class="token number">60</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           <span class="token keyword">if</span> <span class="token punctuation">(</span>s <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+               s <span class="token operator">=</span> <span class="token string">"0"</span> <span class="token operator">+</span> s<span class="token punctuation">;</span>
+           <span class="token punctuation">&#125;</span>
+           document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'d'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token operator">~</span><span class="token operator">~</span><span class="token punctuation">(</span>t <span class="token operator">/</span> <span class="token number">1000</span> <span class="token operator">/</span> <span class="token number">60</span> <span class="token operator">/</span> <span class="token number">60</span> <span class="token operator">/</span> <span class="token number">24</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+           document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'h'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> h<span class="token punctuation">;</span>
+           document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'m'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> m<span class="token punctuation">;</span>
+           document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'s'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> s<span class="token punctuation">;</span>
+       <span class="token punctuation">&#125;</span>
+       <span class="token function">timer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+       <span class="token function">setInterval</span><span class="token punctuation">(</span>timer<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h3><p>评论系统用的是<a href="%22https://valine.js.org/%22">Valine</a><br>一个无后端的免费开源评论系统，考虑到本站用的是gisgus，所以我一开始想的是也用gisgus但是对于一个面向大众的网页，用github账号登陆还是太不友好了，所以我换成了Valine<br>官方有很详细的文档</p>
+<h2 id="关于围巾"><a href="#关于围巾" class="headerlink" title="关于围巾"></a>关于围巾</h2>
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/first.jpg" alt="一开始在宿舍里面织,10点织到1点才织了几厘米" loading="lazy" />
+      <figcaption>一开始在宿舍里面织,10点织到1点才织了几厘米</figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/then.jpg" alt="慢慢就上道了" loading="lazy" />
+      <figcaption>慢慢就上道了</figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/final.jpg" alt="成品" loading="lazy" />
+      <figcaption>成品</figcaption>
+    </figure>
+  
+<p>你们可能会觉得我大夏天送她围巾很有病，其实一开始我也是这样觉得的，但是她不是只能有一条，织围巾也不是什么很难的事，重要的是耐心，每天回宿舍的时候就织一织<br>广大富康楼2楼好哥们都是看着我一点一点织出来的，你们应该也知道没什么难的，<br>织围巾就是一个重复的过程，把一个步骤重复一百多遍二百遍而已，只要你觉得我想这么做那么织围巾这个过程的本身，其实比下这个决定来得简单的多。<br>最后你们也可以拿手机去蹭一蹭她围巾上的小熊图案，有兴趣还可以给我们留个言，整条围巾本身只是我力所能及地给她的一个小礼物，而留言区里真挚的祝福才更大的礼物，谢谢你们！<br><a href="https://jorryjo.wiki/Love-Story/index.html" title="刘雨萱 喜欢你">点这里留言</a></p>
 ]]></content>
       <categories>
         <category>Doc</category>
