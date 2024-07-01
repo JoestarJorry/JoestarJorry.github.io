@@ -1920,6 +1920,7 @@ windowrulev2 &#x3D; noinitialfocus,class:^(xwaylandvideobridge)$
     <content><![CDATA[<div class="aplayer-box" data-url='http://all.jorryjo.wiki/tiantian.mp3' data-name='天天' data-artist='陶喆' data-cover='http://all.jorryjo.wiki/42.jpg' data-lrc='http://all.jorryjo.wiki/tiantian.lrc' data-lrcType='3' ></div>
 
 <h1 id="对！我谈恋爱了！"><a href="#对！我谈恋爱了！" class="headerlink" title="对！我谈恋爱了！"></a>对！我谈恋爱了！</h1><p>这个事已经过了近两个月了.<br>为了充分运用个人特长给lyx一个意想不到的惊喜，也是受到小区门禁系统的启发.<br>我想到了在NFC卡内录入一个有我们两个的恋爱足迹的小网页,藏在我事先给她织好的围巾里面，当她把手机靠近就能直接打开这个网页.<br>现场实录.mp4 👇</p>
+<div class="dplayer-box" data-url='http://all.jorryjo.wiki/WeChat_20240701114948.mp4' ></div>
 <h2 id="关于NFC"><a href="#关于NFC" class="headerlink" title="关于NFC"></a>关于NFC</h2><p>需要NFC芯片，pdd上有很多相关商品，挑便宜的买就行，价格基本是1-2块一张，买的越多越便宜，我只买了一个，假设你觉得自己没把握可以多买几个.</p>
 <h3 id="写入软件"><a href="#写入软件" class="headerlink" title="写入软件"></a>写入软件</h3><p>安卓可以用<strong>NFC TOOLS PRO</strong><br>我是苹果所以一开始找了很久，推荐使用<strong>NFC Reader And Write</strong><br>找到写入软件下载安装后还得确保你的手机<strong>可以使用NFC</strong><br>不然没法写入，写入的过程大概就是扫描后直接添加url记录，很简单。</p>
 <h2 id="关于恋爱足迹页"><a href="#关于恋爱足迹页" class="headerlink" title="关于恋爱足迹页"></a>关于恋爱足迹页</h2><p>这个叫足迹我觉得不太稳妥，叫恋爱计时器&amp;留言系统会比较好。<br><a href="http://jorryjo.wiki/Love-Story/index.html">足迹页面</a><br>使用传统html三件套+一点点的php<br>其实也没多复杂主要由两大块组成</p>
