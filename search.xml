@@ -1980,4 +1980,488 @@ windowrulev2 &#x3D; noinitialfocus,class:^(xwaylandvideobridge)$
         <tag>教程</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Windows Termnal的上限</title>
+    <url>/2024/07/13/Windows-Termnal%E7%9A%84%E4%B8%8A%E9%99%90/</url>
+    <content><![CDATA[<h3 id="OVERVIEW"><a href="#OVERVIEW" class="headerlink" title="OVERVIEW"></a>OVERVIEW</h3>
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240714064041.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+    <figure class="figure-image">
+      <img src="http://all.jorryjo.wiki/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240714064115.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<h1 id="WindowsTerminal"><a href="#WindowsTerminal" class="headerlink" title="WindowsTerminal"></a>WindowsTerminal</h1><p>简称wt,一款由微软开发的windows终端，相对于windows上的其他我认为它有着更好的操作界面以及更直白的选项卡，体现于目前主流的终端模拟器所没有的用选项卡改配置，以及流畅的gui动画，还有高（好吧一点都不高）可定制性.<br>在Win11上它的表现尤其突出，<br>配合窗口圆角以及专注模式可以实现无边框的沉浸式圆角窗口，同时高版本的powershell所提供的现代化终端体验丰富了其华丽外衣下的空洞内在，<br>使用Startship之后更是锦上添花般地给予了我极好的终端体验，<br>常言道，<em>美化是第一生产力</em>，<br>你的效率取决于你有多喜欢这件事，那么有一个漂亮的终端就能极大提升你写程序的效率。</p>
+<h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><pre class="line-numbers language-json" data-language="json"><code class="language-json"><span class="token punctuation">&#123;</span>
+    <span class="token property">"$help"</span><span class="token operator">:</span> <span class="token string">"https://aka.ms/terminal-documentation"</span><span class="token punctuation">,</span>
+    <span class="token property">"$schema"</span><span class="token operator">:</span> <span class="token string">"https://aka.ms/terminal-profiles-schema"</span><span class="token punctuation">,</span>
+    <span class="token property">"actions"</span><span class="token operator">:</span> 
+    <span class="token punctuation">[</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"command"</span><span class="token operator">:</span> 
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"copy"</span><span class="token punctuation">,</span>
+                <span class="token property">"singleLine"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token property">"keys"</span><span class="token operator">:</span> <span class="token string">"ctrl+c"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"paste"</span><span class="token punctuation">,</span>
+            <span class="token property">"keys"</span><span class="token operator">:</span> <span class="token string">"ctrl+v"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"find"</span><span class="token punctuation">,</span>
+            <span class="token property">"keys"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+f"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"command"</span><span class="token operator">:</span> 
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"action"</span><span class="token operator">:</span> <span class="token string">"splitPane"</span><span class="token punctuation">,</span>
+                <span class="token property">"split"</span><span class="token operator">:</span> <span class="token string">"auto"</span><span class="token punctuation">,</span>
+                <span class="token property">"splitMode"</span><span class="token operator">:</span> <span class="token string">"duplicate"</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token property">"keys"</span><span class="token operator">:</span> <span class="token string">"alt+shift+d"</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"alwaysShowTabs"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"autoHideWindow"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"copyFormatting"</span><span class="token operator">:</span> <span class="token string">"none"</span><span class="token punctuation">,</span>
+    <span class="token property">"copyOnSelect"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"defaultProfile"</span><span class="token operator">:</span> <span class="token string">"&#123;a3a2e83a-884a-5379-baa8-16f193a13b21&#125;"</span><span class="token punctuation">,</span>
+    <span class="token property">"initialPosition"</span><span class="token operator">:</span> <span class="token string">","</span><span class="token punctuation">,</span>
+    <span class="token property">"launchMode"</span><span class="token operator">:</span> <span class="token string">"focus"</span><span class="token punctuation">,</span>
+    <span class="token property">"newTabMenu"</span><span class="token operator">:</span> 
+    <span class="token punctuation">[</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"remainingProfiles"</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"profiles"</span><span class="token operator">:</span> 
+    <span class="token punctuation">&#123;</span>
+        <span class="token property">"defaults"</span><span class="token operator">:</span> 
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"colorScheme"</span><span class="token operator">:</span> <span class="token string">"One Half Dark"</span><span class="token punctuation">,</span>
+            <span class="token property">"font"</span><span class="token operator">:</span> 
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"face"</span><span class="token operator">:</span> <span class="token string">"JetBrainsMono Nerd Font"</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token property">"padding"</span><span class="token operator">:</span> <span class="token string">"0"</span><span class="token punctuation">,</span>
+            <span class="token property">"scrollbarState"</span><span class="token operator">:</span> <span class="token string">"hidden"</span><span class="token punctuation">,</span>
+            <span class="token property">"useAcrylic"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token property">"list"</span><span class="token operator">:</span> 
+        <span class="token punctuation">[</span>
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"backgroundImage"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+                <span class="token property">"colorScheme"</span><span class="token operator">:</span> <span class="token string">"Tango Dark"</span><span class="token punctuation">,</span>
+                <span class="token property">"commandline"</span><span class="token operator">:</span> <span class="token string">"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"</span><span class="token punctuation">,</span>
+                <span class="token property">"elevate"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"font"</span><span class="token operator">:</span> 
+                <span class="token punctuation">&#123;</span>
+                    <span class="token property">"face"</span><span class="token operator">:</span> <span class="token string">"JetBrainsMono Nerd Font"</span>
+                <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+                <span class="token property">"guid"</span><span class="token operator">:</span> <span class="token string">"&#123;61c54bbd-c2c6-5271-96e7-009a87ff44bf&#125;"</span><span class="token punctuation">,</span>
+                <span class="token property">"hidden"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Windows PowerShell"</span><span class="token punctuation">,</span>
+                <span class="token property">"opacity"</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+                <span class="token property">"useAcrylic"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"commandline"</span><span class="token operator">:</span> <span class="token string">"%SystemRoot%\\System32\\cmd.exe"</span><span class="token punctuation">,</span>
+                <span class="token property">"guid"</span><span class="token operator">:</span> <span class="token string">"&#123;0caa0dad-35be-5f56-a8ff-afceeeaa6101&#125;"</span><span class="token punctuation">,</span>
+                <span class="token property">"hidden"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"\u547d\u4ee4\u63d0\u793a\u7b26"</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"guid"</span><span class="token operator">:</span> <span class="token string">"&#123;b453ae62-4e3d-5e58-b989-0a998ec441b8&#125;"</span><span class="token punctuation">,</span>
+                <span class="token property">"hidden"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Azure Cloud Shell"</span><span class="token punctuation">,</span>
+                <span class="token property">"source"</span><span class="token operator">:</span> <span class="token string">"Windows.Terminal.Azure"</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"backgroundImage"</span><span class="token operator">:</span> <span class="token string">"C:\\Users\\Administrator\\Pictures\\wallhaven-6d1zll.png"</span><span class="token punctuation">,</span>
+                <span class="token property">"backgroundImageOpacity"</span><span class="token operator">:</span> <span class="token number">0.32</span><span class="token punctuation">,</span>
+                <span class="token property">"colorScheme"</span><span class="token operator">:</span> <span class="token string">"One Half Dark"</span><span class="token punctuation">,</span>
+                <span class="token property">"elevate"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"font"</span><span class="token operator">:</span> 
+                <span class="token punctuation">&#123;</span>
+                    <span class="token property">"face"</span><span class="token operator">:</span> <span class="token string">"JetBrainsMono Nerd Font"</span><span class="token punctuation">,</span>
+                    <span class="token property">"weight"</span><span class="token operator">:</span> <span class="token string">"normal"</span>
+                <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+                <span class="token property">"guid"</span><span class="token operator">:</span> <span class="token string">"&#123;574e775e-4f2a-5b96-ac1e-a2962a402336&#125;"</span><span class="token punctuation">,</span>
+                <span class="token property">"hidden"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"PowerShell"</span><span class="token punctuation">,</span>
+                <span class="token property">"opacity"</span><span class="token operator">:</span> <span class="token number">28</span><span class="token punctuation">,</span>
+                <span class="token property">"padding"</span><span class="token operator">:</span> <span class="token string">"10"</span><span class="token punctuation">,</span>
+                <span class="token property">"source"</span><span class="token operator">:</span> <span class="token string">"Windows.Terminal.PowershellCore"</span><span class="token punctuation">,</span>
+                <span class="token property">"useAcrylic"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"commandline"</span><span class="token operator">:</span> <span class="token string">"C:\\Program Files\\PowerShell\\7\\pwsh.exe"</span><span class="token punctuation">,</span>
+                <span class="token property">"guid"</span><span class="token operator">:</span> <span class="token string">"&#123;8bade937-f532-4212-becc-869f67b2b732&#125;"</span><span class="token punctuation">,</span>
+                <span class="token property">"hidden"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Profile 5"</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"guid"</span><span class="token operator">:</span> <span class="token string">"&#123;a5a97cb8-8961-5535-816d-772efe0c6a3f&#125;"</span><span class="token punctuation">,</span>
+                <span class="token property">"hidden"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Arch"</span><span class="token punctuation">,</span>
+                <span class="token property">"source"</span><span class="token operator">:</span> <span class="token string">"Windows.Terminal.Wsl"</span>
+            <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">&#123;</span>
+                <span class="token property">"backgroundImage"</span><span class="token operator">:</span> <span class="token string">"E:\\3284904010\\preview.gif"</span><span class="token punctuation">,</span>
+                <span class="token property">"backgroundImageOpacity"</span><span class="token operator">:</span> <span class="token number">0.33</span><span class="token punctuation">,</span>
+                <span class="token property">"cursorShape"</span><span class="token operator">:</span> <span class="token string">"bar"</span><span class="token punctuation">,</span>
+                <span class="token property">"experimental.retroTerminalEffect"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"font"</span><span class="token operator">:</span> 
+                <span class="token punctuation">&#123;</span>
+                    <span class="token property">"face"</span><span class="token operator">:</span> <span class="token string">"CaskaydiaCove Nerd Font"</span><span class="token punctuation">,</span>
+                    <span class="token property">"size"</span><span class="token operator">:</span> <span class="token number">13.0</span>
+                <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+                <span class="token property">"guid"</span><span class="token operator">:</span> <span class="token string">"&#123;a3a2e83a-884a-5379-baa8-16f193a13b21&#125;"</span><span class="token punctuation">,</span>
+                <span class="token property">"hidden"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"PowerShell 7 Preview"</span><span class="token punctuation">,</span>
+                <span class="token property">"opacity"</span><span class="token operator">:</span> <span class="token number">42</span><span class="token punctuation">,</span>
+                <span class="token property">"padding"</span><span class="token operator">:</span> <span class="token string">"10"</span><span class="token punctuation">,</span>
+                <span class="token property">"source"</span><span class="token operator">:</span> <span class="token string">"Windows.Terminal.PowershellCore"</span>
+            <span class="token punctuation">&#125;</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+    <span class="token property">"schemes"</span><span class="token operator">:</span> 
+    <span class="token punctuation">[</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#0C0C0C"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#0C0C0C"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#0037DA"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#767676"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#3B78FF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#61D6D6"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#16C60C"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#B4009E"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#E74856"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#F2F2F2"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#F9F1A5"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#3A96DD"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#CCCCCC"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#13A10E"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Campbell"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#881798"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#C50F1F"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#CCCCCC"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#C19C00"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#012456"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#0C0C0C"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#0037DA"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#767676"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#3B78FF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#61D6D6"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#16C60C"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#B4009E"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#E74856"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#F2F2F2"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#F9F1A5"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#3A96DD"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#CCCCCC"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#13A10E"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Campbell Powershell"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#881798"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#C50F1F"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#CCCCCC"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#C19C00"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#282C34"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#282C34"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#61AFEF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#5A6374"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#61AFEF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#56B6C2"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#98C379"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#C678DD"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#E06C75"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#DCDFE4"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#E5C07B"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#56B6C2"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#DCDFE4"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#98C379"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"One Half Dark"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#C678DD"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#E06C75"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#DCDFE4"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#E5C07B"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#FAFAFA"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#383A42"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#0184BC"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#4F525D"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#61AFEF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#56B5C1"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#98C379"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#C577DD"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#DF6C75"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#E4C07A"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#4F525D"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#0997B3"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#383A42"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#50A14F"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"One Half Light"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#A626A4"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#E45649"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#FAFAFA"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#C18301"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#002B36"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#002B36"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#268BD2"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#073642"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#839496"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#93A1A1"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#586E75"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#6C71C4"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#CB4B16"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#FDF6E3"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#657B83"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#2AA198"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#839496"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#859900"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Solarized Dark"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#D33682"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#DC322F"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#EEE8D5"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#B58900"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#FDF6E3"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#002B36"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#268BD2"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#073642"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#839496"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#93A1A1"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#586E75"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#6C71C4"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#CB4B16"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#FDF6E3"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#657B83"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#002B36"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#2AA198"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#657B83"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#859900"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Solarized Light"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#D33682"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#DC322F"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#EEE8D5"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#B58900"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#000000"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#000000"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#3465A4"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#555753"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#729FCF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#34E2E2"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#8AE234"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#AD7FA8"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#EF2929"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#EEEEEC"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#FCE94F"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#06989A"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#D3D7CF"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#4E9A06"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Tango Dark"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#75507B"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#CC0000"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#D3D7CF"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#C4A000"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#000000"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#3465A4"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#555753"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#729FCF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#34E2E2"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#8AE234"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#AD7FA8"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#EF2929"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#EEEEEC"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#FCE94F"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#000000"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#06989A"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#555753"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#4E9A06"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Tango Light"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#75507B"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#CC0000"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#D3D7CF"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#C4A000"</span>
+        <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+        <span class="token punctuation">&#123;</span>
+            <span class="token property">"background"</span><span class="token operator">:</span> <span class="token string">"#000000"</span><span class="token punctuation">,</span>
+            <span class="token property">"black"</span><span class="token operator">:</span> <span class="token string">"#000000"</span><span class="token punctuation">,</span>
+            <span class="token property">"blue"</span><span class="token operator">:</span> <span class="token string">"#000080"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlack"</span><span class="token operator">:</span> <span class="token string">"#808080"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightBlue"</span><span class="token operator">:</span> <span class="token string">"#0000FF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightCyan"</span><span class="token operator">:</span> <span class="token string">"#00FFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightGreen"</span><span class="token operator">:</span> <span class="token string">"#00FF00"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightPurple"</span><span class="token operator">:</span> <span class="token string">"#FF00FF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightRed"</span><span class="token operator">:</span> <span class="token string">"#FF0000"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightWhite"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"brightYellow"</span><span class="token operator">:</span> <span class="token string">"#FFFF00"</span><span class="token punctuation">,</span>
+            <span class="token property">"cursorColor"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"cyan"</span><span class="token operator">:</span> <span class="token string">"#008080"</span><span class="token punctuation">,</span>
+            <span class="token property">"foreground"</span><span class="token operator">:</span> <span class="token string">"#C0C0C0"</span><span class="token punctuation">,</span>
+            <span class="token property">"green"</span><span class="token operator">:</span> <span class="token string">"#008000"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Vintage"</span><span class="token punctuation">,</span>
+            <span class="token property">"purple"</span><span class="token operator">:</span> <span class="token string">"#800080"</span><span class="token punctuation">,</span>
+            <span class="token property">"red"</span><span class="token operator">:</span> <span class="token string">"#800000"</span><span class="token punctuation">,</span>
+            <span class="token property">"selectionBackground"</span><span class="token operator">:</span> <span class="token string">"#FFFFFF"</span><span class="token punctuation">,</span>
+            <span class="token property">"white"</span><span class="token operator">:</span> <span class="token string">"#C0C0C0"</span><span class="token punctuation">,</span>
+            <span class="token property">"yellow"</span><span class="token operator">:</span> <span class="token string">"#808000"</span>
+        <span class="token punctuation">&#125;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"showTabsInTitlebar"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"themes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"useAcrylicInTabRow"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Nvchad"><a href="#Nvchad" class="headerlink" title="Nvchad"></a>Nvchad</h2><p>一个现代化的nvim配置，有优美的UI和完备的写码功能<br><a href="'https://nvchad.com/'">官网</a><br>唯一不好的地方就是第一次接触这个配置的哥们可能不太能明白该怎么修改配置，<br>其实主要就是在lua文件夹下的<em>chadrc.lua</em>(用来改ui)文件和主文件夹下的init.lua文件<br>我将自己的这两个文件贴出供各位参考</p>
+<h4 id="init-lua"><a href="#init-lua" class="headerlink" title="init.lua"></a>init.lua</h4><pre class="line-numbers language-lua" data-language="lua"><code class="language-lua">vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>base46_cache <span class="token operator">=</span> vim<span class="token punctuation">.</span>fn<span class="token punctuation">.</span>stdpath <span class="token string">"data"</span> <span class="token operator">..</span> <span class="token string">"/nvchad/base46/"</span>
+vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>mapleader <span class="token operator">=</span> <span class="token string">" "</span>
+<span class="token comment">--require('lua.custom.init')</span>
+<span class="token comment">-- bootstrap lazy and all plugins</span>
+<span class="token keyword">local</span> lazypath <span class="token operator">=</span> vim<span class="token punctuation">.</span>fn<span class="token punctuation">.</span>stdpath <span class="token string">"data"</span> <span class="token operator">..</span> <span class="token string">"/lazy/lazy.nvim"</span>
+<span class="token keyword">if</span> <span class="token keyword">not</span> vim<span class="token punctuation">.</span>loop<span class="token punctuation">.</span><span class="token function">fs_stat</span><span class="token punctuation">(</span>lazypath<span class="token punctuation">)</span> <span class="token keyword">then</span>
+  <span class="token keyword">local</span> repo <span class="token operator">=</span> <span class="token string">"https://github.com/folke/lazy.nvim.git"</span>
+  vim<span class="token punctuation">.</span>fn<span class="token punctuation">.</span><span class="token function">system</span> <span class="token punctuation">&#123;</span> <span class="token string">"git"</span><span class="token punctuation">,</span> <span class="token string">"clone"</span><span class="token punctuation">,</span> <span class="token string">"--filter=blob:none"</span><span class="token punctuation">,</span> repo<span class="token punctuation">,</span> <span class="token string">"--branch=stable"</span><span class="token punctuation">,</span> lazypath <span class="token punctuation">&#125;</span>
+<span class="token keyword">end</span>
+
+vim<span class="token punctuation">.</span>opt<span class="token punctuation">.</span>rtp<span class="token punctuation">:</span><span class="token function">prepend</span><span class="token punctuation">(</span>lazypath<span class="token punctuation">)</span>
+<span class="token keyword">local</span> lazy_config <span class="token operator">=</span> require <span class="token string">"configs.lazy"</span>
+
+<span class="token comment">-- load plugins</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"lazy"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span>
+  <span class="token punctuation">&#123;</span>
+    <span class="token string">"NvChad/NvChad"</span><span class="token punctuation">,</span>
+    lazy <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">,</span>
+    branch <span class="token operator">=</span> <span class="token string">"v2.5"</span><span class="token punctuation">,</span>
+    import <span class="token operator">=</span> <span class="token string">"nvchad.plugins"</span><span class="token punctuation">,</span>
+    config <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      require <span class="token string">"options"</span>
+    <span class="token keyword">end</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+
+  <span class="token punctuation">&#123;</span> import <span class="token operator">=</span> <span class="token string">"plugins"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">,</span> lazy_config<span class="token punctuation">)</span>
+
+<span class="token comment">-- load theme</span>
+<span class="token function">dofile</span><span class="token punctuation">(</span>vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>base46_cache <span class="token operator">..</span> <span class="token string">"defaults"</span><span class="token punctuation">)</span>
+<span class="token function">dofile</span><span class="token punctuation">(</span>vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>base46_cache <span class="token operator">..</span> <span class="token string">"statusline"</span><span class="token punctuation">)</span>
+
+require <span class="token string">"nvchad.autocmds"</span>
+vim<span class="token punctuation">.</span><span class="token function">schedule</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  require <span class="token string">"mappings"</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+
+
+<span class="token keyword">if</span> vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide <span class="token keyword">then</span>
+    <span class="token comment">-- Put anything you want to happen only in Neovide here</span>
+    vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_cursor_vfx_mode <span class="token operator">=</span> <span class="token string">"railgun"</span>
+    vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_cursor_vfx_mode <span class="token operator">=</span> <span class="token string">"wireframe"</span>
+    vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_cursor_vfx_mode <span class="token operator">=</span> <span class="token string">"sonicboom"</span>
+    vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_cursor_vfx_mode <span class="token operator">=</span> <span class="token string">"ripple"</span>
+
+    vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_refresh_rate <span class="token operator">=</span> <span class="token number">75</span>
+    
+    vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_scale_factor <span class="token operator">=</span> <span class="token number">0.8</span>
+	<span class="token comment">-- Helper function for transparency formatting</span>
+<span class="token keyword">local</span> alpha <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">return</span> string<span class="token punctuation">.</span><span class="token function">format</span><span class="token punctuation">(</span><span class="token string">"%x"</span><span class="token punctuation">,</span> math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">255</span> <span class="token operator">*</span> vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>transparency <span class="token keyword">or</span> <span class="token number">0.8</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+<span class="token comment">-- g:neovide_transparency should be 0 if you want to unify transparency of content and title bar.</span>
+vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_transparency <span class="token operator">=</span> <span class="token number">0.9</span>
+vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>transparency <span class="token operator">=</span> <span class="token number">0.8</span>
+vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_background_color <span class="token operator">=</span> <span class="token string">"#0f1117"</span> <span class="token operator">..</span> <span class="token function">alpha</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">--vim.o.guifont = "JetBrainsMono Nerd Font Mono Bold:h14" -- text below applies for VimScript</span>
+vim<span class="token punctuation">.</span>o<span class="token punctuation">.</span>guifont <span class="token operator">=</span> <span class="token string">"CaskaydiaCove Nerd Font Mono"</span> <span class="token comment">-- text below applies for VimScript</span>
+vim<span class="token punctuation">.</span>g<span class="token punctuation">.</span>neovide_fullscreen <span class="token operator">=</span> <span class="token keyword">true</span>
+<span class="token keyword">end</span>
+
+<span class="token comment">-- local function setupTM()</span>
+<span class="token comment">--   vim.cmd('hi Normal guibg=NONE ctermbg=NONE')</span>
+<span class="token comment">--   vim.cmd('Nvdash')</span>
+<span class="token comment">-- end</span>
+<span class="token comment">-- setupTM()</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="chadrc-lua"><a href="#chadrc-lua" class="headerlink" title="chadrc.lua"></a>chadrc.lua</h4><pre class="line-numbers language-lua" data-language="lua"><code class="language-lua">
+<span class="token comment">-- This file  needs to have same structure as nvconfig.lua </span>
+<span class="token comment">-- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua</span>
+
+<span class="token comment">---@type ChadrcConfig</span>
+<span class="token keyword">local</span> M <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+
+M<span class="token punctuation">.</span>ui <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+	theme_toggle <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token string">"solarized_osaka"</span><span class="token punctuation">,</span> <span class="token string">"dark_horizon"</span> <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  theme <span class="token operator">=</span> <span class="token string">"solarized_osaka"</span><span class="token punctuation">,</span>
+  transparency <span class="token operator">=</span> <span class="token string">'true'</span><span class="token punctuation">,</span>
+  statusline <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    theme <span class="token operator">=</span> <span class="token string">"minimal"</span><span class="token punctuation">,</span>
+    separator_style <span class="token operator">=</span> <span class="token string">"default"</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  tabufline <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    enabled <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">,</span>
+    lazyload <span class="token operator">=</span> <span class="token keyword">false</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+  nvdash <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+    load_on_startup <span class="token operator">=</span> <span class="token keyword">true</span><span class="token punctuation">,</span>
+    header <span class="token operator">=</span> <span class="token punctuation">&#123;</span>
+      <span class="token string">[[                                                                       ]]</span><span class="token punctuation">,</span>
+      <span class="token string">[[       ████ ██████           █████      ██                     ]]</span><span class="token punctuation">,</span>
+      <span class="token string">[[      ███████████             █████                             ]]</span><span class="token punctuation">,</span>
+      <span class="token string">[[      █████████ ███████████████████ ███   ███████████   ]]</span><span class="token punctuation">,</span>
+      <span class="token string">[[     █████████  ███    █████████████ █████ ██████████████   ]]</span><span class="token punctuation">,</span>
+      <span class="token string">[[    █████████ ██████████ █████████ █████ █████ ████ █████   ]]</span><span class="token punctuation">,</span>
+      <span class="token string">[[  ███████████ ███    ███ █████████ █████ █████ ████ █████  ]]</span><span class="token punctuation">,</span>
+      <span class="token string">[[ ██████  █████████████████████ ████ █████ █████ ████ ██████ ]]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+	<span class="token comment">-- hl_override = &#123;</span>
+	<span class="token comment">-- 	Comment = &#123; italic = true &#125;,</span>
+	<span class="token comment">-- 	["@comment"] = &#123; italic = true &#125;,</span>
+	<span class="token comment">-- &#125;,</span>
+
+  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
+<span class="token punctuation">&#125;</span>
+
+<span class="token keyword">return</span> M
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+]]></content>
+      <categories>
+        <category>Doc</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
 </search>
